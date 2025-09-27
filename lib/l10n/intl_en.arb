@@ -1,8 +1,160 @@
 {
-    "firstPageOnboardingTitle": "Start Journey With Nike",
-    "firstPageOnboardingSubtitle": "Smart, Gorgeous & Fashionable Collection",
-    "secondPageOnboardingTitle": "Follow Latest Style Shoes",
-    "secondPageOnboardingSubtitle": "There Are Many Beautiful And Attractive Plants To Your Room",
-    "thirdPageOnboardingTitle": "Summer Shoes Nike 2025",
-    "thirdPageOnboardingSubtitle": "Experience comfort and style with Nike's latest summer designs"
+  "firstPageOnboardingTitle": "Start Journey ",
+  "firstPageOnboardingTitle1": "With Nike",
+  "firstPageOnboardingSubtitle": "Smart, Gorgeous & Fashionable Collection",
+  "secondPageOnboardingTitle": "Follow Latest",
+  "secondPageOnboardingTitle1": "Style Shoes",
+  "secondPageOnboardingSubtitle": "There Are Many Beautiful And Attractive products To Your Room",
+  "thirdPageOnboardingTitle": "Summer Shoes",
+  "thirdPageOnboardingTitle1": "Nike 2025",
+  "thirdPageOnboardingSubtitle": "Experience comfort and style with Nike's latest summer designs",
+  "textButtonGetStarted": "Get Started",
+  "textButtonNext": "Next",
+  
+  "signInTitle": "Hello Again!",
+  "signInSubtitle": "Welcome Back You,ve Been Missed!",
+  "signInEmail": "Email Address",
+  "signInPassword": "Password",
+  "signInRecoveryPassword": "Recovery Password",
+  "signInButton": "Sign In",
+  "signInWithGoogle": "Sign in with Google",
+  "signInWithFacebook": "Sign in with Facebook",
+  "signInWithApple": "Sign in with Apple",
+  "signInNoAccount": "Don't have an account?",
+  "signInSignUpFree": "Sign Up for free",
+
+  
+  "signUpTitle": "Create Account",
+  "signUpSubtitle": "Fill your information below or register with social media",
+  "signUpFullName": "Full Name",
+  "signUpEmail": "Email Address",
+  "signUpPassword": "Password",
+  "signUpConfirmPassword": "Confirm Password",
+  "signUpButton": "Sign Up",
+  "signUpWithGoogle": "Sign up with Google",
+  "signUpWithFacebook": "Sign up with Facebook",
+  "signUpWithApple": "Sign up with Apple",
+  "signUpHaveAccount": "Already have an account?",
+  "signUpSignInNow": "Sign In now",
+
+  
+  "forgotPasswordTitle": "Recovery Password",
+  "forgotPasswordSubtitle": "Please Enter Your Phone Number To Receive a Verification Code",
+  "forgotPasswordPhoneNumber": "Phone Number",
+  "forgotPasswordContinue": "Continue",
+
+  
+  "forgotPasswordVerificationTitle": "Enter verification code",
+  "forgotPasswordVerificationSubtitle": "Enter the code we sent to the following phone number 01002275616",
+  "forgotPasswordVerificationButton": "Verify Code",
+  "forgotPasswordResendCode": "Resend Code",
+
+  
+  "newPasswordTitle": "New Password",
+  "newPasswordSubtitle": "Please Create new password to sign in",
+  "newPasswordField": "New Password",
+  "newPasswordConfirmField": "Confirm New Password",
+  "newPasswordButton": "Create new password",
+
+  
+  "homePasswordChanged": "Password has been changed successfully",
+  "homeStoreLocation": "Store location",
+  "homeStoreAddress": "Mondolibug, Sylhet",
+  "homeSearchPlaceholder": "Looking for shoes",
+  "homeBrandNike": "Nike",
+  "homeBrandPuma": "Puma",
+  "homeBrandUnderArmour": "Under Armour",
+  "homeBrandAdidas": "Adidas",
+  "homeBrandConverse": "Converse",
+  "homePopularShoes": "Popular Shoes",
+  "homeBestSeller": "Best Seller",
+  "homeNikeJordan": "Nike Jordan",
+  "homeNikeAirMax": "Nike Air Max",
+  "homePrice493": "$493.00",
+  "homeNikeAirJordan": "Nike Air Jordan",
+
+  
+  "bestSellerTitle": "Best Seller",
+  "bestSellerCategory": "Men's Shoes",
+
+  
+  "favouriteTitle": "Favourite",
+
+  
+  "searchTitle": "Search Your Shoes",
+  "searchNoResults": "No Results",
+  "searchSorryMessage": "Sorry… this information is not available at the moment",
+  "searchShoes": "Shoes",
+  "searchCancel": "Cancel",
+
+  
+  "notificationsToday": "Today",
+  "notificationsYesterday": "Yesterday",
+  "notificationsTitle": "Notifications",
+  "notificationsClearAll": "Clear All",
+
+  
+  "filtersTitle": "Filters",
+  "filtersGender": "Gender",
+  "filtersMen": "Men",
+  "filtersWomen": "Women",
+  "filtersUnisex": "Unisex",
+  "filtersSize": "Size",
+  "filtersPrice": "Price",
+  "filtersPrice16": "$16",
+  "filtersPrice350": "$350",
+  "filtersApply": "Apply",
+
+  
+  "detailsCategory": "Men's Shoes",
+  "detailsTitle": "Nike Air Jordan",
+  "detailsPrice": "$967.800",
+  "detailsDescription": "Air Jordan is an American brand of basketball shoes athletic, casual, and style clothing produced by Nike....",
+  "detailsGallery": "Gallery",
+  "detailsAddToCart": "Add To Cart",
+
+  
+  "cartSubtotal": "Subtotal",
+  "cartShopping": "Shopping",
+  "cartTotalCost": "Total Cost",
+  "cartCheckout": "Checkout",
+
+  
+  "checkoutContactInfo": "Contact Information",
+  "checkoutEmail": "Email",
+  "checkoutPhone": "Phone",
+  "checkoutAddress": "Address",
+  "checkoutSampleAddress": "Newahall St 36, London, 12908 - UK",
+  "checkoutPayment": "Payment",
+  "checkoutBackToShopping": "Back To Shopping",
+  "checkoutSuccess": "Your Payment Is Successful",
+
+  
+  "drawerGreeting": "Hey, 👋",
+  "drawerUserName": "alisson becker",
+  "drawerProfile": "Profile",
+  "drawerHomePage": "Home Page",
+  "drawerMyCart": "My Cart",
+  "drawerFavorite": "Favorite",
+  "drawerOrders": "Orders",
+  "drawerNotifications": "Notifications",
+  "drawerAbout": "About",
+  "drawerSignOut": "Sign Out",
+
+  "drawerAccountSettings": "Account & Settings",
+  "drawerAccount": "Account",
+  "drawerNotificationSetting": "Notification Setting",
+  "drawerShippingAddress": "Shipping Address",
+  "drawerPaymentInfo": "Payment Info",
+  "drawerDeleteAccount": "Delete Account",
+
+  "drawerAppSettings": "App Settings",
+  "drawerLanguages": "Languages",
+  "drawerEnablePushNotifications": "Enable Push Notifications",
+  "drawerEnableLocationServices": "Enable Location Services",
+  "drawerDarkMode": "Dark Mode",
+
+  "drawerFullName": "Full Name",
+  "drawerEmailAddress": "Email Address",
+  "drawerLocation": "Location"
 }

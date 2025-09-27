@@ -22,23 +22,231 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "bestSellerCategory": MessageLookupByLibrary.simpleMessage("Men\'s Shoes"),
+    "bestSellerTitle": MessageLookupByLibrary.simpleMessage("Best Seller"),
+    "cartCheckout": MessageLookupByLibrary.simpleMessage("Checkout"),
+    "cartShopping": MessageLookupByLibrary.simpleMessage("Shopping"),
+    "cartSubtotal": MessageLookupByLibrary.simpleMessage("Subtotal"),
+    "cartTotalCost": MessageLookupByLibrary.simpleMessage("Total Cost"),
+    "checkoutAddress": MessageLookupByLibrary.simpleMessage("Address"),
+    "checkoutBackToShopping": MessageLookupByLibrary.simpleMessage(
+      "Back To Shopping",
+    ),
+    "checkoutContactInfo": MessageLookupByLibrary.simpleMessage(
+      "Contact Information",
+    ),
+    "checkoutEmail": MessageLookupByLibrary.simpleMessage("Email"),
+    "checkoutPayment": MessageLookupByLibrary.simpleMessage("Payment"),
+    "checkoutPhone": MessageLookupByLibrary.simpleMessage("Phone"),
+    "checkoutSampleAddress": MessageLookupByLibrary.simpleMessage(
+      "Newahall St 36, London, 12908 - UK",
+    ),
+    "checkoutSuccess": MessageLookupByLibrary.simpleMessage(
+      "Your Payment Is Successful",
+    ),
+    "detailsAddToCart": MessageLookupByLibrary.simpleMessage("Add To Cart"),
+    "detailsCategory": MessageLookupByLibrary.simpleMessage("Men\'s Shoes"),
+    "detailsDescription": MessageLookupByLibrary.simpleMessage(
+      "Air Jordan is an American brand of basketball shoes athletic, casual, and style clothing produced by Nike....",
+    ),
+    "detailsGallery": MessageLookupByLibrary.simpleMessage("Gallery"),
+    "detailsPrice": MessageLookupByLibrary.simpleMessage("\$967.800"),
+    "detailsTitle": MessageLookupByLibrary.simpleMessage("Nike Air Jordan"),
+    "drawerAbout": MessageLookupByLibrary.simpleMessage("About"),
+    "drawerAccount": MessageLookupByLibrary.simpleMessage("Account"),
+    "drawerAccountSettings": MessageLookupByLibrary.simpleMessage(
+      "Account & Settings",
+    ),
+    "drawerAppSettings": MessageLookupByLibrary.simpleMessage("App Settings"),
+    "drawerDarkMode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
+    "drawerDeleteAccount": MessageLookupByLibrary.simpleMessage(
+      "Delete Account",
+    ),
+    "drawerEmailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
+    "drawerEnableLocationServices": MessageLookupByLibrary.simpleMessage(
+      "Enable Location Services",
+    ),
+    "drawerEnablePushNotifications": MessageLookupByLibrary.simpleMessage(
+      "Enable Push Notifications",
+    ),
+    "drawerFavorite": MessageLookupByLibrary.simpleMessage("Favorite"),
+    "drawerFullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "drawerGreeting": MessageLookupByLibrary.simpleMessage("Hey, 👋"),
+    "drawerHomePage": MessageLookupByLibrary.simpleMessage("Home Page"),
+    "drawerLanguages": MessageLookupByLibrary.simpleMessage("Languages"),
+    "drawerLocation": MessageLookupByLibrary.simpleMessage("Location"),
+    "drawerMyCart": MessageLookupByLibrary.simpleMessage("My Cart"),
+    "drawerNotificationSetting": MessageLookupByLibrary.simpleMessage(
+      "Notification Setting",
+    ),
+    "drawerNotifications": MessageLookupByLibrary.simpleMessage(
+      "Notifications",
+    ),
+    "drawerOrders": MessageLookupByLibrary.simpleMessage("Orders"),
+    "drawerPaymentInfo": MessageLookupByLibrary.simpleMessage("Payment Info"),
+    "drawerProfile": MessageLookupByLibrary.simpleMessage("Profile"),
+    "drawerShippingAddress": MessageLookupByLibrary.simpleMessage(
+      "Shipping Address",
+    ),
+    "drawerSignOut": MessageLookupByLibrary.simpleMessage("Sign Out"),
+    "drawerUserName": MessageLookupByLibrary.simpleMessage("alisson becker"),
+    "favouriteTitle": MessageLookupByLibrary.simpleMessage("Favourite"),
+    "filtersApply": MessageLookupByLibrary.simpleMessage("Apply"),
+    "filtersGender": MessageLookupByLibrary.simpleMessage("Gender"),
+    "filtersMen": MessageLookupByLibrary.simpleMessage("Men"),
+    "filtersPrice": MessageLookupByLibrary.simpleMessage("Price"),
+    "filtersPrice16": MessageLookupByLibrary.simpleMessage("\$16"),
+    "filtersPrice350": MessageLookupByLibrary.simpleMessage("\$350"),
+    "filtersSize": MessageLookupByLibrary.simpleMessage("Size"),
+    "filtersTitle": MessageLookupByLibrary.simpleMessage("Filters"),
+    "filtersUnisex": MessageLookupByLibrary.simpleMessage("Unisex"),
+    "filtersWomen": MessageLookupByLibrary.simpleMessage("Women"),
     "firstPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
       "Smart, Gorgeous & Fashionable Collection",
     ),
     "firstPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
-      "Start Journey With Nike",
+      "Start Journey ",
     ),
+    "firstPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
+      "With Nike",
+    ),
+    "forgotPasswordContinue": MessageLookupByLibrary.simpleMessage("Continue"),
+    "forgotPasswordPhoneNumber": MessageLookupByLibrary.simpleMessage(
+      "Phone Number",
+    ),
+    "forgotPasswordResendCode": MessageLookupByLibrary.simpleMessage(
+      "Resend Code",
+    ),
+    "forgotPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Please Enter Your Phone Number To Receive a Verification Code",
+    ),
+    "forgotPasswordTitle": MessageLookupByLibrary.simpleMessage(
+      "Recovery Password",
+    ),
+    "forgotPasswordVerificationButton": MessageLookupByLibrary.simpleMessage(
+      "Verify Code",
+    ),
+    "forgotPasswordVerificationSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Enter the code we sent to the following phone number 01002275616",
+    ),
+    "forgotPasswordVerificationTitle": MessageLookupByLibrary.simpleMessage(
+      "Enter verification code",
+    ),
+    "homeBestSeller": MessageLookupByLibrary.simpleMessage("Best Seller"),
+    "homeBrandAdidas": MessageLookupByLibrary.simpleMessage("Adidas"),
+    "homeBrandConverse": MessageLookupByLibrary.simpleMessage("Converse"),
+    "homeBrandNike": MessageLookupByLibrary.simpleMessage("Nike"),
+    "homeBrandPuma": MessageLookupByLibrary.simpleMessage("Puma"),
+    "homeBrandUnderArmour": MessageLookupByLibrary.simpleMessage(
+      "Under Armour",
+    ),
+    "homeNikeAirJordan": MessageLookupByLibrary.simpleMessage(
+      "Nike Air Jordan",
+    ),
+    "homeNikeAirMax": MessageLookupByLibrary.simpleMessage("Nike Air Max"),
+    "homeNikeJordan": MessageLookupByLibrary.simpleMessage("Nike Jordan"),
+    "homePasswordChanged": MessageLookupByLibrary.simpleMessage(
+      "Password has been changed successfully",
+    ),
+    "homePopularShoes": MessageLookupByLibrary.simpleMessage("Popular Shoes"),
+    "homePrice493": MessageLookupByLibrary.simpleMessage("\$493.00"),
+    "homeSearchPlaceholder": MessageLookupByLibrary.simpleMessage(
+      "Looking for shoes",
+    ),
+    "homeStoreAddress": MessageLookupByLibrary.simpleMessage(
+      "Mondolibug, Sylhet",
+    ),
+    "homeStoreLocation": MessageLookupByLibrary.simpleMessage("Store location"),
+    "newPasswordButton": MessageLookupByLibrary.simpleMessage(
+      "Create new password",
+    ),
+    "newPasswordConfirmField": MessageLookupByLibrary.simpleMessage(
+      "Confirm New Password",
+    ),
+    "newPasswordField": MessageLookupByLibrary.simpleMessage("New Password"),
+    "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Please Create new password to sign in",
+    ),
+    "newPasswordTitle": MessageLookupByLibrary.simpleMessage("New Password"),
+    "notificationsClearAll": MessageLookupByLibrary.simpleMessage("Clear All"),
+    "notificationsTitle": MessageLookupByLibrary.simpleMessage("Notifications"),
+    "notificationsToday": MessageLookupByLibrary.simpleMessage("Today"),
+    "notificationsYesterday": MessageLookupByLibrary.simpleMessage("Yesterday"),
+    "searchCancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+    "searchNoResults": MessageLookupByLibrary.simpleMessage("No Results"),
+    "searchShoes": MessageLookupByLibrary.simpleMessage("Shoes"),
+    "searchSorryMessage": MessageLookupByLibrary.simpleMessage(
+      "Sorry… this information is not available at the moment",
+    ),
+    "searchTitle": MessageLookupByLibrary.simpleMessage("Search Your Shoes"),
     "secondPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "There Are Many Beautiful And Attractive Plants To Your Room",
+      "There Are Many Beautiful And Attractive products To Your Room",
     ),
     "secondPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
-      "Follow Latest Style Shoes",
+      "Follow Latest",
     ),
+    "secondPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
+      "Style Shoes",
+    ),
+    "signInButton": MessageLookupByLibrary.simpleMessage("Sign In"),
+    "signInEmail": MessageLookupByLibrary.simpleMessage("Email Address"),
+    "signInNoAccount": MessageLookupByLibrary.simpleMessage(
+      "Don\'t have an account?",
+    ),
+    "signInPassword": MessageLookupByLibrary.simpleMessage("Password"),
+    "signInRecoveryPassword": MessageLookupByLibrary.simpleMessage(
+      "Recovery Password",
+    ),
+    "signInSignUpFree": MessageLookupByLibrary.simpleMessage(
+      "Sign Up for free",
+    ),
+    "signInSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Welcome Back You,ve Been Missed!",
+    ),
+    "signInTitle": MessageLookupByLibrary.simpleMessage("Hello Again!"),
+    "signInWithApple": MessageLookupByLibrary.simpleMessage(
+      "Sign in with Apple",
+    ),
+    "signInWithFacebook": MessageLookupByLibrary.simpleMessage(
+      "Sign in with Facebook",
+    ),
+    "signInWithGoogle": MessageLookupByLibrary.simpleMessage(
+      "Sign in with Google",
+    ),
+    "signUpButton": MessageLookupByLibrary.simpleMessage("Sign Up"),
+    "signUpConfirmPassword": MessageLookupByLibrary.simpleMessage(
+      "Confirm Password",
+    ),
+    "signUpEmail": MessageLookupByLibrary.simpleMessage("Email Address"),
+    "signUpFullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "signUpHaveAccount": MessageLookupByLibrary.simpleMessage(
+      "Already have an account?",
+    ),
+    "signUpPassword": MessageLookupByLibrary.simpleMessage("Password"),
+    "signUpSignInNow": MessageLookupByLibrary.simpleMessage("Sign In now"),
+    "signUpSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Fill your information below or register with social media",
+    ),
+    "signUpTitle": MessageLookupByLibrary.simpleMessage("Create Account"),
+    "signUpWithApple": MessageLookupByLibrary.simpleMessage(
+      "Sign up with Apple",
+    ),
+    "signUpWithFacebook": MessageLookupByLibrary.simpleMessage(
+      "Sign up with Facebook",
+    ),
+    "signUpWithGoogle": MessageLookupByLibrary.simpleMessage(
+      "Sign up with Google",
+    ),
+    "textButtonGetStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "textButtonNext": MessageLookupByLibrary.simpleMessage("Next"),
     "thirdPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
       "Experience comfort and style with Nike\'s latest summer designs",
     ),
     "thirdPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
-      "Summer Shoes Nike 2025",
+      "Summer Shoes",
+    ),
+    "thirdPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
+      "Nike 2025",
     ),
   };
 }

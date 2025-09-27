@@ -1,8 +1,149 @@
 {
-  "firstPageOnboardingTitle": "ابدأ رحلتك مع نايكي",
-  "firstPageOnboardingSubtitle": "مجموعة ذكية، أنيقة وعصرية",
-  "secondPageOnboardingTitle": "تابع أحدث أنماط الأحذية",
-  "secondPageOnboardingSubtitle": "هناك العديد من النباتات الجميلة والجذابة لغرفتك",
-  "thirdPageOnboardingTitle": "أحذية صيف نايكي 2025",
- "thirdPageOnboardingSubtitle": "اكتشف الراحة والأناقة مع أحدث تصميمات نايكي لصيف منعش"
+  "firstPageOnboardingTitle": "ابدأ رحلتك",
+  "firstPageOnboardingTitle1": "مع نايك",
+  "firstPageOnboardingSubtitle": "مجموعة ذكية، رائعة وعصرية",
+  
+  "secondPageOnboardingTitle": "تابع أحدث",
+  "secondPageOnboardingTitle1": "أنماط الأحذية",
+  "secondPageOnboardingSubtitle": "هناك العديد من المنتجات الجميلة والجذابة لغرفتك",
+  
+  "thirdPageOnboardingTitle": "أحذية الصيف",
+  "thirdPageOnboardingTitle1": "نايك 2025",
+  "thirdPageOnboardingSubtitle": "اختبر الراحة والأناقة مع أحدث تصميمات نايك الصيفية",
+  
+  "textButtonGetStarted": "ابدأ",
+  "textButtonNext": "التالي",
+  
+  "signInTitle": "مرحبًا من جديد!",
+  "signInSubtitle": "أهلاً بعودتك، لقد افتقدناك!",
+  "signInEmail": "البريد الإلكتروني",
+  "signInPassword": "كلمة المرور",
+  "signInRecoveryPassword": "استعادة كلمة المرور",
+  "signInButton": "تسجيل الدخول",
+  "signInWithGoogle": "تسجيل الدخول عبر جوجل",
+  "signInWithFacebook": "تسجيل الدخول عبر فيسبوك",
+  "signInWithApple": "تسجيل الدخول عبر آبل",
+  "signInNoAccount": "ليس لديك حساب؟",
+  "signInSignUpFree": "سجّل مجانًا",
+
+  "signUpTitle": "إنشاء حساب",
+  "signUpSubtitle": "املأ بياناتك بالأسفل أو سجّل عبر وسائل التواصل",
+  "signUpFullName": "الاسم الكامل",
+  "signUpEmail": "البريد الإلكتروني",
+  "signUpPassword": "كلمة المرور",
+  "signUpConfirmPassword": "تأكيد كلمة المرور",
+  "signUpButton": "إنشاء حساب",
+  "signUpWithGoogle": "سجّل عبر جوجل",
+  "signUpWithFacebook": "سجّل عبر فيسبوك",
+  "signUpWithApple": "سجّل عبر آبل",
+  "signUpHaveAccount": "لديك حساب بالفعل؟",
+  "signUpSignInNow": "سجّل دخول الآن",
+
+  "forgotPasswordTitle": "استعادة كلمة المرور",
+  "forgotPasswordSubtitle": "الرجاء إدخال رقم هاتفك لاستقبال رمز التحقق",
+  "forgotPasswordPhoneNumber": "رقم الهاتف",
+  "forgotPasswordContinue": "متابعة",
+
+  "forgotPasswordVerificationTitle": "أدخل رمز التحقق",
+  "forgotPasswordVerificationSubtitle": "أدخل الرمز المرسل إلى الرقم 01002275616",
+  "forgotPasswordVerificationButton": "تحقق من الرمز",
+  "forgotPasswordResendCode": "إعادة إرسال الرمز",
+
+  "newPasswordTitle": "كلمة مرور جديدة",
+  "newPasswordSubtitle": "الرجاء إنشاء كلمة مرور جديدة لتسجيل الدخول",
+  "newPasswordField": "كلمة مرور جديدة",
+  "newPasswordConfirmField": "تأكيد كلمة المرور الجديدة",
+  "newPasswordButton": "إنشاء كلمة مرور جديدة",
+
+  "homePasswordChanged": "تم تغيير كلمة المرور بنجاح",
+  "homeStoreLocation": "موقع المتجر",
+  "homeStoreAddress": "مونديليبوج، سيلهيت",
+  "homeSearchPlaceholder": "ابحث عن الأحذية",
+  "homeBrandNike": "نايك",
+  "homeBrandPuma": "بوما",
+  "homeBrandUnderArmour": "أندر آرمور",
+  "homeBrandAdidas": "أديداس",
+  "homeBrandConverse": "كونفرس",
+  "homePopularShoes": "أحذية شائعة",
+  "homeBestSeller": "الأكثر مبيعًا",
+  "homeNikeJordan": "نايك جوردان",
+  "homeNikeAirMax": "نايك إير ماكس",
+  "homePrice493": "493.00$",
+  "homeNikeAirJordan": "نايك إير جوردان",
+
+  "bestSellerTitle": "الأكثر مبيعًا",
+  "bestSellerCategory": "أحذية رجالية",
+
+  "favouriteTitle": "المفضلة",
+
+  "searchTitle": "ابحث عن حذائك",
+  "searchNoResults": "لا توجد نتائج",
+  "searchSorryMessage": "عذرًا… هذه المعلومة غير متوفرة الآن",
+  "searchShoes": "أحذية",
+  "searchCancel": "إلغاء",
+
+  "notificationsToday": "اليوم",
+  "notificationsYesterday": "أمس",
+  "notificationsTitle": "الإشعارات",
+  "notificationsClearAll": "مسح الكل",
+
+  "filtersTitle": "الفلاتر",
+  "filtersGender": "الجنس",
+  "filtersMen": "رجال",
+  "filtersWomen": "نساء",
+  "filtersUnisex": "للجنسين",
+  "filtersSize": "المقاس",
+  "filtersPrice": "السعر",
+  "filtersPrice16": "16$",
+  "filtersPrice350": "350$",
+  "filtersApply": "تطبيق",
+
+  "detailsCategory": "أحذية رجالية",
+  "detailsTitle": "نايك إير جوردان",
+  "detailsPrice": "967.800$",
+  "detailsDescription": "إير جوردان علامة أمريكية للأحذية الرياضية والكاجوال والأزياء من إنتاج نايك....",
+  "detailsGallery": "المعرض",
+  "detailsAddToCart": "أضف إلى السلة",
+
+  "cartSubtotal": "الإجمالي الفرعي",
+  "cartShopping": "التسوق",
+  "cartTotalCost": "التكلفة الإجمالية",
+  "cartCheckout": "الدفع",
+
+  "checkoutContactInfo": "معلومات الاتصال",
+  "checkoutEmail": "البريد الإلكتروني",
+  "checkoutPhone": "الهاتف",
+  "checkoutAddress": "العنوان",
+  "checkoutSampleAddress": "شارع نيوهول 36، لندن، 12908 - المملكة المتحدة",
+  "checkoutPayment": "الدفع",
+  "checkoutBackToShopping": "العودة للتسوق",
+  "checkoutSuccess": "تم الدفع بنجاح",
+
+  "drawerGreeting": "مرحبًا 👋",
+  "drawerUserName": "أليسون بيكر",
+  "drawerProfile": "الملف الشخصي",
+  "drawerHomePage": "الصفحة الرئيسية",
+  "drawerMyCart": "سلتي",
+  "drawerFavorite": "المفضلة",
+  "drawerOrders": "الطلبات",
+  "drawerNotifications": "الإشعارات",
+  "drawerAbout": "حول",
+  "drawerSignOut": "تسجيل الخروج",
+
+  "drawerAccountSettings": "الحساب والإعدادات",
+  "drawerAccount": "الحساب",
+  "drawerNotificationSetting": "إعدادات الإشعارات",
+  "drawerShippingAddress": "عنوان الشحن",
+  "drawerPaymentInfo": "معلومات الدفع",
+  "drawerDeleteAccount": "حذف الحساب",
+
+  "drawerAppSettings": "إعدادات التطبيق",
+  "drawerLanguages": "اللغات",
+  "drawerEnablePushNotifications": "تفعيل الإشعارات",
+  "drawerEnableLocationServices": "تفعيل خدمات الموقع",
+  "drawerDarkMode": "الوضع الداكن",
+
+  "drawerFullName": "الاسم الكامل",
+  "drawerEmailAddress": "البريد الإلكتروني",
+  "drawerLocation": "الموقع"
 }
