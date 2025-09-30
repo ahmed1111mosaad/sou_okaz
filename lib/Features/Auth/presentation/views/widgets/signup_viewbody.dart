@@ -29,7 +29,6 @@ class _SignupViewbodyState extends State<SignupViewbody> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24.0),
       child: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
         child: Padding(
           padding: EdgeInsets.only(
             bottom: MediaQuery.of(context).viewInsets.bottom,

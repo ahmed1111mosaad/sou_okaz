@@ -47,6 +47,9 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
             width: 2,
           ),
         ),
+        errorStyle: TextStyle(
+          color: Colors.deepOrange
+        ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(50.0),
           borderSide: BorderSide(
@@ -54,7 +57,6 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
             width: 2,
           ),
         ),
-
         suffixIcon: widget.isPassword
             ? IconButton(
                 onPressed: () {

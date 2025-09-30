@@ -16,7 +16,6 @@ class SignInWithButton extends StatelessWidget {
         onPressed: () {},
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-
           children: [
             Image.asset(image),
             SizedBox(width: 8),

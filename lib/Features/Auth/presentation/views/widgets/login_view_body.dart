@@ -8,14 +8,14 @@ import 'package:sou_okaz/core/helpers/functions/navigator_with_slide_animation.d
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
 
-class LoginViewBody extends StatefulWidget {
-  const LoginViewBody({super.key});
+class SigninViewBody extends StatefulWidget {
+  const SigninViewBody({super.key});
 
   @override
-  State<LoginViewBody> createState() => _LoginViewBodyState();
+  State<SigninViewBody> createState() => _SigninViewBodyState();
 }
 
-class _LoginViewBodyState extends State<LoginViewBody> {
+class _SigninViewBodyState extends State<SigninViewBody> {
   GlobalKey<FormState> key = GlobalKey<FormState>();
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   String? email;
@@ -113,9 +113,14 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                   isPassword: true,
                 ),
                 SizedBox(height: 4),
-                Text(
-                  S.of(context).signInRecoveryPassword,
-                  style: AppTextStyles.regular13,
+                GestureDetector(
+                  onTap: () {
+                    
+                  },
+                  child: Text(
+                    S.of(context).signInRecoveryPassword,
+                    style: AppTextStyles.regular13,
+                  ),
                 ),
                 SizedBox(height: 20),
 

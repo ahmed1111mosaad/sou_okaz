@@ -35,6 +35,7 @@ class SouOkaz extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       theme: ThemeData(
+        
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Color(0xFFF5F5F5),
         fontFamily: 'Airbnb Cereal App',

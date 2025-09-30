@@ -65,7 +65,7 @@ class CustomPhoneNumber extends StatelessWidget {
           shape: BoxShape.circle,
         ),
         initialCountryCode: 'EG',
-        dropdownTextStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+        dropdownTextStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w500,color: Colors.black),
         decoration: InputDecoration(
           filled: true,
           fillColor: Colors.white,
