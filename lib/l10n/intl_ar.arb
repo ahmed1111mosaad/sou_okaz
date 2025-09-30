@@ -2,18 +2,15 @@
   "firstPageOnboardingTitle": "ابدأ رحلتك",
   "firstPageOnboardingTitle1": "مع نايك",
   "firstPageOnboardingSubtitle": "مجموعة ذكية، رائعة وعصرية",
-  
   "secondPageOnboardingTitle": "تابع أحدث",
   "secondPageOnboardingTitle1": "أنماط الأحذية",
   "secondPageOnboardingSubtitle": "هناك العديد من المنتجات الجميلة والجذابة لغرفتك",
-  
   "thirdPageOnboardingTitle": "أحذية الصيف",
   "thirdPageOnboardingTitle1": "نايك 2025",
   "thirdPageOnboardingSubtitle": "اختبر الراحة والأناقة مع أحدث تصميمات نايك الصيفية",
-  
   "textButtonGetStarted": "ابدأ",
   "textButtonNext": "التالي",
-  
+
   "signInTitle": "مرحبًا من جديد!",
   "signInSubtitle": "أهلاً بعودتك، لقد افتقدناك!",
   "signInEmail": "البريد الإلكتروني",
@@ -25,9 +22,25 @@
   "signInWithApple": "تسجيل الدخول عبر آبل",
   "signInNoAccount": "ليس لديك حساب؟",
   "signInSignUpFree": "سجّل مجانًا",
+  "signInValidator1": "الحد الأدنى 8 أحرف",
+  "signInValidator2": "يجب ان يحتوى على الافل أحرف كبيرة وصغيرة ورقم واحد ",
+  "signInValidatorEmpty": "من فضلك أدخل الحقل المطلوب",
+  "signInValidatorValidEmail": "من فضلك أدخل بريدًا إلكترونيًا صالحًا",
+  "snackbarTitleSuccess": "تهانينا",
+  "snackbarDescriptionSuccess": "تم إنشاء الحساب بنجاح",
+  "snackbarTitleFailure": "حدث خطأ ما",
+  "snackbarDescriptionFailure": "من فضلك تحقق من البيانات وحاول مرة أخرى",
+  "snackbarDescriptionFailureTerms": "من فضلك وافق على الشروط والأحكام",
+  "snackbarTitleWarning": "تنبيه",
+  "snackbarDescriptionWarning": "قد تكون بعض المعلومات ناقصة أو غير مكتملة",
+  "snackbarTitleInfo": "معلومة",
+  "snackbarDescriptionInfo": "هذه نصيحة مفيدة لك",
 
+
+
+ 
   "signUpTitle": "إنشاء حساب",
-  "signUpSubtitle": "املأ بياناتك بالأسفل أو سجّل عبر وسائل التواصل",
+  "signUpSubtitle": "هيا لننشئ حسابًا معًا",
   "signUpFullName": "الاسم الكامل",
   "signUpEmail": "البريد الإلكتروني",
   "signUpPassword": "كلمة المرور",
@@ -38,6 +51,12 @@
   "signUpWithApple": "سجّل عبر آبل",
   "signUpHaveAccount": "لديك حساب بالفعل؟",
   "signUpSignInNow": "سجّل دخول الآن",
+  "signUpPhoneNumber": "رقم الهاتف",
+  "termsAndCondition1": "أوافق على",
+  "termsAndCondition2": " سياسة الخصوصية لسوق عكاظ",
+  "termsAndCondition3": " و",
+  "termsAndCondition4": " شروط الاستخدام.",
+
 
   "forgotPasswordTitle": "استعادة كلمة المرور",
   "forgotPasswordSubtitle": "الرجاء إدخال رقم هاتفك لاستقبال رمز التحقق",

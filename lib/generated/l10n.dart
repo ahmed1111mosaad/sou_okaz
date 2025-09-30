@@ -259,6 +259,46 @@ class S {
     );
   }
 
+  /// `Minimum of 8 characters`
+  String get signInValidator1 {
+    return Intl.message(
+      'Minimum of 8 characters',
+      name: 'signInValidator1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Uppercase, lowercase, letters and one number`
+  String get signInValidator2 {
+    return Intl.message(
+      'Uppercase, lowercase, letters and one number',
+      name: 'signInValidator2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter the required field`
+  String get signInValidatorEmpty {
+    return Intl.message(
+      'Please enter the required field',
+      name: 'signInValidatorEmpty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter an valid email`
+  String get signInValidatorValidEmail {
+    return Intl.message(
+      'Please enter an valid email',
+      name: 'signInValidatorValidEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Create Account`
   String get signUpTitle {
     return Intl.message(
@@ -269,10 +309,10 @@ class S {
     );
   }
 
-  /// `Fill your information below or register with social media`
+  /// `Let's create account together`
   String get signUpSubtitle {
     return Intl.message(
-      'Fill your information below or register with social media',
+      'Let\'s create account together',
       name: 'signUpSubtitle',
       desc: '',
       args: [],
@@ -294,6 +334,16 @@ class S {
     return Intl.message(
       'Email Address',
       name: 'signUpEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone Number`
+  String get signUpPhoneNumber {
+    return Intl.message(
+      'Phone Number',
+      name: 'signUpPhoneNumber',
       desc: '',
       args: [],
     );
@@ -364,6 +414,131 @@ class S {
     return Intl.message(
       'Sign In now',
       name: 'signUpSignInNow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I agree to Sou Okaz's`
+  String get termsAndCondition1 {
+    return Intl.message(
+      'I agree to Sou Okaz\'s',
+      name: 'termsAndCondition1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Privacy Policy`
+  String get termsAndCondition2 {
+    return Intl.message(
+      ' Privacy Policy',
+      name: 'termsAndCondition2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` And`
+  String get termsAndCondition3 {
+    return Intl.message(' And', name: 'termsAndCondition3', desc: '', args: []);
+  }
+
+  /// ` Terms Of Use.`
+  String get termsAndCondition4 {
+    return Intl.message(
+      ' Terms Of Use.',
+      name: 'termsAndCondition4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Congratulations`
+  String get snackbarTitleSuccess {
+    return Intl.message(
+      'Congratulations',
+      name: 'snackbarTitleSuccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You have signed up successfully`
+  String get snackbarDescriptionSuccess {
+    return Intl.message(
+      'You have signed up successfully',
+      name: 'snackbarDescriptionSuccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Something went wrong`
+  String get snackbarTitleFailure {
+    return Intl.message(
+      'Something went wrong',
+      name: 'snackbarTitleFailure',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please check your details and try again`
+  String get snackbarDescriptionFailure {
+    return Intl.message(
+      'Please check your details and try again',
+      name: 'snackbarDescriptionFailure',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please accept the Terms And Conditions`
+  String get snackbarDescriptionFailureTerms {
+    return Intl.message(
+      'Please accept the Terms And Conditions',
+      name: 'snackbarDescriptionFailureTerms',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Attention`
+  String get snackbarTitleWarning {
+    return Intl.message(
+      'Attention',
+      name: 'snackbarTitleWarning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Some information might be missing or incomplete`
+  String get snackbarDescriptionWarning {
+    return Intl.message(
+      'Some information might be missing or incomplete',
+      name: 'snackbarDescriptionWarning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Information`
+  String get snackbarTitleInfo {
+    return Intl.message(
+      'Information',
+      name: 'snackbarTitleInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This is a helpful tip for you`
+  String get snackbarDescriptionInfo {
+    return Intl.message(
+      'This is a helpful tip for you',
+      name: 'snackbarDescriptionInfo',
       desc: '',
       args: [],
     );

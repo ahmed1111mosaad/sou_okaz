@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sou_okaz/core/assets/assets.dart';
 
 class OnboardingImageShoes extends StatelessWidget {
   const OnboardingImageShoes({super.key, required this.image});

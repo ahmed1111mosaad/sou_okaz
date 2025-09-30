@@ -1,7 +1,7 @@
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:sou_okaz/core/services/shared_preferences_singleton.dart';
 import 'package:sou_okaz/core/utils/routes.dart';
 import 'generated/l10n.dart';
@@ -35,13 +35,14 @@ class SouOkaz extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       theme: ThemeData(
+        brightness: Brightness.dark,
         scaffoldBackgroundColor: Color(0xFFF5F5F5),
         fontFamily: 'Airbnb Cereal App',
       ),
       // locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      initialRoute: Routes.onboarding,
+      initialRoute: Routes.splash,
       routes: routes(),
     );
   }

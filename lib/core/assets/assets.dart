@@ -2,17 +2,29 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsImagesAppleIcon
+  /// assets/images/apple_icon.png
+  static const String assetsImagesAppleIcon = "assets/images/apple_icon.png";
+
+  /// Assets for assetsImagesCheck
+  /// assets/images/check.png
+  static const String assetsImagesCheck = "assets/images/check.png";
+
   /// Assets for assetsImagesEllipse
   /// assets/images/Ellipse.png
   static const String assetsImagesEllipse = "assets/images/Ellipse.png";
 
+  /// Assets for assetsImagesFacebookIcon
+  /// assets/images/facebook_icon.png
+  static const String assetsImagesFacebookIcon = "assets/images/facebook_icon.png";
+
+  /// Assets for assetsImagesGoogleIcon
+  /// assets/images/google_icon.png
+  static const String assetsImagesGoogleIcon = "assets/images/google_icon.png";
+
   /// Assets for assetsImagesGreenShoes
   /// assets/images/green_shoes.png
   static const String assetsImagesGreenShoes = "assets/images/green_shoes.png";
-
-  /// Assets for assetsImagesGroup 285
-  /// assets/images/Group 285.svg
-  static const String assetsImagesGroup = "assets/images/Group 285.svg";
 
   /// Assets for assetsImagesNIKE
   /// assets/images/NIKE.svg

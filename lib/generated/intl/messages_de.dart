@@ -218,6 +218,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "Willkommen zurück, du wurdest vermisst!",
     ),
     "signInTitle": MessageLookupByLibrary.simpleMessage("Hallo wieder!"),
+    "signInValidator1": MessageLookupByLibrary.simpleMessage(
+      "Mindestens 8 Zeichen",
+    ),
+    "signInValidator2": MessageLookupByLibrary.simpleMessage(
+      "Groß- und Kleinbuchstaben sowie eine Zahl",
+    ),
+    "signInValidatorEmpty": MessageLookupByLibrary.simpleMessage(
+      "Bitte füllen Sie das erforderliche Feld aus",
+    ),
+    "signInValidatorValidEmail": MessageLookupByLibrary.simpleMessage(
+      "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    ),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Mit Apple anmelden",
     ),
@@ -239,9 +251,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "Schon ein Konto?",
     ),
     "signUpPassword": MessageLookupByLibrary.simpleMessage("Passwort"),
+    "signUpPhoneNumber": MessageLookupByLibrary.simpleMessage("Telefonnummer"),
     "signUpSignInNow": MessageLookupByLibrary.simpleMessage("Jetzt anmelden"),
     "signUpSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Fülle deine Daten unten aus oder registriere dich mit Social Media",
+      "Lass uns gemeinsam ein Konto erstellen",
     ),
     "signUpTitle": MessageLookupByLibrary.simpleMessage("Konto erstellen"),
     "signUpWithApple": MessageLookupByLibrary.simpleMessage(
@@ -252,6 +265,35 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "signUpWithGoogle": MessageLookupByLibrary.simpleMessage(
       "Mit Google registrieren",
+    ),
+    "snackbarDescriptionFailure": MessageLookupByLibrary.simpleMessage(
+      "Bitte überprüfen Sie Ihre Angaben und versuchen Sie es erneut",
+    ),
+    "snackbarDescriptionFailureTerms": MessageLookupByLibrary.simpleMessage(
+      "Bitte akzeptieren Sie die Allgemeinen Geschäftsbedingungen",
+    ),
+    "snackbarDescriptionInfo": MessageLookupByLibrary.simpleMessage(
+      "Dies ist ein hilfreicher Hinweis für Sie",
+    ),
+    "snackbarDescriptionSuccess": MessageLookupByLibrary.simpleMessage(
+      "Sie haben sich erfolgreich registriert",
+    ),
+    "snackbarDescriptionWarning": MessageLookupByLibrary.simpleMessage(
+      "Einige Informationen fehlen oder sind unvollständig",
+    ),
+    "snackbarTitleFailure": MessageLookupByLibrary.simpleMessage(
+      "Etwas ist schiefgelaufen",
+    ),
+    "snackbarTitleInfo": MessageLookupByLibrary.simpleMessage("Information"),
+    "snackbarTitleSuccess": MessageLookupByLibrary.simpleMessage("Glückwunsch"),
+    "snackbarTitleWarning": MessageLookupByLibrary.simpleMessage("Achtung"),
+    "termsAndCondition1": MessageLookupByLibrary.simpleMessage("Ich stimme"),
+    "termsAndCondition2": MessageLookupByLibrary.simpleMessage(
+      " den Datenschutzbestimmungen von Sou Okaz",
+    ),
+    "termsAndCondition3": MessageLookupByLibrary.simpleMessage(" und"),
+    "termsAndCondition4": MessageLookupByLibrary.simpleMessage(
+      " den Nutzungsbedingungen zu.",
     ),
     "textButtonGetStarted": MessageLookupByLibrary.simpleMessage("Loslegen"),
     "textButtonNext": MessageLookupByLibrary.simpleMessage("Weiter"),

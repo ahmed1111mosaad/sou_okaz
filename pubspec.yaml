@@ -35,9 +35,14 @@ dependencies:
     sdk: flutter
   flutter_localization: ^0.3.3
   flutter_svg: ^2.2.1
+  font_awesome_flutter: ^10.9.0
+  intl_phone_field: ^3.0.1
+  motion_toast: ^2.14.0
   rive: ^0.13.20
   shared_preferences: ^2.5.3
 
+  intl: any
+  flutter_localizations: any
 dev_dependencies:
   flutter_launcher_icons: ^0.14.4
   flutter_lints: ^5.0.0

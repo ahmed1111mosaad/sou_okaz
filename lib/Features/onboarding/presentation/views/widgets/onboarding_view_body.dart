@@ -2,7 +2,9 @@ import 'package:sou_okaz/Features/onboarding/presentation/views/widgets/onboardi
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/core/app_colors.dart';
 import 'package:dots_indicator/dots_indicator.dart';
+import 'package:sou_okaz/core/services/shared_preferences_singleton.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
+import 'package:sou_okaz/core/utils/constants.dart';
 import 'package:sou_okaz/generated/l10n.dart';
 
 class OnboardingViewBody extends StatefulWidget {
@@ -79,9 +81,13 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
                             pageController.animateToPage(
                               currentPage + 1,
                               duration: Duration(milliseconds: 600),
-                              curve: Curves.decelerate
+                              curve: Curves.decelerate,
                             );
                           }
+                          SharedPreferencesSingleton.setBool(
+                            Keys.kIsOnboardingview,
+                            true,
+                          );
                         },
                         child: Text(
                           currentPage == 0 || currentPage == 1

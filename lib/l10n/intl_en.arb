@@ -22,12 +22,17 @@
   "signInWithApple": "Sign in with Apple",
   "signInNoAccount": "Don't have an account?",
   "signInSignUpFree": "Sign Up for free",
+  "signInValidator1": "Minimum of 8 characters",
+  "signInValidator2": "Uppercase, lowercase, letters and one number",
+  "signInValidatorEmpty": "Please enter the required field",
+  "signInValidatorValidEmail": "Please enter an valid email",
 
   
   "signUpTitle": "Create Account",
-  "signUpSubtitle": "Fill your information below or register with social media",
+  "signUpSubtitle": "Let's create account together",
   "signUpFullName": "Full Name",
   "signUpEmail": "Email Address",
+  "signUpPhoneNumber": "Phone Number",
   "signUpPassword": "Password",
   "signUpConfirmPassword": "Confirm Password",
   "signUpButton": "Sign Up",
@@ -36,6 +41,21 @@
   "signUpWithApple": "Sign up with Apple",
   "signUpHaveAccount": "Already have an account?",
   "signUpSignInNow": "Sign In now",
+  "termsAndCondition1": "I agree to Sou Okaz's",
+  "termsAndCondition2": " Privacy Policy",
+  "termsAndCondition3": " And",
+  "termsAndCondition4": " Terms Of Use.",
+  
+  "snackbarTitleSuccess": "Congratulations",
+  "snackbarDescriptionSuccess": "You have signed up successfully",
+  "snackbarTitleFailure": "Something went wrong",
+  "snackbarDescriptionFailure": "Please check your details and try again",
+  "snackbarDescriptionFailureTerms": "Please accept the Terms And Conditions",
+  "snackbarTitleWarning": "Attention",
+  "snackbarDescriptionWarning": "Some information might be missing or incomplete",
+  "snackbarTitleInfo": "Information",
+  "snackbarDescriptionInfo": "This is a helpful tip for you",
+
 
   
   "forgotPasswordTitle": "Recovery Password",

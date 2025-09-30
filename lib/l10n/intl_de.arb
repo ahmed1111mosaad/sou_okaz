@@ -25,9 +25,14 @@
   "signInWithApple": "Mit Apple anmelden",
   "signInNoAccount": "Noch kein Konto?",
   "signInSignUpFree": "Kostenlos registrieren",
+  "signInValidator1": "Mindestens 8 Zeichen",
+  "signInValidator2": "Groß- und Kleinbuchstaben sowie eine Zahl",
+  "signInValidatorEmpty": "Bitte füllen Sie das erforderliche Feld aus",
+  "signInValidatorValidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+
 
   "signUpTitle": "Konto erstellen",
-  "signUpSubtitle": "Fülle deine Daten unten aus oder registriere dich mit Social Media",
+  "signUpSubtitle": "Lass uns gemeinsam ein Konto erstellen",
   "signUpFullName": "Vollständiger Name",
   "signUpEmail": "E-Mail-Adresse",
   "signUpPassword": "Passwort",
@@ -38,6 +43,24 @@
   "signUpWithApple": "Mit Apple registrieren",
   "signUpHaveAccount": "Schon ein Konto?",
   "signUpSignInNow": "Jetzt anmelden",
+  "signUpPhoneNumber": "Telefonnummer",
+  "termsAndCondition1": "Ich stimme",
+  "termsAndCondition2": " den Datenschutzbestimmungen von Sou Okaz",
+  "termsAndCondition3": " und",
+  "termsAndCondition4": " den Nutzungsbedingungen zu.",
+  "snackbarTitleSuccess": "Glückwunsch",
+  "snackbarDescriptionSuccess": "Sie haben sich erfolgreich registriert",
+  "snackbarTitleFailure": "Etwas ist schiefgelaufen",
+  "snackbarDescriptionFailure": "Bitte überprüfen Sie Ihre Angaben und versuchen Sie es erneut",
+  "snackbarTitleWarning": "Achtung",
+  "snackbarDescriptionWarning": "Einige Informationen fehlen oder sind unvollständig",
+  "snackbarDescriptionFailureTerms": "Bitte akzeptieren Sie die Allgemeinen Geschäftsbedingungen",
+
+  "snackbarTitleInfo": "Information",
+  "snackbarDescriptionInfo": "Dies ist ein hilfreicher Hinweis für Sie",
+
+
+
 
   "forgotPasswordTitle": "Passwort wiederherstellen",
   "forgotPasswordSubtitle": "Bitte gib deine Telefonnummer ein, um einen Bestätigungscode zu erhalten",

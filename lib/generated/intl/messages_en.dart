@@ -204,6 +204,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "Welcome Back You,ve Been Missed!",
     ),
     "signInTitle": MessageLookupByLibrary.simpleMessage("Hello Again!"),
+    "signInValidator1": MessageLookupByLibrary.simpleMessage(
+      "Minimum of 8 characters",
+    ),
+    "signInValidator2": MessageLookupByLibrary.simpleMessage(
+      "Uppercase, lowercase, letters and one number",
+    ),
+    "signInValidatorEmpty": MessageLookupByLibrary.simpleMessage(
+      "Please enter the required field",
+    ),
+    "signInValidatorValidEmail": MessageLookupByLibrary.simpleMessage(
+      "Please enter an valid email",
+    ),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",
     ),
@@ -223,9 +235,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "Already have an account?",
     ),
     "signUpPassword": MessageLookupByLibrary.simpleMessage("Password"),
+    "signUpPhoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
     "signUpSignInNow": MessageLookupByLibrary.simpleMessage("Sign In now"),
     "signUpSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Fill your information below or register with social media",
+      "Let\'s create account together",
     ),
     "signUpTitle": MessageLookupByLibrary.simpleMessage("Create Account"),
     "signUpWithApple": MessageLookupByLibrary.simpleMessage(
@@ -236,6 +249,39 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "signUpWithGoogle": MessageLookupByLibrary.simpleMessage(
       "Sign up with Google",
+    ),
+    "snackbarDescriptionFailure": MessageLookupByLibrary.simpleMessage(
+      "Please check your details and try again",
+    ),
+    "snackbarDescriptionFailureTerms": MessageLookupByLibrary.simpleMessage(
+      "Please accept the Terms And Conditions",
+    ),
+    "snackbarDescriptionInfo": MessageLookupByLibrary.simpleMessage(
+      "This is a helpful tip for you",
+    ),
+    "snackbarDescriptionSuccess": MessageLookupByLibrary.simpleMessage(
+      "You have signed up successfully",
+    ),
+    "snackbarDescriptionWarning": MessageLookupByLibrary.simpleMessage(
+      "Some information might be missing or incomplete",
+    ),
+    "snackbarTitleFailure": MessageLookupByLibrary.simpleMessage(
+      "Something went wrong",
+    ),
+    "snackbarTitleInfo": MessageLookupByLibrary.simpleMessage("Information"),
+    "snackbarTitleSuccess": MessageLookupByLibrary.simpleMessage(
+      "Congratulations",
+    ),
+    "snackbarTitleWarning": MessageLookupByLibrary.simpleMessage("Attention"),
+    "termsAndCondition1": MessageLookupByLibrary.simpleMessage(
+      "I agree to Sou Okaz\'s",
+    ),
+    "termsAndCondition2": MessageLookupByLibrary.simpleMessage(
+      " Privacy Policy",
+    ),
+    "termsAndCondition3": MessageLookupByLibrary.simpleMessage(" And"),
+    "termsAndCondition4": MessageLookupByLibrary.simpleMessage(
+      " Terms Of Use.",
     ),
     "textButtonGetStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
     "textButtonNext": MessageLookupByLibrary.simpleMessage("Next"),

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:sou_okaz/Features/Auth/presentation/views/login_view.dart';
 import 'package:sou_okaz/Features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:sou_okaz/Features/splash/presentation/views/widgets/sou_okaz_animation.dart';
-import 'package:sou_okaz/core/functions/navigator_with_fade_animation.dart';
-import 'package:sou_okaz/core/functions/navigator_with_slide_animation.dart';
+import 'package:sou_okaz/core/helpers/functions/navigator_with_fade_animation.dart';
+import 'package:sou_okaz/core/services/shared_preferences_singleton.dart';
+import 'package:sou_okaz/core/utils/constants.dart';
 
-import 'package:sou_okaz/core/utils/routes.dart';
 
 class CustomSplashScreenBody extends StatefulWidget {
   const CustomSplashScreenBody({super.key});
@@ -17,8 +18,16 @@ class _CustomSplashScreenBodyState extends State<CustomSplashScreenBody> {
   @override
   void initState() {
     super.initState();
+    bool isOnboardingViewSeen = SharedPreferencesSingleton.getBool(Keys.kIsOnboardingview) ?? false;
     Future.delayed(Duration(milliseconds: 5500), () {
       navigatorWithFadeAnimationPushReplacement(context, OnboardingView());
+      if(isOnboardingViewSeen){
+        navigatorWithFadeAnimationPushReplacement(context, LoginView());
+      }else{
+      navigatorWithFadeAnimationPushReplacement(context, OnboardingView());
+
+        
+      }
     });
   }
 

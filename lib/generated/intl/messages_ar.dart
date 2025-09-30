@@ -196,6 +196,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "أهلاً بعودتك، لقد افتقدناك!",
     ),
     "signInTitle": MessageLookupByLibrary.simpleMessage("مرحبًا من جديد!"),
+    "signInValidator1": MessageLookupByLibrary.simpleMessage(
+      "الحد الأدنى 8 أحرف",
+    ),
+    "signInValidator2": MessageLookupByLibrary.simpleMessage(
+      "يجب ان يحتوى على الافل أحرف كبيرة وصغيرة ورقم واحد ",
+    ),
+    "signInValidatorEmpty": MessageLookupByLibrary.simpleMessage(
+      "من فضلك أدخل الحقل المطلوب",
+    ),
+    "signInValidatorValidEmail": MessageLookupByLibrary.simpleMessage(
+      "من فضلك أدخل بريدًا إلكترونيًا صالحًا",
+    ),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "تسجيل الدخول عبر آبل",
     ),
@@ -215,9 +227,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "لديك حساب بالفعل؟",
     ),
     "signUpPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+    "signUpPhoneNumber": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
     "signUpSignInNow": MessageLookupByLibrary.simpleMessage("سجّل دخول الآن"),
     "signUpSubtitle": MessageLookupByLibrary.simpleMessage(
-      "املأ بياناتك بالأسفل أو سجّل عبر وسائل التواصل",
+      "هيا لننشئ حسابًا معًا",
     ),
     "signUpTitle": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
     "signUpWithApple": MessageLookupByLibrary.simpleMessage("سجّل عبر آبل"),
@@ -225,6 +238,33 @@ class MessageLookup extends MessageLookupByLibrary {
       "سجّل عبر فيسبوك",
     ),
     "signUpWithGoogle": MessageLookupByLibrary.simpleMessage("سجّل عبر جوجل"),
+    "snackbarDescriptionFailure": MessageLookupByLibrary.simpleMessage(
+      "من فضلك تحقق من البيانات وحاول مرة أخرى",
+    ),
+    "snackbarDescriptionFailureTerms": MessageLookupByLibrary.simpleMessage(
+      "من فضلك وافق على الشروط والأحكام",
+    ),
+    "snackbarDescriptionInfo": MessageLookupByLibrary.simpleMessage(
+      "هذه نصيحة مفيدة لك",
+    ),
+    "snackbarDescriptionSuccess": MessageLookupByLibrary.simpleMessage(
+      "تم إنشاء الحساب بنجاح",
+    ),
+    "snackbarDescriptionWarning": MessageLookupByLibrary.simpleMessage(
+      "قد تكون بعض المعلومات ناقصة أو غير مكتملة",
+    ),
+    "snackbarTitleFailure": MessageLookupByLibrary.simpleMessage("حدث خطأ ما"),
+    "snackbarTitleInfo": MessageLookupByLibrary.simpleMessage("معلومة"),
+    "snackbarTitleSuccess": MessageLookupByLibrary.simpleMessage("تهانينا"),
+    "snackbarTitleWarning": MessageLookupByLibrary.simpleMessage("تنبيه"),
+    "termsAndCondition1": MessageLookupByLibrary.simpleMessage("أوافق على"),
+    "termsAndCondition2": MessageLookupByLibrary.simpleMessage(
+      " سياسة الخصوصية لسوق عكاظ",
+    ),
+    "termsAndCondition3": MessageLookupByLibrary.simpleMessage(" و"),
+    "termsAndCondition4": MessageLookupByLibrary.simpleMessage(
+      " شروط الاستخدام.",
+    ),
     "textButtonGetStarted": MessageLookupByLibrary.simpleMessage("ابدأ"),
     "textButtonNext": MessageLookupByLibrary.simpleMessage("التالي"),
     "thirdPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
