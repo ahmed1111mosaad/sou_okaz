@@ -18,7 +18,10 @@ class OnboardingBackgroundImage extends StatelessWidget {
         children: [
           Positioned(
             right: 0.0,
-            child: Image.asset(Assets.assetsImagesEllipse),
+            child: Image.asset(
+              Assets.assetsImagesEllipse,
+              color: Theme.of(context).iconTheme.color,
+            ),
           ),
           WidePoint(),
           Nike(),

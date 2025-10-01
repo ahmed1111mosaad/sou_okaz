@@ -1,7 +1,9 @@
+import 'package:sou_okaz/Features/Auth/presentation/views/signin_view.dart';
 import 'package:sou_okaz/Features/onboarding/presentation/views/widgets/onboarding_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/core/app_colors.dart';
 import 'package:dots_indicator/dots_indicator.dart';
+import 'package:sou_okaz/core/helpers/functions/navigator_with_fade_animation.dart';
 import 'package:sou_okaz/core/services/shared_preferences_singleton.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/core/utils/constants.dart';
@@ -77,17 +79,22 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
                           backgroundColor: AppColors.primaryColor,
                         ),
                         onPressed: () {
+                          SharedPreferencesSingleton.setBool(
+                            Keys.kIsOnboardingview,
+                            true,
+                          );
                           if (currentPage < 2) {
                             pageController.animateToPage(
                               currentPage + 1,
                               duration: Duration(milliseconds: 600),
                               curve: Curves.decelerate,
                             );
+                          } else {
+                            navigatorWithFadeAnimationPushReplacement(
+                              context,
+                              SigninView(),
+                            );
                           }
-                          SharedPreferencesSingleton.setBool(
-                            Keys.kIsOnboardingview,
-                            true,
-                          );
                         },
                         child: Text(
                           currentPage == 0 || currentPage == 1

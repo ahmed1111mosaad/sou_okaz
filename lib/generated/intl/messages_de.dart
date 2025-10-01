@@ -175,6 +175,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "newPasswordButton": MessageLookupByLibrary.simpleMessage(
       "Neues Passwort erstellen",
     ),
+    "newPasswordChangedSuccessfully": MessageLookupByLibrary.simpleMessage(
+      "Passwort wurde erfolgreich geändert",
+    ),
     "newPasswordConfirmField": MessageLookupByLibrary.simpleMessage(
       "Neues Passwort bestätigen",
     ),
@@ -191,6 +194,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "notificationsToday": MessageLookupByLibrary.simpleMessage("Heute"),
     "notificationsYesterday": MessageLookupByLibrary.simpleMessage("Gestern"),
+    "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
+      "Passwörter stimmen nicht überein",
+    ),
     "searchCancel": MessageLookupByLibrary.simpleMessage("Abbrechen"),
     "searchNoResults": MessageLookupByLibrary.simpleMessage("Keine Ergebnisse"),
     "searchShoes": MessageLookupByLibrary.simpleMessage("Schuhe"),

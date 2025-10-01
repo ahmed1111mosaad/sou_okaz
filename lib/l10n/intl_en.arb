@@ -77,6 +77,8 @@
   "newPasswordField": "New Password",
   "newPasswordConfirmField": "Confirm New Password",
   "newPasswordButton": "Create new password",
+  "passwordsDoNotMatch": "Passwords do not match",
+  "newPasswordChangedSuccessfully":"Password has been changed successfully",
 
   
   "homePasswordChanged": "Password has been changed successfully",

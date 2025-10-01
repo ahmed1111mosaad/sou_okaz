@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/core/services/shared_preferences_singleton.dart';
+import 'package:sou_okaz/core/theme/theme_data.dart';
 import 'package:sou_okaz/core/utils/routes.dart';
 import 'generated/l10n.dart';
 
@@ -22,7 +23,6 @@ void main() async {
 class SouOkaz extends StatelessWidget {
   const SouOkaz({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -34,18 +34,14 @@ class SouOkaz extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      theme: ThemeData(
-        textButtonTheme: TextButtonThemeData(),
-        brightness: Brightness.dark,
-        scaffoldBackgroundColor: Color(0xFFF5F5F5),
-        fontFamily: 'Airbnb Cereal App',
-      ),
+      theme: lightMode,
       // locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      initialRoute: Routes.splash,
+      initialRoute: Routes.onboarding,
       routes: routes(),
     );
+
   }
 }
 

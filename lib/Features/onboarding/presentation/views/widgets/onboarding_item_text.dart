@@ -17,8 +17,8 @@ class OnboardingItemText extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title, style: AppTextStyles.medium40),
-        Text(title1, style: AppTextStyles.medium40),
+        Text(title, style: Theme.of(context).textTheme.titleLarge),
+        Text(title1, style: Theme.of(context).textTheme.titleLarge),
         SizedBox(height: 15),
         Text(subTitle, style: AppTextStyles.regular20),
       ],

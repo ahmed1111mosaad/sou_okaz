@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
+import 'package:sou_okaz/generated/l10n.dart';
 
 class SignInWithButton extends StatelessWidget {
   const SignInWithButton({super.key, required this.image, required this.title});
@@ -12,17 +13,22 @@ class SignInWithButton extends StatelessWidget {
       width: double.infinity,
       height: 55,
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
+        style: ElevatedButton.styleFrom(
+          elevation: 0.0,
+          backgroundColor: Theme.of(context).colorScheme.secondary,
+        ),
         onPressed: () {},
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(image),
-            SizedBox(width: 8),
-            Text(
-              title,
-              style: AppTextStyles.medium18.copyWith(color: Color(0xff1A2530)),
+            Image.asset(
+              image,
+              color: title == S.of(context).signInWithApple
+                  ? Theme.of(context).colorScheme.onSurface
+                  : null,
             ),
+            SizedBox(width: 8),
+            Text(title, style: Theme.of(context).textTheme.bodyMedium),
           ],
         ),
       ),

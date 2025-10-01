@@ -40,7 +40,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 Center(
                   child: Text(
                     S.of(context).signInTitle,
-                    style: AppTextStyles.medium28,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                 ),
                 SizedBox(height: 5),
@@ -51,11 +51,12 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ),
                 ),
                 SizedBox(height: 50),
+                // ? Email
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     S.of(context).signInEmail,
-                    style: AppTextStyles.medium16,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
                 SizedBox(height: 6),
@@ -83,15 +84,15 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   isPassword: false,
                 ),
                 SizedBox(height: 18.0),
+                // ? Password
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     S.of(context).signInPassword,
-                    style: AppTextStyles.medium16,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
                 SizedBox(height: 6),
-
                 // !
                 CustomTextFormField(
                   obscureText: true,
@@ -173,7 +174,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                       },
                       child: Text(
                         S.of(context).signInSignUpFree,
-                        style: AppTextStyles.medium14,
+                        style:Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
                   ],

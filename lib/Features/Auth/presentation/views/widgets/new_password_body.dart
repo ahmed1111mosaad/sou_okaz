@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
+import 'package:sou_okaz/core/helpers/functions/snackbar/show_success.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
 
@@ -79,7 +80,6 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
               ),
             ),
             SizedBox(height: 6),
-
             // !
             CustomTextFormField(
               obscureText: true,
@@ -93,6 +93,8 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
                   return S.of(context).signInValidator2;
                 } else if (value.isEmpty) {
                   return S.of(context).signInValidatorEmpty;
+                }else if(newPassowrd != newPassowrdConfirm){
+                  return "password doesn't match";
                 }
                 return null;
               },
@@ -109,6 +111,7 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
                 if (formKey.currentState!.validate()) {
                   formKey.currentState!.save();
                   setState(() {});
+                  showSuccess(context, title: S.of(context).newPasswordChangedSuccessfully, description: '');
                 } else {
                   autovalidateMode = AutovalidateMode.always;
                   setState(() {});

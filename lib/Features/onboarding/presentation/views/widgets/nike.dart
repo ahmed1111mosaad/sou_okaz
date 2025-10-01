@@ -16,7 +16,7 @@ class Nike extends StatelessWidget {
       child: SvgPicture.asset(
         Assets.assetsImagesNIKE,
         colorFilter: ColorFilter.mode(
-          Color.fromARGB(255, 238, 237, 237), // your color
+          Theme.of(context).primaryIconTheme.color!, // your color
           BlendMode
               .srcIn, // tells Flutter to paint the SVG with this color),
         ),

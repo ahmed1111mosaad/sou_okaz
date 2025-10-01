@@ -78,6 +78,9 @@
   "newPasswordField": "Neues Passwort",
   "newPasswordConfirmField": "Neues Passwort bestätigen",
   "newPasswordButton": "Neues Passwort erstellen",
+  "passwordsDoNotMatch": "Passwörter stimmen nicht überein",
+  "newPasswordChangedSuccessfully": "Passwort wurde erfolgreich geändert",
+
 
   "homePasswordChanged": "Passwort wurde erfolgreich geändert",
   "homeStoreLocation": "Geschäftsstandort",

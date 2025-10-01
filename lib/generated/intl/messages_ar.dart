@@ -159,6 +159,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "newPasswordButton": MessageLookupByLibrary.simpleMessage(
       "إنشاء كلمة مرور جديدة",
     ),
+    "newPasswordChangedSuccessfully": MessageLookupByLibrary.simpleMessage(
+      "تم تغيير كلمة المرور بنجاح",
+    ),
     "newPasswordConfirmField": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور الجديدة",
     ),
@@ -171,6 +174,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "notificationsTitle": MessageLookupByLibrary.simpleMessage("الإشعارات"),
     "notificationsToday": MessageLookupByLibrary.simpleMessage("اليوم"),
     "notificationsYesterday": MessageLookupByLibrary.simpleMessage("أمس"),
+    "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
+      "كلمتا المرور غير متطابقتين",
+    ),
     "searchCancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
     "searchNoResults": MessageLookupByLibrary.simpleMessage("لا توجد نتائج"),
     "searchShoes": MessageLookupByLibrary.simpleMessage("أحذية"),

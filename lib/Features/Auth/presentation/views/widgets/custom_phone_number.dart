@@ -24,7 +24,7 @@ class CustomPhoneNumber extends StatelessWidget {
       ),
       child: IntlPhoneField(
         searchFieldTextStyle: TextStyle(color: Colors.black),
-    
+
         validator: validator,
         onChanged: onChanged,
         flagsButtonMargin: EdgeInsets.only(left: 12.0),
@@ -49,7 +49,6 @@ class CustomPhoneNumber extends StatelessWidget {
                 width: 2,
               ),
             ),
-            contentPadding: EdgeInsets.all(0.0),
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: Colors.grey, width: 2),
             ),
@@ -62,7 +61,6 @@ class CustomPhoneNumber extends StatelessWidget {
             color: Colors.black.withAlpha(170),
             fontSize: 13,
           ),
-          
         ),
 
         dropdownDecoration: BoxDecoration(
@@ -76,9 +74,9 @@ class CustomPhoneNumber extends StatelessWidget {
           color: Colors.black,
         ),
         decoration: InputDecoration(
+          contentPadding: EdgeInsets.symmetric(vertical: 8.0),
           filled: true,
           fillColor: Colors.white,
-
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(50.0),
             borderSide: BorderSide.none,

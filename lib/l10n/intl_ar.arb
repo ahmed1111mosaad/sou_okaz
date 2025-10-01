@@ -74,6 +74,8 @@
   "newPasswordField": "كلمة مرور جديدة",
   "newPasswordConfirmField": "تأكيد كلمة المرور الجديدة",
   "newPasswordButton": "إنشاء كلمة مرور جديدة",
+  "passwordsDoNotMatch": "كلمتا المرور غير متطابقتين",
+  "newPasswordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح",
 
   "homePasswordChanged": "تم تغيير كلمة المرور بنجاح",
   "homeStoreLocation": "موقع المتجر",

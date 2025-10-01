@@ -689,6 +689,26 @@ class S {
     );
   }
 
+  /// `Passwords do not match`
+  String get passwordsDoNotMatch {
+    return Intl.message(
+      'Passwords do not match',
+      name: 'passwordsDoNotMatch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password has been changed successfully`
+  String get newPasswordChangedSuccessfully {
+    return Intl.message(
+      'Password has been changed successfully',
+      name: 'newPasswordChangedSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Password has been changed successfully`
   String get homePasswordChanged {
     return Intl.message(
