@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl_phone_field/country_picker_dialog.dart';
@@ -9,7 +8,7 @@ import 'package:intl_phone_field/phone_number.dart';
 class CustomPhoneNumber extends StatelessWidget {
   const CustomPhoneNumber({super.key, this.onChanged, this.validator});
   final void Function(PhoneNumber phoneNumber)? onChanged;
-  final FutureOr<String?> Function(PhoneNumber?)? validator;
+  final String? Function(PhoneNumber?)? validator;
 
   @override
   Widget build(BuildContext context) {
@@ -24,21 +23,26 @@ class CustomPhoneNumber extends StatelessWidget {
         ),
       ),
       child: IntlPhoneField(
+        searchFieldTextStyle: TextStyle(color: Colors.black),
+    
         validator: validator,
         onChanged: onChanged,
         flagsButtonMargin: EdgeInsets.only(left: 12.0),
+        cursorColor: Colors.black,
         dropdownIconPosition: IconPosition.trailing,
         dropdownIcon: Icon(Icons.expand_more),
         pickerDialogStyle: PickerDialogStyle(
+          searchFieldCursorColor: Colors.teal,
           countryNameStyle: TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.w500,
-            color: Colors.black.withAlpha(160),
+            color: Colors.black,
           ),
 
           listTileDivider: SizedBox(),
           backgroundColor: Color(0xFFF5F5F5),
           searchFieldInputDecoration: InputDecoration(
+            counterStyle: TextStyle(color: Colors.black.withAlpha(160)),
             focusedBorder: UnderlineInputBorder(
               borderSide: BorderSide(
                 color: const Color.fromARGB(255, 29, 144, 144),
@@ -58,6 +62,7 @@ class CustomPhoneNumber extends StatelessWidget {
             color: Colors.black.withAlpha(170),
             fontSize: 13,
           ),
+          
         ),
 
         dropdownDecoration: BoxDecoration(
@@ -65,10 +70,15 @@ class CustomPhoneNumber extends StatelessWidget {
           shape: BoxShape.circle,
         ),
         initialCountryCode: 'EG',
-        dropdownTextStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w500,color: Colors.black),
+        dropdownTextStyle: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
+          color: Colors.black,
+        ),
         decoration: InputDecoration(
           filled: true,
           fillColor: Colors.white,
+
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(50.0),
             borderSide: BorderSide.none,
@@ -91,13 +101,14 @@ class CustomPhoneNumber extends StatelessWidget {
               width: 2,
             ),
           ),
-          // 👇 هنا بنقول يظهر الرسالة باللون الأحمر وصغير
+
           errorStyle: TextStyle(
             color: Colors.red,
             fontSize: 12,
             fontWeight: FontWeight.w500,
           ),
         ),
+        style: TextStyle(color: Colors.black),
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sou_okaz/Features/Auth/presentation/views/widgets/login_view_body.dart';
+import 'package:sou_okaz/Features/Auth/presentation/views/widgets/signin_view_body.dart';
 import 'package:sou_okaz/core/helpers/functions/app_bar_arrow_back.dart';
 
 class SigninView extends StatelessWidget {

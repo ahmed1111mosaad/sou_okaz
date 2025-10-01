@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sou_okaz/Features/Auth/presentation/views/forgetPasswordview/recovery_password.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/signup_view.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
@@ -115,7 +116,11 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 SizedBox(height: 4),
                 GestureDetector(
                   onTap: () {
-                    
+                    navigatorWithSlideAnimation(
+                      context,
+                      RecoveryPassword(),
+                      Offset(1, 0),
+                    );
                   },
                   child: Text(
                     S.of(context).signInRecoveryPassword,
@@ -123,8 +128,6 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ),
                 ),
                 SizedBox(height: 20),
-
-                // !
                 CustomElevatedButton(
                   title: S.of(context).signInButton,
                   onPressed: () {

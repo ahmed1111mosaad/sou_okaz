@@ -99,8 +99,9 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                     print("✅ Validator Called with: ${phone?.completeNumber}");
                     if (phone == null || phone.completeNumber.isEmpty) {
                       return S.of(context).signInValidatorEmpty;
+                    } else {
+                      return null;
                     }
-                    return null;
                   },
                 ),
 
@@ -206,7 +207,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                       style: AppTextStyles.regular12,
                     ),
                     GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         Navigator.of(context).pop();
                       },
                       child: Text(
@@ -216,10 +217,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height:
-                      MediaQuery.of(context).size.height * 0.3, // 20% من المساحة المتاحة
-                ),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.1),
               ],
             ),
           ),

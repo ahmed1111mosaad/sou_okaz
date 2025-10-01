@@ -269,10 +269,10 @@ class S {
     );
   }
 
-  /// `Uppercase, lowercase, letters and one number`
+  /// `Uppercase, lowercase, Symbol, letters and one number`
   String get signInValidator2 {
     return Intl.message(
-      'Uppercase, lowercase, letters and one number',
+      'Uppercase, lowercase, Symbol, letters and one number',
       name: 'signInValidator2',
       desc: '',
       args: [],
@@ -554,11 +554,21 @@ class S {
     );
   }
 
-  /// `Please Enter Your Phone Number To Receive a Verification Code`
+  /// `Please Enter Your Phone Number`
   String get forgotPasswordSubtitle {
     return Intl.message(
-      'Please Enter Your Phone Number To Receive a Verification Code',
+      'Please Enter Your Phone Number',
       name: 'forgotPasswordSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To Receive a Verification Code`
+  String get forgotPasswordSubtitle1 {
+    return Intl.message(
+      'To Receive a Verification Code',
+      name: 'forgotPasswordSubtitle1',
       desc: '',
       args: [],
     );
@@ -622,6 +632,11 @@ class S {
       desc: '',
       args: [],
     );
+  }
+
+  /// `Resend Code`
+  String get hello {
+    return Intl.message('Resend Code', name: 'hello', desc: '', args: []);
   }
 
   /// `New Password`

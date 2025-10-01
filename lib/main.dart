@@ -6,7 +6,7 @@ import 'package:sou_okaz/core/services/shared_preferences_singleton.dart';
 import 'package:sou_okaz/core/utils/routes.dart';
 import 'generated/l10n.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPreferencesSingleton.init();
   runApp(
@@ -35,7 +35,7 @@ class SouOkaz extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       theme: ThemeData(
-        
+        textButtonTheme: TextButtonThemeData(),
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Color(0xFFF5F5F5),
         fontFamily: 'Airbnb Cereal App',

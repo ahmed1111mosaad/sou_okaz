@@ -118,7 +118,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "Resend Code",
     ),
     "forgotPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Please Enter Your Phone Number To Receive a Verification Code",
+      "Please Enter Your Phone Number",
+    ),
+    "forgotPasswordSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "To Receive a Verification Code",
     ),
     "forgotPasswordTitle": MessageLookupByLibrary.simpleMessage(
       "Recovery Password",
@@ -132,6 +135,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "forgotPasswordVerificationTitle": MessageLookupByLibrary.simpleMessage(
       "Enter verification code",
     ),
+    "hello": MessageLookupByLibrary.simpleMessage("Resend Code"),
     "homeBestSeller": MessageLookupByLibrary.simpleMessage("Best Seller"),
     "homeBrandAdidas": MessageLookupByLibrary.simpleMessage("Adidas"),
     "homeBrandConverse": MessageLookupByLibrary.simpleMessage("Converse"),
@@ -208,7 +212,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Minimum of 8 characters",
     ),
     "signInValidator2": MessageLookupByLibrary.simpleMessage(
-      "Uppercase, lowercase, letters and one number",
+      "Uppercase, lowercase, Symbol, letters and one number",
     ),
     "signInValidatorEmpty": MessageLookupByLibrary.simpleMessage(
       "Please enter the required field",

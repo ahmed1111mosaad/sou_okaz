@@ -128,7 +128,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "Code erneut senden",
     ),
     "forgotPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Bitte gib deine Telefonnummer ein, um einen Bestätigungscode zu erhalten",
+      "Bitte geben Sie Ihre Telefonnummer ein",
+    ),
+    "forgotPasswordSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "Um einen Bestätigungscode zu erhalten",
     ),
     "forgotPasswordTitle": MessageLookupByLibrary.simpleMessage(
       "Passwort wiederherstellen",
@@ -222,7 +225,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Mindestens 8 Zeichen",
     ),
     "signInValidator2": MessageLookupByLibrary.simpleMessage(
-      "Groß- und Kleinbuchstaben sowie eine Zahl",
+      "Muss mindestens einen Großbuchstaben, einen Kleinbuchstaben, ein Symbol und eine Zahl enthalten",
     ),
     "signInValidatorEmpty": MessageLookupByLibrary.simpleMessage(
       "Bitte füllen Sie das erforderliche Feld aus",

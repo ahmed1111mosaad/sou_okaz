@@ -26,10 +26,19 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
     return TextFormField(
       keyboardType: widget.keyboardType,
       validator: widget.validator,
+      
       onChanged: widget.onChanged,
       obscureText: widget.obscureText,
       cursorColor: Colors.black,
+       style: TextStyle(
+    color: const Color(0xFF1A242F),
+    fontSize: 16,
+    fontFamily: 'Airbnb Cereal App',
+    fontWeight: FontWeight.w400,
+    height: 1.14,
+  ),
       decoration: InputDecoration(
+        
         filled: true,
         fillColor: Colors.white,
         enabledBorder: OutlineInputBorder(
@@ -48,8 +57,9 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           ),
         ),
         errorStyle: TextStyle(
-          color: Colors.deepOrange
+          color: Colors.red
         ),
+        
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(50.0),
           borderSide: BorderSide(
@@ -70,6 +80,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                         ? FontAwesomeIcons.eyeSlash
                         : FontAwesomeIcons.eye,
                     size: 17,
+                    color: widget.obscureText ?null: const Color.fromARGB(255, 220, 178, 178),
                   ),
                 ),
               )

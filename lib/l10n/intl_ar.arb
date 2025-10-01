@@ -23,7 +23,7 @@
   "signInNoAccount": "ليس لديك حساب؟",
   "signInSignUpFree": "سجّل مجانًا",
   "signInValidator1": "الحد الأدنى 8 أحرف",
-  "signInValidator2": "يجب ان يحتوى على الافل أحرف كبيرة وصغيرة ورقم واحد ",
+  "signInValidator2": "يجب ان يحتوى على الافل أحرف كبيرة وصغيرة ورمز ورقم واحد ",
   "signInValidatorEmpty": "من فضلك أدخل الحقل المطلوب",
   "signInValidatorValidEmail": "من فضلك أدخل بريدًا إلكترونيًا صالحًا",
   "snackbarTitleSuccess": "تهانينا",
@@ -59,7 +59,8 @@
 
 
   "forgotPasswordTitle": "استعادة كلمة المرور",
-  "forgotPasswordSubtitle": "الرجاء إدخال رقم هاتفك لاستقبال رمز التحقق",
+  "forgotPasswordSubtitle": "من فضلك أدخل رقم هاتفك",
+  "forgotPasswordSubtitle1": "لكي تستقبل رمز التحقق",
   "forgotPasswordPhoneNumber": "رقم الهاتف",
   "forgotPasswordContinue": "متابعة",
 

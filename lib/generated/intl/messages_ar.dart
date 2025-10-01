@@ -116,7 +116,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "إعادة إرسال الرمز",
     ),
     "forgotPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
-      "الرجاء إدخال رقم هاتفك لاستقبال رمز التحقق",
+      "من فضلك أدخل رقم هاتفك",
+    ),
+    "forgotPasswordSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "لكي تستقبل رمز التحقق",
     ),
     "forgotPasswordTitle": MessageLookupByLibrary.simpleMessage(
       "استعادة كلمة المرور",
@@ -200,7 +203,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "الحد الأدنى 8 أحرف",
     ),
     "signInValidator2": MessageLookupByLibrary.simpleMessage(
-      "يجب ان يحتوى على الافل أحرف كبيرة وصغيرة ورقم واحد ",
+      "يجب ان يحتوى على الافل أحرف كبيرة وصغيرة ورمز ورقم واحد ",
     ),
     "signInValidatorEmpty": MessageLookupByLibrary.simpleMessage(
       "من فضلك أدخل الحقل المطلوب",

@@ -26,7 +26,7 @@
   "signInNoAccount": "Noch kein Konto?",
   "signInSignUpFree": "Kostenlos registrieren",
   "signInValidator1": "Mindestens 8 Zeichen",
-  "signInValidator2": "Groß- und Kleinbuchstaben sowie eine Zahl",
+  "signInValidator2": "Muss mindestens einen Großbuchstaben, einen Kleinbuchstaben, ein Symbol und eine Zahl enthalten",
   "signInValidatorEmpty": "Bitte füllen Sie das erforderliche Feld aus",
   "signInValidatorValidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
 
@@ -63,7 +63,8 @@
 
 
   "forgotPasswordTitle": "Passwort wiederherstellen",
-  "forgotPasswordSubtitle": "Bitte gib deine Telefonnummer ein, um einen Bestätigungscode zu erhalten",
+  "forgotPasswordSubtitle": "Bitte geben Sie Ihre Telefonnummer ein",
+  "forgotPasswordSubtitle1": "Um einen Bestätigungscode zu erhalten",
   "forgotPasswordPhoneNumber": "Telefonnummer",
   "forgotPasswordContinue": "Weiter",
 

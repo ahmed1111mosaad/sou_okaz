@@ -23,7 +23,7 @@
   "signInNoAccount": "Don't have an account?",
   "signInSignUpFree": "Sign Up for free",
   "signInValidator1": "Minimum of 8 characters",
-  "signInValidator2": "Uppercase, lowercase, letters and one number",
+  "signInValidator2": "Uppercase, lowercase, Symbol, letters and one number",
   "signInValidatorEmpty": "Please enter the required field",
   "signInValidatorValidEmail": "Please enter an valid email",
 
@@ -59,7 +59,8 @@
 
   
   "forgotPasswordTitle": "Recovery Password",
-  "forgotPasswordSubtitle": "Please Enter Your Phone Number To Receive a Verification Code",
+  "forgotPasswordSubtitle": "Please Enter Your Phone Number",
+  "forgotPasswordSubtitle1": "To Receive a Verification Code",
   "forgotPasswordPhoneNumber": "Phone Number",
   "forgotPasswordContinue": "Continue",
 
@@ -68,6 +69,7 @@
   "forgotPasswordVerificationSubtitle": "Enter the code we sent to the following phone number 01002275616",
   "forgotPasswordVerificationButton": "Verify Code",
   "forgotPasswordResendCode": "Resend Code",
+  "hello": "Resend Code",
 
   
   "newPasswordTitle": "New Password",
