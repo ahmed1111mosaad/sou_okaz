@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926725447107",
+    "project_id": "sou-okaz",
+    "storage_bucket": "sou-okaz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926725447107:android:b30441555361590df0b176",
+        "android_client_info": {
+          "package_name": "com.example.sou_okaz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqlhqzdFB9cXyCUMyl7Ixioes2GO1541M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
