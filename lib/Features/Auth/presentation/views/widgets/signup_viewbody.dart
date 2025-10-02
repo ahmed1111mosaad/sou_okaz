@@ -177,14 +177,14 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                   onPressed: () {
                     if (formKey.currentState!.validate()) {
                       formKey.currentState!.save();
-                      BlocProvider.of<SignUpCubit>(
-                        context,
-                      ).createUserWithEmailAndPassowrd(
-                        email: email!,
-                        password: password!,
-                      );
 
                       if (isTermsAccepted) {
+                        BlocProvider.of<SignUpCubit>(
+                          context,
+                        ).createUserWithEmailAndPassowrd(
+                          email: email!,
+                          password: password!,
+                        );
                       } else {
                         showFailure(
                           context,

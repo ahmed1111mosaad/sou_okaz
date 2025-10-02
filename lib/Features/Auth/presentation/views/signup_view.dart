@@ -27,6 +27,7 @@ class SignUpView extends StatelessWidget {
             );
           }
           if (state is FailureSignUpState) {
+            print(state.errMessage);
             showFailure(context, title: state.errMessage, description: '');
           }
         },

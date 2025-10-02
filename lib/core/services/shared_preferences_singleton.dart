@@ -13,4 +13,12 @@ class SharedPreferencesSingleton {
   static bool? getBool(String key) {
     return _instance.getBool(key) ?? false;
   }
+
+  static Future setString(String key, String value) {
+    return _instance.setString(key, value);
+  }
+
+  static String getString(String key) {
+    return _instance.getString(key) ?? '';
+  }
 }
