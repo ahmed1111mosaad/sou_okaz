@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_up_cubit/sign_up_cubit.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_phone_number.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/terms_and_conditions.dart';
 import 'package:sou_okaz/core/helpers/functions/snackbar/show_failure.dart';
-import 'package:sou_okaz/core/helpers/functions/snackbar/show_success.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
 
@@ -103,7 +104,6 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                     }
                   },
                 ),
-                SizedBox(height: 18.0),
                 // ? Email Address
                 Align(
                   alignment: Alignment.centerLeft,
@@ -177,11 +177,13 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                   onPressed: () {
                     if (formKey.currentState!.validate()) {
                       formKey.currentState!.save();
-                      showSuccess(
+                      BlocProvider.of<SignUpCubit>(
                         context,
-                        title: S.of(context).snackbarTitleSuccess,
-                        description: S.of(context).snackbarDescriptionSuccess,
+                      ).createUserWithEmailAndPassowrd(
+                        email: email!,
+                        password: password!,
                       );
+
                       if (isTermsAccepted) {
                       } else {
                         showFailure(

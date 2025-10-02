@@ -1,6 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:sou_okaz/core/app_colors.dart';
+import 'package:sou_okaz/core/utils/app_colors.dart';
 
 class DotIndicator extends StatelessWidget {
   const DotIndicator({

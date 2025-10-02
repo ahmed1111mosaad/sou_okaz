@@ -419,6 +419,16 @@ class S {
     );
   }
 
+  /// `Your account has been created successfully`
+  String get SuccessSignUp {
+    return Intl.message(
+      'Your account has been created successfully',
+      name: 'SuccessSignUp',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `I agree to Sou Okaz's`
   String get termsAndCondition1 {
     return Intl.message(

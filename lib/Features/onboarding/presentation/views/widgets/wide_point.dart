@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sou_okaz/core/app_colors.dart';
+import 'package:sou_okaz/core/utils/app_colors.dart';
 
 class WidePoint extends StatelessWidget {
   const WidePoint({super.key});

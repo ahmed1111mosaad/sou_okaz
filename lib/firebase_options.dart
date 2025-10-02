@@ -85,4 +85,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'sou-okaz.firebasestorage.app',
     measurementId: 'G-W47LP6MPQJ',
   );
+
 }
