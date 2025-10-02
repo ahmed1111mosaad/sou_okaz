@@ -28,7 +28,7 @@ class _CheckListState extends State<CheckList> {
           borderRadius: BorderRadius.circular(10.0),
           border: Border.all(
             width: isSelected ? 0 : 2,
-            color: isSelected ? Color(0xffFFFFFF) : Colors.grey,
+            color: isSelected ? AppColors.primaryColor : Colors.grey,
           ),
         ),
         child: isSelected ? Image.asset(Assets.assetsImagesCheck) : SizedBox(),

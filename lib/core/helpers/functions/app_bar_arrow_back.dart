@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 AppBar appBarArrowBack(BuildContext context) {
   return AppBar(
-    // backgroundColor: Color(0xFFF5F5F5),
-    backgroundColor: Theme.of(context).colorScheme.surface,
+    systemOverlayStyle: SystemUiOverlayStyle(
+      statusBarColor: Theme.of(context).primaryColor, 
+      statusBarIconBrightness: Brightness.dark, 
+    ),
+    backgroundColor: Colors.transparent,
     elevation: 0.0,
     leading: Padding(
       padding: const EdgeInsets.only(left: 8.0),

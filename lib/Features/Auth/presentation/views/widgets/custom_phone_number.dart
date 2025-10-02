@@ -23,24 +23,29 @@ class CustomPhoneNumber extends StatelessWidget {
         ),
       ),
       child: IntlPhoneField(
-        searchFieldTextStyle: TextStyle(color: Colors.black),
+        searchFieldTextStyle: TextStyle(color: Theme.of(context).colorScheme.onSurface,),
 
         validator: validator,
         onChanged: onChanged,
         flagsButtonMargin: EdgeInsets.only(left: 12.0),
-        cursorColor: Colors.black,
+        cursorColor: Colors.blue,
+        cursorHeight: 24,
         dropdownIconPosition: IconPosition.trailing,
         dropdownIcon: Icon(Icons.expand_more),
         pickerDialogStyle: PickerDialogStyle(
-          searchFieldCursorColor: Colors.teal,
+          searchFieldTextStyle: TextStyle(
+            color: Theme.of(context).colorScheme.onSurface,
+            fontSize: 18
+          ),
+          searchFieldCursorColor: Colors.blue,
           countryNameStyle: TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.w500,
-            color: Colors.black,
+              //  color: Colors.orange,
+               color: Theme.of(context).colorScheme.surfaceBright,
           ),
-
           listTileDivider: SizedBox(),
-          backgroundColor: Color(0xFFF5F5F5),
+          backgroundColor: Theme.of(context).colorScheme.surface,
           searchFieldInputDecoration: InputDecoration(
             counterStyle: TextStyle(color: Colors.black.withAlpha(160)),
             focusedBorder: UnderlineInputBorder(
@@ -55,10 +60,10 @@ class CustomPhoneNumber extends StatelessWidget {
             labelText: 'Search Country',
             prefixIcon: Icon(FontAwesomeIcons.magnifyingGlass),
             prefixIconColor: Colors.grey,
-            labelStyle: TextStyle(color: Colors.grey),
+            labelStyle: TextStyle(color: Colors.grey, fontSize: 16),
           ),
           countryCodeStyle: TextStyle(
-            color: Colors.black.withAlpha(170),
+            color:Theme.of(context).colorScheme.surfaceContainer,
             fontSize: 13,
           ),
         ),
@@ -71,12 +76,12 @@ class CustomPhoneNumber extends StatelessWidget {
         dropdownTextStyle: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w500,
-          color: Colors.black,
+          color: Colors.grey,
         ),
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.symmetric(vertical: 8.0),
+          contentPadding: EdgeInsets.symmetric(vertical: 16.0),
           filled: true,
-          fillColor: Colors.white,
+          fillColor: Theme.of(context).colorScheme.secondary,
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(50.0),
             borderSide: BorderSide.none,
@@ -101,12 +106,12 @@ class CustomPhoneNumber extends StatelessWidget {
           ),
 
           errorStyle: TextStyle(
-            color: Colors.red,
-            fontSize: 12,
+            color: Theme.of(context).colorScheme.error,
+            fontSize: 13,
             fontWeight: FontWeight.w500,
           ),
         ),
-        style: TextStyle(color: Colors.black),
+        style: TextStyle(color: Theme.of(context).colorScheme.onSurface, fontSize: 15),
       ),
     );
   }

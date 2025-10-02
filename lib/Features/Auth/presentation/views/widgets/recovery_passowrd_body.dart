@@ -34,7 +34,7 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
               Center(
                 child: Text(
                   S.of(context).forgotPasswordTitle,
-                  style: AppTextStyles.medium28,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
               SizedBox(height: 5),
@@ -55,7 +55,7 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   S.of(context).signUpPhoneNumber,
-                  style: AppTextStyles.medium16,
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
               SizedBox(height: 6),
@@ -64,7 +64,6 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                   setState(() {
                     phoneNumber = phone;
                   });
-                  print("📱 onChanged => ${phone.completeNumber}");
                 },
               ),
               SizedBox(height: MediaQuery.of(context).size.height * .015),
@@ -75,7 +74,7 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                     formKey.currentState!.save();
                     navigatorWithSlideAnimation(
                       context,
-                      EnterVerificationCode(phoneNumber: phoneNumber!,),
+                      EnterVerificationCode(phoneNumber: phoneNumber!),
                       Offset(1, 0),
                     );
                   }

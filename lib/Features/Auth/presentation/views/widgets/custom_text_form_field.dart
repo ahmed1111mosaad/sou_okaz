@@ -29,6 +29,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       onChanged: widget.onChanged,
       obscureText: widget.obscureText,
       cursorColor: Theme.of(context).primaryColor,
+      cursorHeight: 24,
       style: TextStyle(
         color: Theme.of(context).colorScheme.onSurface,
         fontSize: 16,
@@ -37,6 +38,11 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         height: 1.14,
       ),
       decoration: InputDecoration(
+        errorStyle: TextStyle(
+          // color: Colors.red,
+          color:Theme.of(context).colorScheme.error,
+          fontSize: 13.0
+        ),
         filled: true,
         fillColor: Theme.of(context).colorScheme.secondary,
         enabledBorder: OutlineInputBorder(
@@ -54,7 +60,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
             width: 2,
           ),
         ),
-        contentPadding: EdgeInsets.symmetric(vertical: 18.0),
+        // contentPadding: EdgeInsets.symmetric(vertical: 18.0),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(50.0),
           borderSide: BorderSide(

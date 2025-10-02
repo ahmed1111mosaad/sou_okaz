@@ -20,7 +20,7 @@ class EnterVerificationCodeBody extends StatelessWidget {
           Center(
             child: Text(
               S.of(context).forgotPasswordVerificationTitle,
-              style: AppTextStyles.medium28,
+            style: Theme.of(context).textTheme.bodyLarge,
             ),
           ),
           SizedBox(height: 5),
@@ -39,15 +39,15 @@ class EnterVerificationCodeBody extends StatelessWidget {
           SizedBox(height: MediaQuery.of(context).size.height * .05),
           VerificationCode(
             height: 70,
+            codeBgColor:Theme.of(context).colorScheme.onSurface,
             borderSelectColor: Color(0xffF4A91F),
             itemWidth: double.infinity,
+            contentColor: Theme.of(context).colorScheme.onSurface,
             style: CodeStyle.rectangle,
             borderColor: const Color(0xFFE6E9E9),
-            contentColor: Color(0xff0C0D0D),
             contentSize: 23,
             maxLength: 4,
             onCompleted: (String value) {
-              print("CodeStyle.form value=$value");
             },
           ),
           SizedBox(height: MediaQuery.of(context).size.height * .04),

@@ -39,12 +39,12 @@ class _SignupViewbodyState extends State<SignupViewbody> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                SizedBox(height: MediaQuery.of(context).size.height * .05),
+                SizedBox(height: MediaQuery.of(context).size.height * .04),
                 // ? Create Account
                 Center(
                   child: Text(
                     S.of(context).signUpTitle,
-                    style: AppTextStyles.medium28,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                 ),
                 SizedBox(height: 5),
@@ -55,13 +55,13 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                     style: AppTextStyles.regular16,
                   ),
                 ),
-                SizedBox(height: MediaQuery.of(context).size.height * .06),
+                SizedBox(height: MediaQuery.of(context).size.height * .05),
                 // ? Full Name
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     S.of(context).signUpFullName,
-                    style: AppTextStyles.medium16,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
                 SizedBox(height: 6),
@@ -78,13 +78,14 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                     return null;
                   },
                 ),
-                SizedBox(height: 6),
+                SizedBox(height: 18.0),
+
                 // ? Phone Number
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     S.of(context).signUpPhoneNumber,
-                    style: AppTextStyles.medium16,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
                 SizedBox(height: 6),
@@ -93,10 +94,8 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                     setState(() {
                       phoneNumber = phone.completeNumber;
                     });
-                    print("📱 onChanged => ${phone.completeNumber}");
                   },
                   validator: (phone) {
-                    print("✅ Validator Called with: ${phone?.completeNumber}");
                     if (phone == null || phone.completeNumber.isEmpty) {
                       return S.of(context).signInValidatorEmpty;
                     } else {
@@ -104,13 +103,13 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                     }
                   },
                 ),
-
+                SizedBox(height: 18.0),
                 // ? Email Address
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     S.of(context).signInEmail,
-                    style: AppTextStyles.medium16,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
                 SizedBox(height: 6),
@@ -140,7 +139,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                   alignment: Alignment.centerLeft,
                   child: Text(
                     S.of(context).signInPassword,
-                    style: AppTextStyles.medium16,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
                 SizedBox(height: 6),
@@ -212,7 +211,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                       },
                       child: Text(
                         S.of(context).signInButton,
-                        style: AppTextStyles.medium12,
+                        style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
                   ],

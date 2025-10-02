@@ -51,6 +51,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ),
                 ),
                 SizedBox(height: 50),
+                
                 // ? Email
                 Align(
                   alignment: Alignment.centerLeft,
@@ -188,3 +189,4 @@ class _SigninViewBodyState extends State<SigninViewBody> {
     );
   }
 }
+

@@ -30,7 +30,7 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
             Center(
               child: Text(
                 S.of(context).newPasswordTitle,
-                style: AppTextStyles.medium28,
+                style: Theme.of(context).textTheme.bodyLarge,
               ),
             ),
             SizedBox(height: 5),
@@ -45,7 +45,7 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
               alignment: Alignment.centerLeft,
               child: Text(
                 S.of(context).newPasswordField,
-                style: AppTextStyles.medium16,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
             SizedBox(height: 6),
@@ -76,7 +76,7 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
               alignment: Alignment.centerLeft,
               child: Text(
                 S.of(context).newPasswordConfirmField,
-                style: AppTextStyles.medium16,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
             SizedBox(height: 6),

@@ -38,7 +38,7 @@ class SouOkaz extends StatelessWidget {
       // locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      initialRoute: Routes.onboarding,
+      initialRoute: Routes.splash,
       routes: routes(),
     );
 
@@ -48,3 +48,4 @@ class SouOkaz extends StatelessWidget {
 bool isArabic() {
   return Intl.getCurrentLocale() == 'ar';
 }
+

@@ -21,7 +21,7 @@ void showInfo(
     secondaryColor: Colors.blue.shade600,
     primaryColor: const Color(0xFFE8F3FF), // أزرق فاتح
     width: MediaQuery.of(context).size.width * .9,
-    height: MediaQuery.of(context).size.height * .08,
+  height: MediaQuery.of(context).size.height * .09,
     displaySideBar: false,
   ).show(context);
 }

@@ -17,7 +17,7 @@ void showSuccess(
     iconSize: 45,
     secondaryColor: Color(0xFFFFB300),
     width: MediaQuery.of(context).size.width * .9,
-    height: MediaQuery.of(context).size.height * .08,
+    height: MediaQuery.of(context).size.height * .09,
     description: Text(
       description,
       style: TextStyle(color: Color(0xFF6E6E6E), fontSize: 13),

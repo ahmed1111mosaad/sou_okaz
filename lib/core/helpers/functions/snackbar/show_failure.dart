@@ -25,7 +25,7 @@ void showFailure(
     secondaryColor: Colors.red.shade600,
     primaryColor: const Color(0xFFFFE8E8), // أحمر فاتح
     width: MediaQuery.of(context).size.width * .9,
-    height: MediaQuery.of(context).size.height * .08,
+    height: MediaQuery.of(context).size.height * .09,
     displaySideBar: false,
   ).show(context);
 }
