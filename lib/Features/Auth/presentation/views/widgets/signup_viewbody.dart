@@ -229,7 +229,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
-                  ],
+                  ], 
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.1),
               ],

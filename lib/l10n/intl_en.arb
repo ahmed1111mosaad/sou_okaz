@@ -26,6 +26,9 @@
   "signInValidator2": "Uppercase, lowercase, Symbol, letters and one number",
   "signInValidatorEmpty": "Please enter the required field",
   "signInValidatorValidEmail": "Please enter an valid email",
+  "SuccessSignIn":"You have signed in successfully",
+  "invalidEmailOrPassword": "Email or password is incorrect.",
+
 
   
   "signUpTitle": "Create Account",

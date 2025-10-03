@@ -165,6 +165,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "مونديليبوج، سيلهيت",
     ),
     "homeStoreLocation": MessageLookupByLibrary.simpleMessage("موقع المتجر"),
+    "invalidEmailOrPassword": MessageLookupByLibrary.simpleMessage(
+      "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+    ),
     "newPasswordButton": MessageLookupByLibrary.simpleMessage(
       "إنشاء كلمة مرور جديدة",
     ),

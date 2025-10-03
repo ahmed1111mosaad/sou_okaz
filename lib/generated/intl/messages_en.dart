@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "SuccessSignIn": MessageLookupByLibrary.simpleMessage(
+      "You have signed in successfully",
+    ),
     "SuccessSignUp": MessageLookupByLibrary.simpleMessage(
       "Your account has been created successfully",
     ),
@@ -170,6 +173,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Mondolibug, Sylhet",
     ),
     "homeStoreLocation": MessageLookupByLibrary.simpleMessage("Store location"),
+    "invalidEmailOrPassword": MessageLookupByLibrary.simpleMessage(
+      "Email or password is incorrect.",
+    ),
     "newPasswordButton": MessageLookupByLibrary.simpleMessage(
       "Create new password",
     ),

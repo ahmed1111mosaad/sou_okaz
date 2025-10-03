@@ -23,12 +23,12 @@ class SignUpViewBlocConsumer extends StatelessWidget {
           );
         }
         if (state is FailureSignUpState) {
-          print(state.errMessage);
           showFailure(context, title: state.errMessage, description: '');
         }
       },
       builder: (context, state) {
         return ModalProgressHUD(
+          color: const Color.fromARGB(255, 255, 246, 245),
           inAsyncCall: state is LoadingSignUpState,
           child: child,
         );

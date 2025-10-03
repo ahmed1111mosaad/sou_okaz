@@ -40,8 +40,8 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       decoration: InputDecoration(
         errorStyle: TextStyle(
           // color: Colors.red,
-          color:Theme.of(context).colorScheme.error,
-          fontSize: 13.0
+          color: Theme.of(context).colorScheme.error,
+          fontSize: 13.0,
         ),
         filled: true,
         fillColor: Theme.of(context).colorScheme.secondary,

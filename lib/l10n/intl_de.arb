@@ -45,6 +45,10 @@
   "signUpSignInNow": "Jetzt anmelden",
   "signUpPhoneNumber": "Telefonnummer",
   "SuccessSignUp": "Dein Konto wurde erfolgreich erstellt",
+  "SuccessSignIn_de": "Sie haben sich erfolgreich angemeldet",
+  "invalidEmailOrPassword": "E-Mail oder Passwort ist falsch.",
+
+
   "termsAndCondition1": "Ich stimme",
   "termsAndCondition2": " den Datenschutzbestimmungen von Sou Okaz",
   "termsAndCondition3": " und",

@@ -3,7 +3,7 @@ import 'package:sou_okaz/Features/Auth/domain/repo/auth_repo.dart';
 import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_up_cubit/sign_up_states.dart';
 
 class SignUpCubit extends Cubit<SignUpStates> {
-  SignUpCubit({required this.authRepo}) : super(InitialSignUpState());
+  SignUpCubit(this.authRepo) : super(InitialSignUpState());
   final AuthRepo authRepo;
   createUserWithEmailAndPassowrd({
     required String email,

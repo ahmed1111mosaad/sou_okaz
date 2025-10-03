@@ -22,6 +22,8 @@ class FirebaseAuthFailure extends Failure {
       return FirebaseAuthFailure(S.current.userNotFound);
     } else if (e.code == 'wrong-password') {
       return FirebaseAuthFailure(S.current.wrongPassword);
+    } else if (e.code == 'invalid-credential') {
+      return FirebaseAuthFailure(S.current.invalidEmailOrPassword);
     } else {
       return FirebaseAuthFailure('Failed to create user: ${e.message}');
     }

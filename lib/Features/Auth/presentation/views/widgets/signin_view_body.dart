@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sou_okaz/Features/Auth/data/repo/auth_repo_impl.dart';
+import 'package:sou_okaz/Features/Auth/domain/entities/user_entity.dart';
+import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_in_cubit/sign_in_cubit.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/forgetPasswordview/recovery_password.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/signup_view.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
@@ -22,6 +26,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   String? email;
   String? password;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -52,7 +57,6 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ),
                 ),
                 SizedBox(height: 50),
-
                 // ? Email
                 Align(
                   alignment: isArabic()
@@ -141,6 +145,12 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                     if (key.currentState!.validate()) {
                       key.currentState!.save();
                       setState(() {});
+                      BlocProvider.of<SignInCubit>(
+                        context,
+                      ).signInWithEmailAndPassword(
+                        email: email!,
+                        password: password!,
+                      );
                     } else {
                       autovalidateMode = AutovalidateMode.always;
                       setState(() {});

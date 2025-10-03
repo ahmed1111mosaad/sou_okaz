@@ -181,6 +181,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "homeStoreLocation": MessageLookupByLibrary.simpleMessage(
       "Geschäftsstandort",
     ),
+    "invalidEmailOrPassword": MessageLookupByLibrary.simpleMessage(
+      "E-Mail oder Passwort ist falsch.",
+    ),
     "newPasswordButton": MessageLookupByLibrary.simpleMessage(
       "Neues Passwort erstellen",
     ),

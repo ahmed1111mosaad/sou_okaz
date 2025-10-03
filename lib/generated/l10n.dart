@@ -299,6 +299,26 @@ class S {
     );
   }
 
+  /// `You have signed in successfully`
+  String get SuccessSignIn {
+    return Intl.message(
+      'You have signed in successfully',
+      name: 'SuccessSignIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email or password is incorrect.`
+  String get invalidEmailOrPassword {
+    return Intl.message(
+      'Email or password is incorrect.',
+      name: 'invalidEmailOrPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Create Account`
   String get signUpTitle {
     return Intl.message(

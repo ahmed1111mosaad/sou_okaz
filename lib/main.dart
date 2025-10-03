@@ -6,6 +6,7 @@ import 'package:intl/intl.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Auth/domain/repo/auth_repo.dart';
+import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_in_cubit/sign_in_cubit.dart';
 import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_up_cubit/sign_up_cubit.dart';
 import 'package:sou_okaz/core/services/service_locator.dart';
 import 'package:sou_okaz/core/services/shared_preferences_singleton.dart';
@@ -39,9 +40,8 @@ class SouOkaz extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
-          create: (context) => SignUpCubit(authRepo: getIt<AuthRepo>()),
-        ),
+        BlocProvider(create: (context) => SignUpCubit(getIt<AuthRepo>())),
+        BlocProvider(create: (context) => SignInCubit(getIt<AuthRepo>())),
       ],
       child: MaterialApp(
         locale: Locale('en'),

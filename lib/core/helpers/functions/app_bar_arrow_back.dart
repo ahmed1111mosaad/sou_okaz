@@ -12,23 +12,25 @@ AppBar appBarArrowBack(BuildContext context, {bool isLogin = false}) {
     elevation: 0.0,
     leading: Padding(
       padding: EdgeInsets.symmetric(horizontal: isArabic() ? 8.0 : 0.0),
-      child: IconButton(
-        padding: EdgeInsets.all(12.0),
-        constraints: BoxConstraints(minHeight: 40, minWidth: 40),
-        style: IconButton.styleFrom(
-          backgroundColor: Theme.of(context).colorScheme.secondary,
-          shape: CircleBorder(),
-        ),
-        onPressed: () {
-          if (isLogin) {
-          } else {
-            Navigator.of(context).pop();
-          }
-        },
-        icon: Icon(
-          Icons.arrow_back_ios,
-          size: 17,
-          color: Theme.of(context).colorScheme.onSurface,
+      child: SizedBox(
+        width: 35,
+        height: 35,
+        child: IconButton(
+          style: IconButton.styleFrom(
+            backgroundColor: Theme.of(context).colorScheme.secondary,
+            shape: CircleBorder(),
+          ),
+          onPressed: () {
+            if (isLogin) {
+            } else {
+              Navigator.of(context).pop();
+            }
+          },
+          icon: Icon(
+            Icons.arrow_back_ios,
+            size: 17,
+            color: Theme.of(context).colorScheme.onSurface,
+          ),
         ),
       ),
     ),

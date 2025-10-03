@@ -39,6 +39,7 @@ class AuthRepoImpl extends AuthRepo {
       );
       // ToDo add data to the  database
       await addUserData(userEntity: userEntity);
+      await saveUserData(userEntity: userEntity);
       return right(userEntity);
     } on FirebaseAuthException catch (e) {
       if (user != null) {
@@ -71,7 +72,12 @@ class AuthRepoImpl extends AuthRepo {
   @override
   Future saveUserData({required UserEntity userEntity}) async {
     String data = jsonEncode(UserModel.fromEntity(userEntity).toJson());
-    await SharedPreferencesSingleton.setString(Keys.kSaveData, data);
+    await SharedPreferencesSingleton.setString(userEntity.uId, data);
+  }
+
+  static UserEntity getUserDataLocallyFromSharedPreferences({required String key}) {
+    var data = SharedPreferencesSingleton.getString(key);
+    return UserModel.fromJson(json: jsonDecode(data));
   }
 
   @override

@@ -26,6 +26,10 @@
   "signInValidator2": "يجب ان يحتوى على الافل أحرف كبيرة وصغيرة ورمز ورقم واحد ",
   "signInValidatorEmpty": "من فضلك أدخل الحقل المطلوب",
   "signInValidatorValidEmail": "من فضلك أدخل بريدًا إلكترونيًا صالحًا",
+  "SuccessSignIn_ar": "لقد قمت بتسجيل الدخول بنجاح",
+  "invalidEmailOrPassword": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+
+
   "snackbarTitleSuccess": "تهانينا",
   "snackbarDescriptionSuccess": "تم إنشاء الحساب بنجاح",
   "snackbarTitleFailure": "حدث خطأ ما",
