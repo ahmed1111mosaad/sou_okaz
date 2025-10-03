@@ -9,7 +9,7 @@ class SigninView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
-      appBar: appBarArrowBack(context),
+      appBar: appBarArrowBack(context, isLogin: true),
       body: SigninViewBody(),
     );
   }

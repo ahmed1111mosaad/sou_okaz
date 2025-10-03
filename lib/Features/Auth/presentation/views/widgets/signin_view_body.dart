@@ -8,6 +8,7 @@ import 'package:sou_okaz/core/assets/assets.dart';
 import 'package:sou_okaz/core/helpers/functions/navigator_with_slide_animation.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
+import 'package:sou_okaz/main.dart';
 
 class SigninViewBody extends StatefulWidget {
   const SigninViewBody({super.key});
@@ -51,10 +52,12 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ),
                 ),
                 SizedBox(height: 50),
-                
+
                 // ? Email
                 Align(
-                  alignment: Alignment.centerLeft,
+                  alignment: isArabic()
+                      ? Alignment.centerRight
+                      : Alignment.centerLeft,
                   child: Text(
                     S.of(context).signInEmail,
                     style: Theme.of(context).textTheme.titleMedium,
@@ -87,7 +90,9 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 SizedBox(height: 18.0),
                 // ? Password
                 Align(
-                  alignment: Alignment.centerLeft,
+                  alignment: isArabic()
+                      ? Alignment.centerRight
+                      : Alignment.centerLeft,
                   child: Text(
                     S.of(context).signInPassword,
                     style: Theme.of(context).textTheme.titleMedium,
@@ -175,7 +180,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                       },
                       child: Text(
                         S.of(context).signInSignUpFree,
-                        style:Theme.of(context).textTheme.bodySmall,
+                        style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
                   ],
@@ -189,4 +194,3 @@ class _SigninViewBodyState extends State<SigninViewBody> {
     );
   }
 }
-

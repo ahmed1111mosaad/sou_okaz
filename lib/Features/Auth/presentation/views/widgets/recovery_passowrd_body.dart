@@ -6,6 +6,7 @@ import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_phone_n
 import 'package:sou_okaz/core/helpers/functions/navigator_with_slide_animation.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
+import 'package:sou_okaz/main.dart';
 
 class RecoveryPassowrdBody extends StatefulWidget {
   const RecoveryPassowrdBody({super.key});
@@ -52,7 +53,9 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
               ),
               SizedBox(height: MediaQuery.of(context).size.height * .05),
               Align(
-                alignment: Alignment.centerLeft,
+                alignment: isArabic()
+                    ? Alignment.centerRight
+                    : Alignment.centerLeft,
                 child: Text(
                   S.of(context).signUpPhoneNumber,
                   style: Theme.of(context).textTheme.titleMedium,

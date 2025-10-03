@@ -4,6 +4,7 @@ import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_fo
 import 'package:sou_okaz/core/helpers/functions/snackbar/show_success.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
+import 'package:sou_okaz/main.dart';
 
 class NewPasswordBody extends StatefulWidget {
   const NewPasswordBody({super.key});
@@ -42,7 +43,9 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
             ),
             SizedBox(height: 50),
             Align(
-              alignment: Alignment.centerLeft,
+              alignment: isArabic()
+                  ? Alignment.centerRight
+                  : Alignment.centerLeft,
               child: Text(
                 S.of(context).newPasswordField,
                 style: Theme.of(context).textTheme.titleMedium,
@@ -73,7 +76,9 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
             ),
             SizedBox(height: 18.0),
             Align(
-              alignment: Alignment.centerLeft,
+              alignment: isArabic()
+                  ? Alignment.centerRight
+                  : Alignment.centerLeft,
               child: Text(
                 S.of(context).newPasswordConfirmField,
                 style: Theme.of(context).textTheme.titleMedium,
@@ -93,7 +98,7 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
                   return S.of(context).signInValidator2;
                 } else if (value.isEmpty) {
                   return S.of(context).signInValidatorEmpty;
-                }else if(newPassowrd != newPassowrdConfirm){
+                } else if (newPassowrd != newPassowrdConfirm) {
                   return "password doesn't match";
                 }
                 return null;
@@ -111,7 +116,11 @@ class _NewPasswordBodyState extends State<NewPasswordBody> {
                 if (formKey.currentState!.validate()) {
                   formKey.currentState!.save();
                   setState(() {});
-                  showSuccess(context, title: S.of(context).newPasswordChangedSuccessfully, description: '');
+                  showSuccess(
+                    context,
+                    title: S.of(context).newPasswordChangedSuccessfully,
+                    description: '',
+                  );
                 } else {
                   autovalidateMode = AutovalidateMode.always;
                   setState(() {});

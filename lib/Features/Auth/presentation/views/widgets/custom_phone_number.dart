@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl_phone_field/country_picker_dialog.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:intl_phone_field/phone_number.dart';
+import 'package:sou_okaz/main.dart';
 
 class CustomPhoneNumber extends StatelessWidget {
   const CustomPhoneNumber({super.key, this.onChanged, this.validator});
@@ -23,11 +24,13 @@ class CustomPhoneNumber extends StatelessWidget {
         ),
       ),
       child: IntlPhoneField(
-        searchFieldTextStyle: TextStyle(color: Theme.of(context).colorScheme.onSurface,),
-
+        searchFieldTextStyle: TextStyle(
+          color: Theme.of(context).colorScheme.onSurface,
+        ),
+        flagsButtonPadding: EdgeInsets.only(right: isArabic() ? 8.0 : 0.0),
         validator: validator,
         onChanged: onChanged,
-        flagsButtonMargin: EdgeInsets.only(left: 12.0),
+        textAlign: isArabic() ? TextAlign.right : TextAlign.left,
         cursorColor: Colors.blue,
         cursorHeight: 24,
         dropdownIconPosition: IconPosition.trailing,
@@ -35,14 +38,14 @@ class CustomPhoneNumber extends StatelessWidget {
         pickerDialogStyle: PickerDialogStyle(
           searchFieldTextStyle: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
-            fontSize: 18
+            fontSize: 18,
           ),
           searchFieldCursorColor: Colors.blue,
           countryNameStyle: TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.w500,
-              //  color: Colors.orange,
-               color: Theme.of(context).colorScheme.surfaceBright,
+            //  color: Colors.orange,
+            color: Theme.of(context).colorScheme.surfaceBright,
           ),
           listTileDivider: SizedBox(),
           backgroundColor: Theme.of(context).colorScheme.surface,
@@ -63,7 +66,7 @@ class CustomPhoneNumber extends StatelessWidget {
             labelStyle: TextStyle(color: Colors.grey, fontSize: 16),
           ),
           countryCodeStyle: TextStyle(
-            color:Theme.of(context).colorScheme.surfaceContainer,
+            color: Theme.of(context).colorScheme.surfaceContainer,
             fontSize: 13,
           ),
         ),
@@ -75,7 +78,7 @@ class CustomPhoneNumber extends StatelessWidget {
         initialCountryCode: 'EG',
         dropdownTextStyle: TextStyle(
           fontSize: 16,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w400,
           color: Colors.grey,
         ),
         decoration: InputDecoration(
@@ -111,7 +114,10 @@ class CustomPhoneNumber extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
-        style: TextStyle(color: Theme.of(context).colorScheme.onSurface, fontSize: 15),
+        style: TextStyle(
+          color: Theme.of(context).colorScheme.onSurface,
+          fontSize: 15,
+        ),
       ),
     );
   }

@@ -13,6 +13,7 @@ ThemeData lightMode = ThemeData(
   ),
   fontFamily: 'Airbnb Cereal App',
   primaryColor: Color(0xFF5B9EE1),
+
   textTheme: TextTheme(
     labelSmall: TextStyle(color: const Color.fromARGB(255, 244, 99, 89)),
     // title

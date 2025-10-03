@@ -23,17 +23,30 @@ class AuthRepoImpl extends AuthRepo {
   Future<Either<Failure, UserEntity>> createUserWithEmailAndPassword({
     required String email,
     required String password,
+    required String name,
+    required String phoneNumber,
   }) async {
+    User? user;
     try {
-      User user = await firebaseAuthService.createUserWithEmailAndPassworrd(
+      user = await firebaseAuthService.createUserWithEmailAndPassworrd(
         email: email,
         password: password,
       );
-      return right(UserModel.fromFirebase(user));
+      UserEntity userEntity = UserEntity(
+        name: name,
+        email: email,
+        uId: user.uid,
+        phoneNumber: phoneNumber,
+      );
+      await addUserData(userEntity: userEntity);
+      return right(userEntity);
     } on FirebaseAuthException catch (e) {
+      if (user != null) {
+        FirebaseAuth.instance.currentUser!.delete();
+      }
       return left(FirebaseAuthFailure.fromFirebaseFailure(e));
     } catch (e) {
-      return left(FirebaseAuthFailure('Faken error: $e'));
+      return left(FirebaseAuthFailure('error: $e'));
     }
   }
 
@@ -42,6 +55,7 @@ class AuthRepoImpl extends AuthRepo {
     await firestoreService.addData(
       path: CollectionNames.users,
       data: UserModel.fromEntity(userEntity).toJson(),
+      docuid: userEntity.uId,
     );
   }
 

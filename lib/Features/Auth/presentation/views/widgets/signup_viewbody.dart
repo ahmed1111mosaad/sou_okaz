@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:intl_phone_field/phone_number.dart';
 import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_up_cubit/sign_up_cubit.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_phone_number.dart';
@@ -8,6 +9,7 @@ import 'package:sou_okaz/Features/Auth/presentation/views/widgets/terms_and_cond
 import 'package:sou_okaz/core/helpers/functions/snackbar/show_failure.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
+import 'package:sou_okaz/main.dart';
 
 class SignupViewbody extends StatefulWidget {
   const SignupViewbody({super.key});
@@ -19,7 +21,7 @@ class SignupViewbody extends StatefulWidget {
 class _SignupViewbodyState extends State<SignupViewbody> {
   String? name;
   String? email;
-  String? phoneNumber;
+  PhoneNumber? phoneNumber;
   String? password;
   bool isTermsAccepted = false;
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
@@ -59,7 +61,9 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                 SizedBox(height: MediaQuery.of(context).size.height * .05),
                 // ? Full Name
                 Align(
-                  alignment: Alignment.centerLeft,
+                  alignment: isArabic()
+                      ? Alignment.centerRight
+                      : Alignment.centerLeft,
                   child: Text(
                     S.of(context).signUpFullName,
                     style: Theme.of(context).textTheme.titleMedium,
@@ -83,7 +87,9 @@ class _SignupViewbodyState extends State<SignupViewbody> {
 
                 // ? Phone Number
                 Align(
-                  alignment: Alignment.centerLeft,
+                  alignment: isArabic()
+                      ? Alignment.centerRight
+                      : Alignment.centerLeft,
                   child: Text(
                     S.of(context).signUpPhoneNumber,
                     style: Theme.of(context).textTheme.titleMedium,
@@ -93,7 +99,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                 CustomPhoneNumber(
                   onChanged: (phone) {
                     setState(() {
-                      phoneNumber = phone.completeNumber;
+                      phoneNumber = phone;
                     });
                   },
                   validator: (phone) {
@@ -106,7 +112,9 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                 ),
                 // ? Email Address
                 Align(
-                  alignment: Alignment.centerLeft,
+                  alignment: isArabic()
+                      ? Alignment.centerRight
+                      : Alignment.centerLeft,
                   child: Text(
                     S.of(context).signInEmail,
                     style: Theme.of(context).textTheme.titleMedium,
@@ -136,7 +144,9 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                 SizedBox(height: 18.0),
                 // ? Password
                 Align(
-                  alignment: Alignment.centerLeft,
+                  alignment: isArabic()
+                      ? Alignment.centerRight
+                      : Alignment.centerLeft,
                   child: Text(
                     S.of(context).signInPassword,
                     style: Theme.of(context).textTheme.titleMedium,
@@ -184,6 +194,8 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                         ).createUserWithEmailAndPassowrd(
                           email: email!,
                           password: password!,
+                          name: name!,
+                          phoneNumber: phoneNumber!.completeNumber,
                         );
                       } else {
                         showFailure(
@@ -196,6 +208,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                       }
                     } else {
                       autovalidateMode = AutovalidateMode.always;
+                      setState(() {});
                     }
                   },
                 ),

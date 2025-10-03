@@ -43,7 +43,7 @@ class UserModel extends UserEntity {
       phoneNumber: json['phoneNumber'],
     );
   }
-  toJson() {
+  Map<String, dynamic> toJson() {
     return {
       'name': name,
       'email': email,
