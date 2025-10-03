@@ -77,6 +77,12 @@
   "newPasswordButton": "إنشاء كلمة مرور جديدة",
   "passwordsDoNotMatch": "كلمتا المرور غير متطابقتين",
   "newPasswordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح",
+  "weakPassword": "كلمة المرور المقدمة ضعيفة جدًا.",
+  "emailAlreadyInUse": "يوجد حساب مسجل بالفعل بهذا البريد الإلكتروني.",
+  "userNotFound": "لم يتم العثور على مستخدم لهذا البريد الإلكتروني.",
+  "wrongPassword": "تم إدخال كلمة مرور غير صحيحة لهذا المستخدم.",
+  "failedCreateUser": "فشل في إنشاء المستخدم.",
+
 
   "homePasswordChanged": "تم تغيير كلمة المرور بنجاح",
   "homeStoreLocation": "موقع المتجر",

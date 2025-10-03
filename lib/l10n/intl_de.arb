@@ -82,6 +82,13 @@
   "passwordsDoNotMatch": "Passwörter stimmen nicht überein",
   "newPasswordChangedSuccessfully": "Passwort wurde erfolgreich geändert",
 
+  "weakPassword": "Das angegebene Passwort ist zu schwach.",
+  "emailAlreadyInUse": "Für diese E-Mail-Adresse existiert bereits ein Konto.",
+  "userNotFound": "Kein Benutzer für diese E-Mail-Adresse gefunden.",
+  "wrongPassword": "Falsches Passwort für diesen Benutzer eingegeben.",
+  "failedCreateUser": "Benutzer konnte nicht erstellt werden.",
+
+
 
   "homePasswordChanged": "Passwort wurde erfolgreich geändert",
   "homeStoreLocation": "Geschäftsstandort",

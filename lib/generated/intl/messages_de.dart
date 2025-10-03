@@ -103,6 +103,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "drawerSignOut": MessageLookupByLibrary.simpleMessage("Abmelden"),
     "drawerUserName": MessageLookupByLibrary.simpleMessage("Alisson Becker"),
+    "emailAlreadyInUse": MessageLookupByLibrary.simpleMessage(
+      "Für diese E-Mail-Adresse existiert bereits ein Konto.",
+    ),
+    "failedCreateUser": MessageLookupByLibrary.simpleMessage(
+      "Benutzer konnte nicht erstellt werden.",
+    ),
     "favouriteTitle": MessageLookupByLibrary.simpleMessage("Favoriten"),
     "filtersApply": MessageLookupByLibrary.simpleMessage("Anwenden"),
     "filtersGender": MessageLookupByLibrary.simpleMessage("Geschlecht"),
@@ -317,6 +323,15 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "thirdPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "Nike 2025",
+    ),
+    "userNotFound": MessageLookupByLibrary.simpleMessage(
+      "Kein Benutzer für diese E-Mail-Adresse gefunden.",
+    ),
+    "weakPassword": MessageLookupByLibrary.simpleMessage(
+      "Das angegebene Passwort ist zu schwach.",
+    ),
+    "wrongPassword": MessageLookupByLibrary.simpleMessage(
+      "Falsches Passwort für diesen Benutzer eingegeben.",
     ),
   };
 }

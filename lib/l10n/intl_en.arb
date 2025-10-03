@@ -81,6 +81,13 @@
   "passwordsDoNotMatch": "Passwords do not match",
   "newPasswordChangedSuccessfully":"Password has been changed successfully",
 
+  "weakPassword": "The password provided is too weak.",
+  "emailAlreadyInUse": "The account already exists for that email.",
+  "userNotFound": "No user found for that email.",
+  "wrongPassword": "Wrong password provided for that user.",
+  "failedCreateUser": "Failed to create user.",
+
+
   
   "homePasswordChanged": "Password has been changed successfully",
   "homeStoreLocation": "Store location",

@@ -93,6 +93,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "drawerSignOut": MessageLookupByLibrary.simpleMessage("Sign Out"),
     "drawerUserName": MessageLookupByLibrary.simpleMessage("alisson becker"),
+    "emailAlreadyInUse": MessageLookupByLibrary.simpleMessage(
+      "The account already exists for that email.",
+    ),
+    "failedCreateUser": MessageLookupByLibrary.simpleMessage(
+      "Failed to create user.",
+    ),
     "favouriteTitle": MessageLookupByLibrary.simpleMessage("Favourite"),
     "filtersApply": MessageLookupByLibrary.simpleMessage("Apply"),
     "filtersGender": MessageLookupByLibrary.simpleMessage("Gender"),
@@ -306,6 +312,15 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "thirdPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "Nike 2025",
+    ),
+    "userNotFound": MessageLookupByLibrary.simpleMessage(
+      "No user found for that email.",
+    ),
+    "weakPassword": MessageLookupByLibrary.simpleMessage(
+      "The password provided is too weak.",
+    ),
+    "wrongPassword": MessageLookupByLibrary.simpleMessage(
+      "Wrong password provided for that user.",
     ),
   };
 }

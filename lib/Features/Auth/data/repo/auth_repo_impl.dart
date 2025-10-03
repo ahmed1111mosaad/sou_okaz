@@ -37,6 +37,7 @@ class AuthRepoImpl extends AuthRepo {
         uId: user.uid,
         phoneNumber: phoneNumber,
       );
+      // ToDo add data to the  database
       await addUserData(userEntity: userEntity);
       return right(userEntity);
     } on FirebaseAuthException catch (e) {
@@ -71,5 +72,26 @@ class AuthRepoImpl extends AuthRepo {
   Future saveUserData({required UserEntity userEntity}) async {
     String data = jsonEncode(UserModel.fromEntity(userEntity).toJson());
     await SharedPreferencesSingleton.setString(Keys.kSaveData, data);
+  }
+
+  @override
+  Future<Either<Failure, UserEntity>> signInWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      var user = await firebaseAuthService.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      // ToDo (get data from database / save data to shared preferences)
+      UserEntity userEntity = await getUserData(uId: user.uid);
+      await saveUserData(userEntity: userEntity);
+      return right(userEntity);
+    } on FirebaseAuthException catch (e) {
+      return left(FirebaseAuthFailure.fromFirebaseFailure(e));
+    } catch (e) {
+      return left(FirebaseAuthFailure(e.toString()));
+    }
   }
 }

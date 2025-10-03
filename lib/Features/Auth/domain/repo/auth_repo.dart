@@ -9,6 +9,10 @@ abstract class AuthRepo {
     required String name,
     required String phoneNumber,
   });
+  Future<Either<Failure, UserEntity>> signInWithEmailAndPassword({
+    required String email,
+    required String password,
+  });
   Future addUserData({required UserEntity userEntity});
   Future<UserEntity> getUserData({required String uId});
   Future saveUserData({required UserEntity userEntity});

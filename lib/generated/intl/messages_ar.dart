@@ -91,6 +91,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "drawerSignOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
     "drawerUserName": MessageLookupByLibrary.simpleMessage("أليسون بيكر"),
+    "emailAlreadyInUse": MessageLookupByLibrary.simpleMessage(
+      "يوجد حساب مسجل بالفعل بهذا البريد الإلكتروني.",
+    ),
+    "failedCreateUser": MessageLookupByLibrary.simpleMessage(
+      "فشل في إنشاء المستخدم.",
+    ),
     "favouriteTitle": MessageLookupByLibrary.simpleMessage("المفضلة"),
     "filtersApply": MessageLookupByLibrary.simpleMessage("تطبيق"),
     "filtersGender": MessageLookupByLibrary.simpleMessage("الجنس"),
@@ -287,6 +293,15 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "thirdPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "نايك 2025",
+    ),
+    "userNotFound": MessageLookupByLibrary.simpleMessage(
+      "لم يتم العثور على مستخدم لهذا البريد الإلكتروني.",
+    ),
+    "weakPassword": MessageLookupByLibrary.simpleMessage(
+      "كلمة المرور المقدمة ضعيفة جدًا.",
+    ),
+    "wrongPassword": MessageLookupByLibrary.simpleMessage(
+      "تم إدخال كلمة مرور غير صحيحة لهذا المستخدم.",
     ),
   };
 }

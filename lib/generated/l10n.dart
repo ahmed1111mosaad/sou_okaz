@@ -719,6 +719,56 @@ class S {
     );
   }
 
+  /// `The password provided is too weak.`
+  String get weakPassword {
+    return Intl.message(
+      'The password provided is too weak.',
+      name: 'weakPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The account already exists for that email.`
+  String get emailAlreadyInUse {
+    return Intl.message(
+      'The account already exists for that email.',
+      name: 'emailAlreadyInUse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No user found for that email.`
+  String get userNotFound {
+    return Intl.message(
+      'No user found for that email.',
+      name: 'userNotFound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wrong password provided for that user.`
+  String get wrongPassword {
+    return Intl.message(
+      'Wrong password provided for that user.',
+      name: 'wrongPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Failed to create user.`
+  String get failedCreateUser {
+    return Intl.message(
+      'Failed to create user.',
+      name: 'failedCreateUser',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Password has been changed successfully`
   String get homePasswordChanged {
     return Intl.message(
