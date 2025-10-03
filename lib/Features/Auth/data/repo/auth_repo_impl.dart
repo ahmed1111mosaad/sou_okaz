@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:sou_okaz/Features/Auth/data/models/user_model.dart';
@@ -70,7 +69,7 @@ class AuthRepoImpl extends AuthRepo {
 
   @override
   Future saveUserData({required UserEntity userEntity}) async {
-    var data = jsonEncode(UserModel.fromEntity(userEntity).toJson());
+    String data = jsonEncode(UserModel.fromEntity(userEntity).toJson());
     await SharedPreferencesSingleton.setString(Keys.kSaveData, data);
   }
 }

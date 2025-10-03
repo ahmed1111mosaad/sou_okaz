@@ -42,7 +42,7 @@ class SouOkaz extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        locale: Locale('ar'),
+        locale: Locale('en'),
         localizationsDelegates: [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
@@ -50,7 +50,7 @@ class SouOkaz extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.delegate.supportedLocales,
-        theme: darkMode,
+        theme: lightMode,
         // locale: DevicePreview.locale(context),
         builder: DevicePreview.appBuilder,
         debugShowCheckedModeBanner: false,

@@ -14,7 +14,7 @@ AppBar appBarArrowBack(BuildContext context, {bool isLogin = false}) {
       padding: EdgeInsets.symmetric(horizontal: isArabic() ? 8.0 : 0.0),
       child: IconButton(
         padding: EdgeInsets.all(12.0),
-        constraints: BoxConstraints(minHeight: 45, minWidth: 45),
+        constraints: BoxConstraints(minHeight: 40, minWidth: 40),
         style: IconButton.styleFrom(
           backgroundColor: Theme.of(context).colorScheme.secondary,
           shape: CircleBorder(),

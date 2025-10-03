@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:sou_okaz/core/Firebase/firestore/data_service.dart';
-import 'package:sou_okaz/core/utils/collection_names.dart';
 
 class FirestoreService implements DataService {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
@@ -37,5 +36,4 @@ class FirestoreService implements DataService {
       return querySnapshot.docs.map((doc) => doc.data()).toList();
     }
   }
-  
 }
