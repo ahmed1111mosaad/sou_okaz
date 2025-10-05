@@ -108,10 +108,10 @@ class AuthRepoImpl extends AuthRepo {
     try {
       User user = await firebaseAuthService.signInWithGoogle();
       return right(UserModel.fromFirebase(user));
-    } on FirebaseAuthException catch (e) {
-      return left(FirebaseAuthFailure.fromFirebaseFailure(e));
+    } on Exception catch (e) {
+      return left(GoogleSignInFailure.fromException(e));
     } catch (e) {
-      return left(FirebaseAuthFailure(e.toString()));
+      return left(GoogleSignInFailure(e.toString()));
     }
   }
 }

@@ -28,6 +28,8 @@
   "signInValidator1": "Mindestens 8 Zeichen",
   "signInValidator2": "Muss mindestens einen Großbuchstaben, einen Kleinbuchstaben, ein Symbol und eine Zahl enthalten",
   "signInValidatorEmpty": "Bitte füllen Sie das erforderliche Feld aus",
+  "FailureSignInWithGoogle": "Anmeldung abgebrochen",
+  "FailureSignInWithGoogleErrorOccured": "Bei der Anmeldung ist ein Fehler aufgetreten",
   "signInValidatorValidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
 
 

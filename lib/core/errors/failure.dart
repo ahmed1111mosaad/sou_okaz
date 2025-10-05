@@ -35,9 +35,9 @@ class GoogleSignInFailure extends Failure {
 
   factory GoogleSignInFailure.fromException(Exception e) {
     if (e.toString().contains('Sign in aborted')) {
-      return GoogleSignInFailure('Sign In has been canceled');
+      return GoogleSignInFailure(S.current.FailureSignInWithGoogle);
     } else {
-      return GoogleSignInFailure('some thing went wrong while sign in');
+      return GoogleSignInFailure(S.current.FailureSignInWithGoogleErrorOccured);
     }
   }
 }

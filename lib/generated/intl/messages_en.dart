@@ -22,6 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "FailureSignInWithGoogle": MessageLookupByLibrary.simpleMessage(
+      "Sign-in cancelled",
+    ),
+    "FailureSignInWithGoogleErrorOccured": MessageLookupByLibrary.simpleMessage(
+      "An error occurred during sign-in",
+    ),
     "SuccessSignIn": MessageLookupByLibrary.simpleMessage(
       "You have signed in successfully",
     ),

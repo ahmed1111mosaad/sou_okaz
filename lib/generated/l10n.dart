@@ -339,6 +339,26 @@ class S {
     );
   }
 
+  /// `Sign-in cancelled`
+  String get FailureSignInWithGoogle {
+    return Intl.message(
+      'Sign-in cancelled',
+      name: 'FailureSignInWithGoogle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An error occurred during sign-in`
+  String get FailureSignInWithGoogleErrorOccured {
+    return Intl.message(
+      'An error occurred during sign-in',
+      name: 'FailureSignInWithGoogleErrorOccured',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Email or password is incorrect.`
   String get invalidEmailOrPassword {
     return Intl.message(

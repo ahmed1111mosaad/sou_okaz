@@ -30,6 +30,8 @@
   "signInValidatorEmpty": "Please enter the required field",
   "signInValidatorValidEmail": "Please enter an valid email",
   "SuccessSignIn":"You have signed in successfully",
+  "FailureSignInWithGoogle":"Sign-in cancelled",
+  "FailureSignInWithGoogleErrorOccured":"An error occurred during sign-in",
   "invalidEmailOrPassword": "Email or password is incorrect.",
 
 

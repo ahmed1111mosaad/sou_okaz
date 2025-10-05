@@ -30,6 +30,8 @@
   "signInValidatorEmpty": "من فضلك أدخل الحقل المطلوب",
   "signInValidatorValidEmail": "من فضلك أدخل بريدًا إلكترونيًا صالحًا",
   "SuccessSignIn_ar": "لقد قمت بتسجيل الدخول بنجاح",
+  "FailureSignInWithGoogle": "تم إلغاء تسجيل الدخول",
+  "FailureSignInWithGoogleErrorOccured": "حدث خطأ أثناء تسجيل الدخول",
   "invalidEmailOrPassword": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
 
 
