@@ -36,28 +36,28 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
                   TextSpan(
                     text: S.of(context).termsAndCondition1,
                     style: AppTextStyles.regular14.copyWith(
-                      fontSize: responsiveFontSize(context, 0, 0.045),
+                      fontSize: responsiveFontSize(context, 0, 0.035),
                     ),
                   ),
                   TextSpan(
                     text: S.of(context).termsAndCondition2,
                     style: AppTextStyles.regular16.copyWith(
                       decoration: TextDecoration.underline,
-                      fontSize: responsiveFontSize(context, 0, 0.05),
+                      fontSize: responsiveFontSize(context, 0, 0.037),
                     ),
                     recognizer: TapGestureRecognizer()..onTap = () {},
                   ),
                   TextSpan(
                     text: S.of(context).termsAndCondition3,
                     style: AppTextStyles.regular14.copyWith(
-                      fontSize: responsiveFontSize(context, 0, 0.045),
+                      fontSize: responsiveFontSize(context, 0, 0.035),
                     ),
                   ),
                   TextSpan(
                     text: S.of(context).termsAndCondition4,
                     style: AppTextStyles.regular16.copyWith(
                       decoration: TextDecoration.underline,
-                      fontSize: responsiveFontSize(context, 0, 0.05),
+                      fontSize: responsiveFontSize(context, 0, 0.037),
                     ),
                     recognizer: TapGestureRecognizer()..onTap = () {},
                   ),

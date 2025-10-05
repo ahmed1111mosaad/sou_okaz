@@ -79,7 +79,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                     child: Text(
                       S.of(context).signUpFullName,
                       style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                          fontSize: responsiveFontSize(context, 0, 0.045),
+                        fontSize: responsiveFontSize(context, 0, 0.045),
                       ),
                     ),
                   ),

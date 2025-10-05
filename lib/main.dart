@@ -25,7 +25,7 @@ void main() async {
 
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
       builder: (BuildContext context) {
         return const SouOkaz();
       },
@@ -53,7 +53,7 @@ class SouOkaz extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.delegate.supportedLocales,
-        theme: lightMode,
+        theme: darkMode,
 
         builder: (context, child) {
           return AnnotatedRegion<SystemUiOverlayStyle>(
@@ -64,7 +64,7 @@ class SouOkaz extends StatelessWidget {
           );
         },
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.splash,
+        initialRoute: Routes.onboarding,
         routes: routes(),
       ),
     );

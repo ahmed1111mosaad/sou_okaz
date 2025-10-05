@@ -28,86 +28,89 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
         padding: EdgeInsets.symmetric(
           horizontal: responsivePaddingWithWidth(context, 0.05),
         ),
-        child: Padding(
-          padding: EdgeInsets.only(
-            bottom: MediaQuery.of(context).viewInsets.bottom,
-          ),
-          child: Form(
-            key: formKey,
-            child: Column(
-              children: [
-                CustomArrowBackAppBar(),
-                SizedBox(height: responsiveFontSize(context, 0.04, 0)),
-                Center(
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      S.of(context).forgotPasswordTitle,
-                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                        fontSize: responsiveFontSize(context, 0, 0.066),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context).viewInsets.bottom,
+            ),
+            child: Form(
+              key: formKey,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  CustomArrowBackAppBar(),
+                  SizedBox(height: responsiveFontSize(context, 0.04, 0)),
+                  Center(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        S.of(context).forgotPasswordTitle,
+                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                          fontSize: responsiveFontSize(context, 0, 0.066),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                SizedBox(height: 5),
-                Center(
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      S.of(context).forgotPasswordSubtitle,
-                      style: AppTextStyles.regular16.copyWith(
-                        fontSize:  responsiveFontSize(context, 0,0.041),
+                  SizedBox(height: 5),
+                  Center(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        S.of(context).forgotPasswordSubtitle,
+                        style: AppTextStyles.regular16.copyWith(
+                          fontSize:  responsiveFontSize(context, 0,0.041),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                Center(
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      S.of(context).forgotPasswordSubtitle1,
-                      style: AppTextStyles.regular16.copyWith(
-                        fontSize:  responsiveFontSize(context, 0,0.041),
+                  Center(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        S.of(context).forgotPasswordSubtitle1,
+                        style: AppTextStyles.regular16.copyWith(
+                          fontSize:  responsiveFontSize(context, 0,0.041),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                SizedBox(height: MediaQuery.of(context).size.height * .05),
-                Align(
-                  alignment: isArabic()
-                      ? Alignment.centerRight
-                      : Alignment.centerLeft,
-                  child: Text(
-                    S.of(context).signUpPhoneNumber,
-                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                      fontSize:  responsiveFontSize(context, 0,0.04),
+                  SizedBox(height: MediaQuery.of(context).size.height * .05),
+                  Align(
+                    alignment: isArabic()
+                        ? Alignment.centerRight
+                        : Alignment.centerLeft,
+                    child: Text(
+                      S.of(context).signUpPhoneNumber,
+                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                        fontSize:  responsiveFontSize(context, 0,0.04),
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(height: 6),
-                CustomPhoneNumber(
-                  onChanged: (phone) {
-                    setState(() {
-                      phoneNumber = phone;
-                    });
-                  },
-                ),
-                SizedBox(height: MediaQuery.of(context).size.height * .015),
-                CustomElevatedButton(
-                  title: S.of(context).forgotPasswordContinue,
-                  onPressed: () {
-                    if (formKey.currentState!.validate()) {
-                      formKey.currentState!.save();
-                      navigatorWithSlideAnimation(
-                        context,
-                        EnterVerificationCode(phoneNumber: phoneNumber!),
-                        Offset(1, 0),
-                      );
-                    }
-                  },
-                ),
-                Spacer(),
-              ],
+                  SizedBox(height: 6),
+                  CustomPhoneNumber(
+                    onChanged: (phone) {
+                      setState(() {
+                        phoneNumber = phone;
+                      });
+                    },
+                  ),
+                  SizedBox(height: MediaQuery.of(context).size.height * .015),
+                  CustomElevatedButton(
+                    title: S.of(context).forgotPasswordContinue,
+                    onPressed: () {
+                      if (formKey.currentState!.validate()) {
+                        formKey.currentState!.save();
+                        navigatorWithSlideAnimation(
+                          context,
+                          EnterVerificationCode(phoneNumber: phoneNumber!),
+                          Offset(1, 0),
+                        );
+                      }
+                    },
+                  ),
+                  
+                ],
+              ),
             ),
           ),
         ),
