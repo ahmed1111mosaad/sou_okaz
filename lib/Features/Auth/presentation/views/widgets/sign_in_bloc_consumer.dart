@@ -23,6 +23,7 @@ class SignInBlocConsumer extends StatelessWidget {
         }
         if (state is FailureSignInState) {
           showFailure(context, title: state.errMessage, description: '');
+          print(state.errMessage);
         }
       },
       builder: (context, state) {

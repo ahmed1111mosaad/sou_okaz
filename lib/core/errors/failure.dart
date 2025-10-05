@@ -29,3 +29,15 @@ class FirebaseAuthFailure extends Failure {
     }
   }
 }
+
+class GoogleSignInFailure extends Failure {
+  GoogleSignInFailure(super.message);
+
+  factory GoogleSignInFailure.fromException(Exception e) {
+    if (e.toString().contains('Sign in aborted')) {
+      return GoogleSignInFailure('Sign In has been canceled');
+    } else {
+      return GoogleSignInFailure('some thing went wrong while sign in');
+    }
+  }
+}

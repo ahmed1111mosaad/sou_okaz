@@ -23,29 +23,20 @@ class FirebaseAuthService {
   }
 
   Future<User> signInWithGoogle() async {
-    // 1- إنشاء instance
-    final signIn = GoogleSignIn.instance;
+    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
-    // 2- تهيئة GoogleSignIn (مهم في v7.1.1)
-    await signIn.initialize(
-      serverClientId:
-          // من Google Cloud Console
-          "926725447107-d9ecjp4v4v65e7g7d9ve4vlrsg48g6lg.apps.googleusercontent.com",
-    );
+    if (googleUser == null) {
+      throw Exception('Sign in aborted');
+    }
 
-    // 3- بدء تسجيل الدخول
-    final googleUser = await signIn.authenticate();
+    final GoogleSignInAuthentication googleAuth =
+        await googleUser.authentication;
 
-    // 4- الحصول على بيانات التوكن
-    final googleAuth = googleUser.authentication;
-
-    // 5- إنشاء Credential من Firebase
     final credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth.accessToken,
       idToken: googleAuth.idToken,
-      accessToken: googleAuth.idToken,
     );
 
-    // 6- تسجيل الدخول في Firebase
     final userCredential = await FirebaseAuth.instance.signInWithCredential(
       credential,
     );
