@@ -114,7 +114,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "filtersUnisex": MessageLookupByLibrary.simpleMessage("Unisex"),
     "filtersWomen": MessageLookupByLibrary.simpleMessage("Women"),
     "firstPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Smart, Gorgeous & Fashionable Collection",
+      "Smart, Gorgeous & Fashionable",
+    ),
+    "firstPageOnboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "Collection",
     ),
     "firstPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
       "Start Journey ",
@@ -205,7 +208,10 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "searchTitle": MessageLookupByLibrary.simpleMessage("Search Your Shoes"),
     "secondPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "There Are Many Beautiful And Attractive products To Your Room",
+      "There Are Many Beautiful And",
+    ),
+    "secondPageOnboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "Attractive products To Your Room",
     ),
     "secondPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
       "Follow Latest",
@@ -311,7 +317,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "textButtonGetStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
     "textButtonNext": MessageLookupByLibrary.simpleMessage("Next"),
     "thirdPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Experience comfort and style with Nike\'s latest summer designs",
+      "Experience comfort and style with",
+    ),
+    "thirdPageOnboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      " Nike\'s latest summer designs",
     ),
     "thirdPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
       "Summer Shoes",

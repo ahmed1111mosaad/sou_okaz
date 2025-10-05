@@ -12,8 +12,8 @@ class SmallRightPoint extends StatelessWidget {
       top: MediaQuery.of(context).size.height * 0.5,
       right: MediaQuery.of(context).size.width * 0.1,
       child: Container(
-        width: 14,
-        height: 14,
+        width: 11,
+        height: 11,
         decoration: BoxDecoration(
           color: AppColors.primaryColor,
           borderRadius: BorderRadius.circular(200),

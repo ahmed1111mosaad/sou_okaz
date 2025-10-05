@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl_phone_field/country_picker_dialog.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:intl_phone_field/phone_number.dart';
+import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 import 'package:sou_okaz/main.dart';
 
 class CustomPhoneNumber extends StatelessWidget {
@@ -24,27 +25,36 @@ class CustomPhoneNumber extends StatelessWidget {
         ),
       ),
       child: IntlPhoneField(
+        flagsButtonMargin: EdgeInsets.all(
+          responsiveFontSize(context, 0.016, 0),
+        ),
         searchFieldTextStyle: TextStyle(
           color: Theme.of(context).colorScheme.onSurface,
+          fontSize: responsiveFontSize(context, 0, 0.047),
         ),
         flagsButtonPadding: EdgeInsets.only(right: isArabic() ? 8.0 : 0.0),
+
         validator: validator,
         onChanged: onChanged,
         textAlign: isArabic() ? TextAlign.right : TextAlign.left,
         cursorColor: Colors.blue,
         cursorHeight: 24,
         dropdownIconPosition: IconPosition.trailing,
-        dropdownIcon: Icon(Icons.expand_more),
+        dropdownIcon: Icon(
+          Icons.expand_more,
+          size: responsiveFontSize(context, 0, 0.05),
+        ),
+        
         pickerDialogStyle: PickerDialogStyle(
           searchFieldTextStyle: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
-            fontSize: 18,
+            fontSize: responsiveFontSize(context, 0, 0.05),
           ),
+          
           searchFieldCursorColor: Colors.blue,
           countryNameStyle: TextStyle(
-            fontSize: 17,
+            fontSize: responsiveFontSize(context, 0, 0.04),
             fontWeight: FontWeight.w500,
-            //  color: Colors.orange,
             color: Theme.of(context).colorScheme.surfaceBright,
           ),
           listTileDivider: SizedBox(),
@@ -57,32 +67,45 @@ class CustomPhoneNumber extends StatelessWidget {
                 width: 2,
               ),
             ),
+            errorStyle: TextStyle(
+              fontSize: responsiveFontSize(context, 0, 0.031),
+            ),
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: Colors.grey, width: 2),
             ),
             labelText: 'Search Country',
-            prefixIcon: Icon(FontAwesomeIcons.magnifyingGlass),
+            prefixIcon: Icon(
+              FontAwesomeIcons.magnifyingGlass,
+              size: responsiveFontSize(context, 0, 0.07),
+            ),
             prefixIconColor: Colors.grey,
-            labelStyle: TextStyle(color: Colors.grey, fontSize: 16),
+            labelStyle: TextStyle(
+              color: Colors.grey,
+              fontSize: responsiveFontSize(context, 0, 0.04),
+            ),
           ),
           countryCodeStyle: TextStyle(
             color: Theme.of(context).colorScheme.surfaceContainer,
-            fontSize: 13,
+            fontSize: responsiveFontSize(context, 0, 0.04),
           ),
         ),
 
         dropdownDecoration: BoxDecoration(
+          color: Colors.red,
           borderRadius: BorderRadius.circular(50.0),
           shape: BoxShape.circle,
         ),
         initialCountryCode: 'EG',
         dropdownTextStyle: TextStyle(
-          fontSize: 16,
+          fontSize: responsiveFontSize(context, 0, 0.05),
           fontWeight: FontWeight.w400,
           color: Colors.grey,
         ),
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.symmetric(vertical: 16.0),
+          contentPadding: EdgeInsets.symmetric(
+            vertical: responsiveFontSize(context, 0.0019, 0),
+            horizontal: 8
+          ),
           filled: true,
           fillColor: Theme.of(context).colorScheme.secondary,
           enabledBorder: OutlineInputBorder(
@@ -110,7 +133,7 @@ class CustomPhoneNumber extends StatelessWidget {
 
           errorStyle: TextStyle(
             color: Theme.of(context).colorScheme.error,
-            fontSize: 13,
+            fontSize: responsiveFontSize(context, 0, 0.032),
             fontWeight: FontWeight.w500,
           ),
         ),

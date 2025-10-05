@@ -75,7 +75,9 @@ class AuthRepoImpl extends AuthRepo {
     await SharedPreferencesSingleton.setString(userEntity.uId, data);
   }
 
-  static UserEntity getUserDataLocallyFromSharedPreferences({required String key}) {
+  static UserEntity getUserDataLocallyFromSharedPreferences({
+    required String key,
+  }) {
     var data = SharedPreferencesSingleton.getString(key);
     return UserModel.fromJson(json: jsonDecode(data));
   }
@@ -94,6 +96,18 @@ class AuthRepoImpl extends AuthRepo {
       UserEntity userEntity = await getUserData(uId: user.uid);
       await saveUserData(userEntity: userEntity);
       return right(userEntity);
+    } on FirebaseAuthException catch (e) {
+      return left(FirebaseAuthFailure.fromFirebaseFailure(e));
+    } catch (e) {
+      return left(FirebaseAuthFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, UserEntity>> signInWithGoogle() async {
+    try {
+      User user = await firebaseAuthService.signInWithGoogle();
+      return right(UserModel.fromFirebase(user));
     } on FirebaseAuthException catch (e) {
       return left(FirebaseAuthFailure.fromFirebaseFailure(e));
     } catch (e) {

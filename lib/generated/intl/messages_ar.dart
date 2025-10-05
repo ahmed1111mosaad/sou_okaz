@@ -109,10 +109,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "filtersUnisex": MessageLookupByLibrary.simpleMessage("للجنسين"),
     "filtersWomen": MessageLookupByLibrary.simpleMessage("نساء"),
     "firstPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "مجموعة ذكية، رائعة وعصرية",
+      "ذكي، رائع وأنيق",
+    ),
+    "firstPageOnboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "المجموعة",
     ),
     "firstPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
-      "ابدأ رحلتك",
+      "ابدأ الرحلة",
     ),
     "firstPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "مع نايك",
@@ -197,13 +200,16 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "searchTitle": MessageLookupByLibrary.simpleMessage("ابحث عن حذائك"),
     "secondPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "هناك العديد من المنتجات الجميلة والجذابة لغرفتك",
+      "هناك العديد من المنتجات الجميلة و",
+    ),
+    "secondPageOnboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "الجذابة لغرفتك",
     ),
     "secondPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
       "تابع أحدث",
     ),
     "secondPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
-      "أنماط الأحذية",
+      "أحذية الموضة",
     ),
     "signInButton": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "signInEmail": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
@@ -289,7 +295,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "textButtonGetStarted": MessageLookupByLibrary.simpleMessage("ابدأ"),
     "textButtonNext": MessageLookupByLibrary.simpleMessage("التالي"),
     "thirdPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "اختبر الراحة والأناقة مع أحدث تصميمات نايك الصيفية",
+      "اختبر الراحة والأناقة مع",
+    ),
+    "thirdPageOnboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "تصاميم نايك الصيفية الأخيرة",
     ),
     "thirdPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
       "أحذية الصيف",

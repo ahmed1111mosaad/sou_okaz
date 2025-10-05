@@ -10,8 +10,8 @@ class WidePoint extends StatelessWidget {
       top: MediaQuery.of(context).size.height * 0.2,
       left: MediaQuery.of(context).size.width * 0.15,
       child: Container(
-        width: 16,
-        height: 16,
+        width: 13,
+        height: 13,
         decoration: BoxDecoration(
           color: AppColors.lightPrimaryColor,
           borderRadius: BorderRadius.circular(200),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sou_okaz/core/helpers/functions/responsive.dart';
+import 'package:sou_okaz/core/theme/theme_data.dart';
 
 class CustomTextFormField extends StatefulWidget {
   CustomTextFormField({
@@ -9,12 +11,14 @@ class CustomTextFormField extends StatefulWidget {
     this.validator,
     required this.obscureText,
     this.keyboardType,
+    this.controller,
   });
   final bool isPassword;
   final Function(String)? onChanged;
   bool obscureText;
   final String? Function(String?)? validator;
   final TextInputType? keyboardType;
+  final TextEditingController? controller;
 
   @override
   State<CustomTextFormField> createState() => _CustomTextFormFieldState();
@@ -24,6 +28,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: widget.controller,
       keyboardType: widget.keyboardType,
       validator: widget.validator,
       onChanged: widget.onChanged,
@@ -32,16 +37,17 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       cursorHeight: 24,
       style: TextStyle(
         color: Theme.of(context).colorScheme.onSurface,
-        fontSize: 16,
+        // color: Color(0xFF1E3A8A),
+        // color: Color(0xFF311B92),
+        fontSize: responsiveFontSize(context, 0, 0.046),
         fontFamily: 'Airbnb Cereal App',
         fontWeight: FontWeight.w400,
         height: 1.14,
       ),
       decoration: InputDecoration(
         errorStyle: TextStyle(
-          // color: Colors.red,
           color: Theme.of(context).colorScheme.error,
-          fontSize: 13.0,
+          fontSize: responsiveFontSize(context, 0, 0.031),
         ),
         filled: true,
         fillColor: Theme.of(context).colorScheme.secondary,

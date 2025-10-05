@@ -13,12 +13,18 @@ class Nike extends StatelessWidget {
       top: MediaQuery.of(context).size.height / 4,
       left: 0.0,
       right: 0.0,
-      child: SvgPicture.asset(
-        Assets.assetsImagesNIKE,
-        colorFilter: ColorFilter.mode(
-          Theme.of(context).primaryIconTheme.color!, // your color
-          BlendMode
-              .srcIn, // tells Flutter to paint the SVG with this color),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 32.0),
+        child: SizedBox(
+          height: MediaQuery.of(context).size.height /5,
+          child: SvgPicture.asset(
+            Assets.assetsImagesNIKE,
+            colorFilter: ColorFilter.mode(
+              Theme.of(context).primaryIconTheme.color!, // your color
+              BlendMode
+                  .srcIn, // tells Flutter to paint the SVG with this color),
+            ),
+          ),
         ),
       ),
     );

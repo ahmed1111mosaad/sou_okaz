@@ -7,10 +7,13 @@ class OnboardingImageShoes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: MediaQuery.of(context).size.height / 5.6,
+      top: MediaQuery.of(context).size.width * .3,
       left: 25,
-      right: 0.0,
-      child: Image.asset(image),
+      right: 25.0,
+      child: SizedBox(
+        height: MediaQuery.of(context).size.height * .6,  
+        child: Image.asset(image),
+      ),
     );
   }
 }

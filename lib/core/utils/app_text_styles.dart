@@ -30,7 +30,7 @@ abstract class AppTextStyles {
   static const TextStyle medium28 = TextStyle(
     color: Color(0xFF1A242F),
     fontSize: 28,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.bold
   );
   static const TextStyle regular16 = TextStyle(
     color: Color(0xFF707B81),

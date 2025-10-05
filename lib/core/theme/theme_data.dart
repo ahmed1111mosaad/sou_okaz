@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 
 ThemeData lightMode = ThemeData(
   brightness: Brightness.light,
+  appBarTheme: AppBarTheme(
+    systemOverlayStyle: SystemUiOverlayStyle.dark,
+  ),
   colorScheme: ColorScheme.light(
     surface: Color(0xFFF5F5F5),
     onSurface: Colors.black,
@@ -31,6 +35,9 @@ ThemeData lightMode = ThemeData(
 
 // ToDO DarkMode
 ThemeData darkMode = ThemeData(
+  appBarTheme: AppBarTheme(
+    systemOverlayStyle: SystemUiOverlayStyle.dark,
+  ),
   brightness: Brightness.dark,
   colorScheme: ColorScheme.dark(
     surface: Color(0xFF1a2530),

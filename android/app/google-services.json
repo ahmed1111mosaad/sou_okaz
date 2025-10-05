@@ -12,7 +12,20 @@
           "package_name": "com.example.sou_okaz"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "926725447107-d9ecjp4v4v65e7g7d9ve4vlrsg48g6lg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sou_okaz",
+            "certificate_hash": "f93e6d6503d0bbaa62b6e77b1bb7d8239ec52fad"
+          }
+        },
+        {
+          "client_id": "926725447107-jgo8726t2vo8i978betmf8071lgbs20q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBqlhqzdFB9cXyCUMyl7Ixioes2GO1541M"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926725447107-jgo8726t2vo8i978betmf8071lgbs20q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "926725447107-foaljpfsudmvsa4kb3jmc0gkl92fmg1i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.souOkaz"
+              }
+            }
+          ]
         }
       }
     }

@@ -74,11 +74,21 @@ class S {
     );
   }
 
-  /// `Smart, Gorgeous & Fashionable Collection`
+  /// `Smart, Gorgeous & Fashionable`
   String get firstPageOnboardingSubtitle {
     return Intl.message(
-      'Smart, Gorgeous & Fashionable Collection',
+      'Smart, Gorgeous & Fashionable',
       name: 'firstPageOnboardingSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Collection`
+  String get firstPageOnboardingSubtitle1 {
+    return Intl.message(
+      'Collection',
+      name: 'firstPageOnboardingSubtitle1',
       desc: '',
       args: [],
     );
@@ -104,11 +114,21 @@ class S {
     );
   }
 
-  /// `There Are Many Beautiful And Attractive products To Your Room`
+  /// `There Are Many Beautiful And`
   String get secondPageOnboardingSubtitle {
     return Intl.message(
-      'There Are Many Beautiful And Attractive products To Your Room',
+      'There Are Many Beautiful And',
       name: 'secondPageOnboardingSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Attractive products To Your Room`
+  String get secondPageOnboardingSubtitle1 {
+    return Intl.message(
+      'Attractive products To Your Room',
+      name: 'secondPageOnboardingSubtitle1',
       desc: '',
       args: [],
     );
@@ -134,11 +154,21 @@ class S {
     );
   }
 
-  /// `Experience comfort and style with Nike's latest summer designs`
+  /// `Experience comfort and style with`
   String get thirdPageOnboardingSubtitle {
     return Intl.message(
-      'Experience comfort and style with Nike\'s latest summer designs',
+      'Experience comfort and style with',
       name: 'thirdPageOnboardingSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Nike's latest summer designs`
+  String get thirdPageOnboardingSubtitle1 {
+    return Intl.message(
+      ' Nike\'s latest summer designs',
+      name: 'thirdPageOnboardingSubtitle1',
       desc: '',
       args: [],
     );

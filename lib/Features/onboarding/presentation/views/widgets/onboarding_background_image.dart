@@ -18,9 +18,12 @@ class OnboardingBackgroundImage extends StatelessWidget {
         children: [
           Positioned(
             right: 0.0,
-            child: Image.asset(
-              Assets.assetsImagesEllipse,
-              color: Theme.of(context).iconTheme.color,
+            child: SizedBox(
+              height: MediaQuery.of(context).size.height * .23,
+              child: Image.asset(
+                Assets.assetsImagesEllipse,
+                color: Theme.of(context).iconTheme.color,
+              ),
             ),
           ),
           WidePoint(),

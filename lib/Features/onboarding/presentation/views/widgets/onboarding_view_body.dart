@@ -45,8 +45,9 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
         ),
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+            padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.05),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
@@ -73,7 +74,7 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
                     Spacer(),
                     SizedBox(
                       width: MediaQuery.of(context).size.width * .42,
-                      height: 55,
+                      height: MediaQuery.of(context).size.height * .06,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColors.primaryColor,
@@ -100,7 +101,9 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
                           currentPage == 0 || currentPage == 1
                               ? S.of(context).textButtonNext
                               : S.of(context).textButtonGetStarted,
-                          style: AppTextStyles.medium18,
+                          style: AppTextStyles.medium18.copyWith(
+                            fontSize: MediaQuery.of(context).size.width * .042,
+                          ),
                         ),
                       ),
                     ),

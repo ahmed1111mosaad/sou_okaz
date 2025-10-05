@@ -121,13 +121,16 @@ class MessageLookup extends MessageLookupByLibrary {
     "filtersUnisex": MessageLookupByLibrary.simpleMessage("Unisex"),
     "filtersWomen": MessageLookupByLibrary.simpleMessage("Frauen"),
     "firstPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Intelligente, wunderschöne & modische Kollektion",
+      "Intelligent, Schön & Modisch",
+    ),
+    "firstPageOnboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "Kollektion",
     ),
     "firstPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
-      "Reise beginnen",
+      "Starte die Reise",
     ),
     "firstPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
-      "mit Nike",
+      "Mit Nike",
     ),
     "forgotPasswordContinue": MessageLookupByLibrary.simpleMessage("Weiter"),
     "forgotPasswordPhoneNumber": MessageLookupByLibrary.simpleMessage(
@@ -217,13 +220,16 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "searchTitle": MessageLookupByLibrary.simpleMessage("Suche deine Schuhe"),
     "secondPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Es gibt viele schöne und attraktive Pflanzen für dein Zimmer",
+      "Es gibt viele schöne und",
+    ),
+    "secondPageOnboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "Attraktive Produkte für dein Zimmer",
     ),
     "secondPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
-      "Folge dem neuesten",
+      "Folge den neuesten",
     ),
     "secondPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
-      "Schuhstil",
+      "Stylischen Schuhen",
     ),
     "signInButton": MessageLookupByLibrary.simpleMessage("Anmelden"),
     "signInEmail": MessageLookupByLibrary.simpleMessage("E-Mail-Adresse"),
@@ -319,10 +325,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "textButtonGetStarted": MessageLookupByLibrary.simpleMessage("Loslegen"),
     "textButtonNext": MessageLookupByLibrary.simpleMessage("Weiter"),
     "thirdPageOnboardingSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Erlebe Komfort und Stil mit Nikes neuesten Sommerdesigns",
+      "Erlebe Komfort und Stil mit",
+    ),
+    "thirdPageOnboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "Nikes neuesten Sommerdesigns",
     ),
     "thirdPageOnboardingTitle": MessageLookupByLibrary.simpleMessage(
-      "Sommerschuhe",
+      "Sommer-Schuhe",
     ),
     "thirdPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "Nike 2025",

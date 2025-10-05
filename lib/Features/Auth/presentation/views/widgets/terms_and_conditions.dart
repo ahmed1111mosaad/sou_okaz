@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/check_mark.dart';
+import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
 
@@ -34,25 +35,29 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
                 children: [
                   TextSpan(
                     text: S.of(context).termsAndCondition1,
-                    style: AppTextStyles.regular14,
+                    style: AppTextStyles.regular14.copyWith(
+                      fontSize: responsiveFontSize(context, 0, 0.045),
+                    ),
                   ),
                   TextSpan(
                     text: S.of(context).termsAndCondition2,
                     style: AppTextStyles.regular16.copyWith(
                       decoration: TextDecoration.underline,
-                      fontSize: 15,
+                      fontSize: responsiveFontSize(context, 0, 0.05),
                     ),
                     recognizer: TapGestureRecognizer()..onTap = () {},
                   ),
                   TextSpan(
                     text: S.of(context).termsAndCondition3,
-                    style: AppTextStyles.regular14,
+                    style: AppTextStyles.regular14.copyWith(
+                      fontSize: responsiveFontSize(context, 0, 0.045),
+                    ),
                   ),
                   TextSpan(
                     text: S.of(context).termsAndCondition4,
                     style: AppTextStyles.regular16.copyWith(
                       decoration: TextDecoration.underline,
-                      fontSize: 15,
+                      fontSize: responsiveFontSize(context, 0, 0.05),
                     ),
                     recognizer: TapGestureRecognizer()..onTap = () {},
                   ),

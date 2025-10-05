@@ -16,13 +16,23 @@ class OnboardingPageView extends StatelessWidget {
       children: [
         Column(
           children: [
-            OnboardingBackgroundImage(image: Assets.assetsImagesGreenShoes),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24.0),
-              child: OnboardingItemText(
-                title: S.of(context).firstPageOnboardingTitle,
-                title1: S.of(context).firstPageOnboardingTitle1,
-                subTitle: S.of(context).firstPageOnboardingSubtitle,
+            Expanded(
+              flex: 2,
+              child: OnboardingBackgroundImage(
+                image: Assets.assetsImagesGreenShoes,
+              ),
+            ),
+            Expanded(
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width * 0.05,
+                ),
+                child: OnboardingItemText(
+                  title: S.of(context).firstPageOnboardingTitle,
+                  title1: S.of(context).firstPageOnboardingTitle1,
+                  subTitle: S.of(context).firstPageOnboardingSubtitle,
+                  subTitle1: S.current.firstPageOnboardingSubtitle1,
+                ),
               ),
             ),
           ],
@@ -33,11 +43,14 @@ class OnboardingPageView extends StatelessWidget {
               image: Assets.assetsImagesOnboardingRedShoes,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              padding: EdgeInsets.symmetric(
+                horizontal: MediaQuery.of(context).size.width * 0.05,
+              ),
               child: OnboardingItemText(
                 title: S.of(context).secondPageOnboardingTitle,
                 title1: S.of(context).secondPageOnboardingTitle1,
                 subTitle: S.of(context).secondPageOnboardingSubtitle,
+                subTitle1: S.current.secondPageOnboardingSubtitle1,
               ),
             ),
           ],
@@ -48,11 +61,14 @@ class OnboardingPageView extends StatelessWidget {
               image: Assets.assetsImagesOrangeOboardingShoes,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              padding: EdgeInsets.symmetric(
+                horizontal: MediaQuery.of(context).size.width * 0.05,
+              ),
               child: OnboardingItemText(
                 title: S.of(context).thirdPageOnboardingTitle,
                 title1: S.of(context).thirdPageOnboardingTitle1,
                 subTitle: S.of(context).thirdPageOnboardingSubtitle,
+                subTitle1: S.current.thirdPageOnboardingSubtitle1,
               ),
             ),
           ],

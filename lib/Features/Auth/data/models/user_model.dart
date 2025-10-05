@@ -23,7 +23,7 @@ class UserModel extends UserEntity {
     return UserModel(
       email: user.email!,
       uId: user.uid,
-      name: user.displayName ?? "No name",
+      name: user.displayName ?? "mo salah",
       phoneNumber: user.phoneNumber ?? '',
     );
   }

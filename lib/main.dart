@@ -1,7 +1,7 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +25,7 @@ void main() async {
 
   runApp(
     DevicePreview(
-      enabled: false,
+      enabled: true,
       builder: (BuildContext context) {
         return const SouOkaz();
       },
@@ -45,6 +45,7 @@ class SouOkaz extends StatelessWidget {
       ],
       child: MaterialApp(
         locale: Locale('en'),
+
         localizationsDelegates: [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
@@ -53,8 +54,15 @@ class SouOkaz extends StatelessWidget {
         ],
         supportedLocales: S.delegate.supportedLocales,
         theme: lightMode,
-        // locale: DevicePreview.locale(context),
-        builder: DevicePreview.appBuilder,
+
+        builder: (context, child) {
+          return AnnotatedRegion<SystemUiOverlayStyle>(
+            value: Theme.of(context).brightness == Brightness.dark
+                ? SystemUiOverlayStyle.light
+                : SystemUiOverlayStyle.dark,
+            child: DevicePreview.appBuilder(context, child),
+          );
+        },
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.splash,
         routes: routes(),
