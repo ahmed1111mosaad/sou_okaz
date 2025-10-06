@@ -369,6 +369,66 @@ class S {
     );
   }
 
+  /// `This account already exists with a different credential.`
+  String get accountExistsWithDifferentCredential {
+    return Intl.message(
+      'This account already exists with a different credential.',
+      name: 'accountExistsWithDifferentCredential',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This sign-in method is not enabled.`
+  String get signInMethodNotEnabled {
+    return Intl.message(
+      'This sign-in method is not enabled.',
+      name: 'signInMethodNotEnabled',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid verification code or ID.`
+  String get invalidVerificationCode {
+    return Intl.message(
+      'Invalid verification code or ID.',
+      name: 'invalidVerificationCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This user account has been disabled.`
+  String get userDisabled {
+    return Intl.message(
+      'This user account has been disabled.',
+      name: 'userDisabled',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Failed to sign in`
+  String get failedToCreateUser {
+    return Intl.message(
+      'Failed to sign in',
+      name: 'failedToCreateUser',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign-in canceled by user.`
+  String get signInCanceled {
+    return Intl.message(
+      'Sign-in canceled by user.',
+      name: 'signInCanceled',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Create Account`
   String get signUpTitle {
     return Intl.message(
@@ -834,6 +894,46 @@ class S {
     return Intl.message(
       'Failed to create user.',
       name: 'failedCreateUser',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid email format.`
+  String get invalidEmail {
+    return Intl.message(
+      'Invalid email format.',
+      name: 'invalidEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reset link configuration is invalid.`
+  String get invalidResetLinkConfig {
+    return Intl.message(
+      'Reset link configuration is invalid.',
+      name: 'invalidResetLinkConfig',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The reset link is invalid.`
+  String get invalidResetLink {
+    return Intl.message(
+      'The reset link is invalid.',
+      name: 'invalidResetLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Unauthorized reset link access.`
+  String get unauthorizedResetLink {
+    return Intl.message(
+      'Unauthorized reset link access.',
+      name: 'unauthorizedResetLink',
       desc: '',
       args: [],
     );

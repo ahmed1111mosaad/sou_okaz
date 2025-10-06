@@ -18,7 +18,7 @@ class SignInBlocConsumer extends StatelessWidget {
     return BlocConsumer<SignInCubit, SignInStates>(
       listener: (context, state) {
         if (state is SuccessSignInState) {
-          showSuccess(context, title: S.current.SuccessSignIn, description: '');
+          showSuccess(context, title: S.of(context).SuccessSignIn, description: '');
           navigatorWithFadeAnimationPushReplacement(context, HomeScreen());
         }
         if (state is FailureSignInState) {
@@ -39,8 +39,3 @@ class SignInBlocConsumer extends StatelessWidget {
     );
   }
 }
-/*
-
-
-
-*/

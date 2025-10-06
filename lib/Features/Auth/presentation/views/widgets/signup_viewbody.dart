@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:intl_phone_field/phone_number.dart';
 import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_up_cubit/sign_up_cubit.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_phone_number.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
-import 'package:sou_okaz/Features/Auth/presentation/views/widgets/signin_view_body.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/terms_and_conditions.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 import 'package:sou_okaz/core/helpers/functions/snackbar/show_failure.dart';

@@ -28,9 +28,16 @@ class MessageLookup extends MessageLookupByLibrary {
     "FailureSignInWithGoogleErrorOccured": MessageLookupByLibrary.simpleMessage(
       "حدث خطأ أثناء تسجيل الدخول",
     ),
+    "SuccessSignIn": MessageLookupByLibrary.simpleMessage(
+      "لقد قمت بتسجيل الدخول بنجاح",
+    ),
     "SuccessSignUp": MessageLookupByLibrary.simpleMessage(
       "تم إنشاء حسابك بنجاح",
     ),
+    "accountExistsWithDifferentCredential":
+        MessageLookupByLibrary.simpleMessage(
+          "هذا الحساب بالفعل مرتبط بطريقة تسجيل دخول مختلفة.",
+        ),
     "bestSellerCategory": MessageLookupByLibrary.simpleMessage("أحذية رجالية"),
     "bestSellerTitle": MessageLookupByLibrary.simpleMessage("الأكثر مبيعًا"),
     "cartCheckout": MessageLookupByLibrary.simpleMessage("الدفع"),
@@ -103,6 +110,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "failedCreateUser": MessageLookupByLibrary.simpleMessage(
       "فشل في إنشاء المستخدم.",
     ),
+    "failedToCreateUser": MessageLookupByLibrary.simpleMessage(
+      "فشل في تسجيل الدخول",
+    ),
     "favouriteTitle": MessageLookupByLibrary.simpleMessage("المفضلة"),
     "filtersApply": MessageLookupByLibrary.simpleMessage("تطبيق"),
     "filtersGender": MessageLookupByLibrary.simpleMessage("الجنس"),
@@ -174,8 +184,20 @@ class MessageLookup extends MessageLookupByLibrary {
       "مونديليبوج، سيلهيت",
     ),
     "homeStoreLocation": MessageLookupByLibrary.simpleMessage("موقع المتجر"),
+    "invalidEmail": MessageLookupByLibrary.simpleMessage(
+      "صيغة البريد الإلكتروني غير صحيحة.",
+    ),
     "invalidEmailOrPassword": MessageLookupByLibrary.simpleMessage(
       "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+    ),
+    "invalidResetLink": MessageLookupByLibrary.simpleMessage(
+      "رابط إعادة التعيين غير صالح.",
+    ),
+    "invalidResetLinkConfig": MessageLookupByLibrary.simpleMessage(
+      "إعداد رابط إعادة التعيين غير صالح.",
+    ),
+    "invalidVerificationCode": MessageLookupByLibrary.simpleMessage(
+      "رمز أو معرف التحقق غير صالح.",
     ),
     "newPasswordButton": MessageLookupByLibrary.simpleMessage(
       "إنشاء كلمة مرور جديدة",
@@ -218,7 +240,13 @@ class MessageLookup extends MessageLookupByLibrary {
       "أحذية الموضة",
     ),
     "signInButton": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "signInCanceled": MessageLookupByLibrary.simpleMessage(
+      "تم إلغاء تسجيل الدخول من قبل المستخدم.",
+    ),
     "signInEmail": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "signInMethodNotEnabled": MessageLookupByLibrary.simpleMessage(
+      "طريقة تسجيل الدخول هذه غير مفعلة.",
+    ),
     "signInNoAccount": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
     "signInPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "signInRecoveryPassword": MessageLookupByLibrary.simpleMessage(
@@ -311,6 +339,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "thirdPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "نايك 2025",
+    ),
+    "unauthorizedResetLink": MessageLookupByLibrary.simpleMessage(
+      "وصول غير مصرح به إلى رابط إعادة التعيين.",
+    ),
+    "userDisabled": MessageLookupByLibrary.simpleMessage(
+      "تم تعطيل حساب هذا المستخدم.",
     ),
     "userNotFound": MessageLookupByLibrary.simpleMessage(
       "لم يتم العثور على مستخدم لهذا البريد الإلكتروني.",

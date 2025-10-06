@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
-import 'package:sou_okaz/core/theme/theme_data.dart';
 
 class CustomTextFormField extends StatefulWidget {
   CustomTextFormField({

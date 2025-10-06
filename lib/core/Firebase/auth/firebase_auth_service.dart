@@ -1,5 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:sou_okaz/core/errors/failure.dart';
+import 'package:sou_okaz/main.dart';
 
 class FirebaseAuthService {
   Future<User> createUserWithEmailAndPassworrd({
@@ -42,5 +45,27 @@ class FirebaseAuthService {
     );
 
     return userCredential.user!;
+  }
+
+  Future<User> signInWithFacebook() async {
+    // Trigger the sign-in flow
+    final LoginResult loginResult = await FacebookAuth.instance.login();
+    if (loginResult.status != LoginStatus.success ||
+        loginResult.accessToken == null) {
+      throw Exception('Sign-in canceled');
+    }
+
+    // Create a credential from the access token
+    final OAuthCredential facebookAuthCredential =
+        FacebookAuthProvider.credential(loginResult.accessToken!.tokenString);
+
+    // Once signed in, return the UserCredential
+    return (await FirebaseAuth.instance
+            .signInWithCredential(facebookAuthCredential))
+        .user!;
+  }
+
+  Future<void> resetpassword({required String email}) async {
+    await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
   }
 }

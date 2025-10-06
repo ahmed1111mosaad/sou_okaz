@@ -29,10 +29,16 @@
   "signInValidator2": "يجب ان يحتوى على الافل أحرف كبيرة وصغيرة ورمز ورقم واحد ",
   "signInValidatorEmpty": "من فضلك أدخل الحقل المطلوب",
   "signInValidatorValidEmail": "من فضلك أدخل بريدًا إلكترونيًا صالحًا",
-  "SuccessSignIn_ar": "لقد قمت بتسجيل الدخول بنجاح",
+  "SuccessSignIn": "لقد قمت بتسجيل الدخول بنجاح",
   "FailureSignInWithGoogle": "تم إلغاء تسجيل الدخول",
   "FailureSignInWithGoogleErrorOccured": "حدث خطأ أثناء تسجيل الدخول",
   "invalidEmailOrPassword": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+    "accountExistsWithDifferentCredential": "هذا الحساب بالفعل مرتبط بطريقة تسجيل دخول مختلفة.",
+  "signInMethodNotEnabled": "طريقة تسجيل الدخول هذه غير مفعلة.",
+  "invalidVerificationCode": "رمز أو معرف التحقق غير صالح.",
+  "userDisabled": "تم تعطيل حساب هذا المستخدم.",
+  "failedToCreateUser": "فشل في تسجيل الدخول",
+  "signInCanceled": "تم إلغاء تسجيل الدخول من قبل المستخدم.",
 
 
   "snackbarTitleSuccess": "تهانينا",
@@ -91,6 +97,11 @@
   "userNotFound": "لم يتم العثور على مستخدم لهذا البريد الإلكتروني.",
   "wrongPassword": "تم إدخال كلمة مرور غير صحيحة لهذا المستخدم.",
   "failedCreateUser": "فشل في إنشاء المستخدم.",
+  "invalidEmail": "صيغة البريد الإلكتروني غير صحيحة.",
+  "invalidResetLinkConfig": "إعداد رابط إعادة التعيين غير صالح.",
+  "invalidResetLink": "رابط إعادة التعيين غير صالح.",
+  "unauthorizedResetLink": "وصول غير مصرح به إلى رابط إعادة التعيين.",
+
 
 
   "homePasswordChanged": "تم تغيير كلمة المرور بنجاح",

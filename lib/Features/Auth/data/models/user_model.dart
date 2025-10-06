@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:intl_phone_field/phone_number.dart';
 import 'package:sou_okaz/Features/Auth/domain/entities/user_entity.dart';
 
 class UserModel extends UserEntity {

@@ -13,7 +13,6 @@
   "thirdPageOnboardingSubtitle1": " Nike's latest summer designs",
   "textButtonGetStarted": "Get Started",
   "textButtonNext": "Next",
-  
   "signInTitle": "Hello Again!",
   "signInSubtitle": "Welcome Back You,ve Been Missed!",
   "signInEmail": "Email Address",
@@ -29,13 +28,16 @@
   "signInValidator2": "Uppercase, lowercase, Symbol, letters and one number",
   "signInValidatorEmpty": "Please enter the required field",
   "signInValidatorValidEmail": "Please enter an valid email",
-  "SuccessSignIn":"You have signed in successfully",
-  "FailureSignInWithGoogle":"Sign-in cancelled",
-  "FailureSignInWithGoogleErrorOccured":"An error occurred during sign-in",
+  "SuccessSignIn": "You have signed in successfully",
+  "FailureSignInWithGoogle": "Sign-in cancelled",
+  "FailureSignInWithGoogleErrorOccured": "An error occurred during sign-in",
   "invalidEmailOrPassword": "Email or password is incorrect.",
-
-
-  
+  "accountExistsWithDifferentCredential": "This account already exists with a different credential.",
+  "signInMethodNotEnabled": "This sign-in method is not enabled.",
+  "invalidVerificationCode": "Invalid verification code or ID.",
+  "userDisabled": "This user account has been disabled.",
+  "failedToCreateUser": "Failed to sign in",
+  "signInCanceled": "Sign-in canceled by user.",
   "signUpTitle": "Create Account",
   "signUpSubtitle": "Let's create account together",
   "signUpFullName": "Full Name",
@@ -49,12 +51,11 @@
   "signUpWithApple": "Sign up with Apple",
   "signUpHaveAccount": "Already have an account?",
   "signUpSignInNow": "Sign In now",
-  "SuccessSignUp":"Your account has been created successfully",
+  "SuccessSignUp": "Your account has been created successfully",
   "termsAndCondition1": "I agree to Sou Okaz's",
   "termsAndCondition2": " Privacy Policy",
   "termsAndCondition3": " And",
   "termsAndCondition4": " Terms Of Use.",
-  
   "snackbarTitleSuccess": "Congratulations",
   "snackbarDescriptionSuccess": "You have signed up successfully",
   "snackbarTitleFailure": "Something went wrong",
@@ -64,39 +65,36 @@
   "snackbarDescriptionWarning": "Some information might be missing or incomplete",
   "snackbarTitleInfo": "Information",
   "snackbarDescriptionInfo": "This is a helpful tip for you",
-
-
-  
   "forgotPasswordTitle": "Recovery Password",
   "forgotPasswordSubtitle": "Please Enter Your Phone Number",
   "forgotPasswordSubtitle1": "To Receive a Verification Code",
   "forgotPasswordPhoneNumber": "Phone Number",
   "forgotPasswordContinue": "Continue",
-
-  
   "forgotPasswordVerificationTitle": "Enter verification code",
   "forgotPasswordVerificationSubtitle": "Enter the code we sent to the following phone number 01002275616",
   "forgotPasswordVerificationButton": "Verify Code",
   "forgotPasswordResendCode": "Resend Code",
   "hello": "Resend Code",
-
-  
   "newPasswordTitle": "New Password",
   "newPasswordSubtitle": "Please Create new password to sign in",
   "newPasswordField": "New Password",
   "newPasswordConfirmField": "Confirm New Password",
   "newPasswordButton": "Create new password",
   "passwordsDoNotMatch": "Passwords do not match",
-  "newPasswordChangedSuccessfully":"Password has been changed successfully",
-
+  "newPasswordChangedSuccessfully": "Password has been changed successfully",
   "weakPassword": "The password provided is too weak.",
   "emailAlreadyInUse": "The account already exists for that email.",
   "userNotFound": "No user found for that email.",
   "wrongPassword": "Wrong password provided for that user.",
   "failedCreateUser": "Failed to create user.",
+  "invalidEmail": "Invalid email format.",
+  "invalidResetLinkConfig": "Reset link configuration is invalid.",
+  "invalidResetLink": "The reset link is invalid.",
+  "unauthorizedResetLink": "Unauthorized reset link access.",
 
 
-  
+
+
   "homePasswordChanged": "Password has been changed successfully",
   "homeStoreLocation": "Store location",
   "homeStoreAddress": "Mondolibug, Sylhet",
@@ -112,28 +110,18 @@
   "homeNikeAirMax": "Nike Air Max",
   "homePrice493": "$493.00",
   "homeNikeAirJordan": "Nike Air Jordan",
-
-  
   "bestSellerTitle": "Best Seller",
   "bestSellerCategory": "Men's Shoes",
-
-  
   "favouriteTitle": "Favourite",
-
-  
   "searchTitle": "Search Your Shoes",
   "searchNoResults": "No Results",
   "searchSorryMessage": "Sorry… this information is not available at the moment",
   "searchShoes": "Shoes",
   "searchCancel": "Cancel",
-
-  
   "notificationsToday": "Today",
   "notificationsYesterday": "Yesterday",
   "notificationsTitle": "Notifications",
   "notificationsClearAll": "Clear All",
-
-  
   "filtersTitle": "Filters",
   "filtersGender": "Gender",
   "filtersMen": "Men",
@@ -144,22 +132,16 @@
   "filtersPrice16": "$16",
   "filtersPrice350": "$350",
   "filtersApply": "Apply",
-
-  
   "detailsCategory": "Men's Shoes",
   "detailsTitle": "Nike Air Jordan",
   "detailsPrice": "$967.800",
   "detailsDescription": "Air Jordan is an American brand of basketball shoes athletic, casual, and style clothing produced by Nike....",
   "detailsGallery": "Gallery",
   "detailsAddToCart": "Add To Cart",
-
-  
   "cartSubtotal": "Subtotal",
   "cartShopping": "Shopping",
   "cartTotalCost": "Total Cost",
   "cartCheckout": "Checkout",
-
-  
   "checkoutContactInfo": "Contact Information",
   "checkoutEmail": "Email",
   "checkoutPhone": "Phone",
@@ -168,8 +150,6 @@
   "checkoutPayment": "Payment",
   "checkoutBackToShopping": "Back To Shopping",
   "checkoutSuccess": "Your Payment Is Successful",
-
-  
   "drawerGreeting": "Hey, 👋",
   "drawerUserName": "alisson becker",
   "drawerProfile": "Profile",
@@ -180,20 +160,17 @@
   "drawerNotifications": "Notifications",
   "drawerAbout": "About",
   "drawerSignOut": "Sign Out",
-
   "drawerAccountSettings": "Account & Settings",
   "drawerAccount": "Account",
   "drawerNotificationSetting": "Notification Setting",
   "drawerShippingAddress": "Shipping Address",
   "drawerPaymentInfo": "Payment Info",
   "drawerDeleteAccount": "Delete Account",
-
   "drawerAppSettings": "App Settings",
   "drawerLanguages": "Languages",
   "drawerEnablePushNotifications": "Enable Push Notifications",
   "drawerEnableLocationServices": "Enable Location Services",
   "drawerDarkMode": "Dark Mode",
-
   "drawerFullName": "Full Name",
   "drawerEmailAddress": "Email Address",
   "drawerLocation": "Location"

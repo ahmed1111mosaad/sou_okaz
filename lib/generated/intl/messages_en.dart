@@ -34,6 +34,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "SuccessSignUp": MessageLookupByLibrary.simpleMessage(
       "Your account has been created successfully",
     ),
+    "accountExistsWithDifferentCredential":
+        MessageLookupByLibrary.simpleMessage(
+          "This account already exists with a different credential.",
+        ),
     "bestSellerCategory": MessageLookupByLibrary.simpleMessage("Men\'s Shoes"),
     "bestSellerTitle": MessageLookupByLibrary.simpleMessage("Best Seller"),
     "cartCheckout": MessageLookupByLibrary.simpleMessage("Checkout"),
@@ -107,6 +111,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "failedCreateUser": MessageLookupByLibrary.simpleMessage(
       "Failed to create user.",
+    ),
+    "failedToCreateUser": MessageLookupByLibrary.simpleMessage(
+      "Failed to sign in",
     ),
     "favouriteTitle": MessageLookupByLibrary.simpleMessage("Favourite"),
     "filtersApply": MessageLookupByLibrary.simpleMessage("Apply"),
@@ -182,8 +189,20 @@ class MessageLookup extends MessageLookupByLibrary {
       "Mondolibug, Sylhet",
     ),
     "homeStoreLocation": MessageLookupByLibrary.simpleMessage("Store location"),
+    "invalidEmail": MessageLookupByLibrary.simpleMessage(
+      "Invalid email format.",
+    ),
     "invalidEmailOrPassword": MessageLookupByLibrary.simpleMessage(
       "Email or password is incorrect.",
+    ),
+    "invalidResetLink": MessageLookupByLibrary.simpleMessage(
+      "The reset link is invalid.",
+    ),
+    "invalidResetLinkConfig": MessageLookupByLibrary.simpleMessage(
+      "Reset link configuration is invalid.",
+    ),
+    "invalidVerificationCode": MessageLookupByLibrary.simpleMessage(
+      "Invalid verification code or ID.",
     ),
     "newPasswordButton": MessageLookupByLibrary.simpleMessage(
       "Create new password",
@@ -226,7 +245,13 @@ class MessageLookup extends MessageLookupByLibrary {
       "Style Shoes",
     ),
     "signInButton": MessageLookupByLibrary.simpleMessage("Sign In"),
+    "signInCanceled": MessageLookupByLibrary.simpleMessage(
+      "Sign-in canceled by user.",
+    ),
     "signInEmail": MessageLookupByLibrary.simpleMessage("Email Address"),
+    "signInMethodNotEnabled": MessageLookupByLibrary.simpleMessage(
+      "This sign-in method is not enabled.",
+    ),
     "signInNoAccount": MessageLookupByLibrary.simpleMessage(
       "Don\'t have an account?",
     ),
@@ -333,6 +358,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "thirdPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "Nike 2025",
+    ),
+    "unauthorizedResetLink": MessageLookupByLibrary.simpleMessage(
+      "Unauthorized reset link access.",
+    ),
+    "userDisabled": MessageLookupByLibrary.simpleMessage(
+      "This user account has been disabled.",
     ),
     "userNotFound": MessageLookupByLibrary.simpleMessage(
       "No user found for that email.",

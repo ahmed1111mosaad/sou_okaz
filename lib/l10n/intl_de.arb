@@ -31,6 +31,12 @@
   "FailureSignInWithGoogle": "Anmeldung abgebrochen",
   "FailureSignInWithGoogleErrorOccured": "Bei der Anmeldung ist ein Fehler aufgetreten",
   "signInValidatorValidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+  "accountExistsWithDifferentCredential": "Dieses Konto existiert bereits mit einem anderen Anmeldeverfahren.",
+  "signInMethodNotEnabled": "Diese Anmeldemethode ist nicht aktiviert.",
+  "invalidVerificationCode": "Ungültiger Bestätigungscode oder ID.",
+  "userDisabled": "Dieses Benutzerkonto wurde deaktiviert.",
+  "failedToCreateUser": "Anmeldung fehlgeschlagen",
+  "signInCanceled": "Anmeldung vom Benutzer abgebrochen.",
 
 
   "signUpTitle": "Konto erstellen",
@@ -47,7 +53,8 @@
   "signUpSignInNow": "Jetzt anmelden",
   "signUpPhoneNumber": "Telefonnummer",
   "SuccessSignUp": "Dein Konto wurde erfolgreich erstellt",
-  "SuccessSignIn_de": "Sie haben sich erfolgreich angemeldet",
+  "successSignIn": "Sie haben sich erfolgreich angemeldet",
+  
   "invalidEmailOrPassword": "E-Mail oder Passwort ist falsch.",
 
 
@@ -93,6 +100,11 @@
   "userNotFound": "Kein Benutzer für diese E-Mail-Adresse gefunden.",
   "wrongPassword": "Falsches Passwort für diesen Benutzer eingegeben.",
   "failedCreateUser": "Benutzer konnte nicht erstellt werden.",
+  "invalidEmail": "Ungültiges E-Mail-Format.",
+  "invalidResetLinkConfig": "Ungültige Konfiguration des Zurücksetzungslinks.",
+  "invalidResetLink": "Der Zurücksetzungslink ist ungültig.",
+  "unauthorizedResetLink": "Unbefugter Zugriff auf den Zurücksetzungslink.",
+
 
 
 

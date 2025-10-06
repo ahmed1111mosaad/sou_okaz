@@ -3,6 +3,7 @@ import 'package:intl_phone_field/phone_number.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/forgetPasswordview/enter_verification_code.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_phone_number.dart';
+import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:sou_okaz/core/helpers/functions/navigator_with_slide_animation.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
@@ -19,7 +20,9 @@ class RecoveryPassowrdBody extends StatefulWidget {
 
 class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
   PhoneNumber? phoneNumber;
+  String? email;
   GlobalKey<FormState> formKey = GlobalKey();
+  AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +37,7 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
               bottom: MediaQuery.of(context).viewInsets.bottom,
             ),
             child: Form(
+              autovalidateMode: autovalidateMode,
               key: formKey,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -46,8 +50,8 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                       child: Text(
                         S.of(context).forgotPasswordTitle,
                         style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                          fontSize: responsiveFontSize(context, 0, 0.066),
-                        ),
+                              fontSize: responsiveFontSize(context, 0, 0.066),
+                            ),
                       ),
                     ),
                   ),
@@ -58,7 +62,7 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                       child: Text(
                         S.of(context).forgotPasswordSubtitle,
                         style: AppTextStyles.regular16.copyWith(
-                          fontSize:  responsiveFontSize(context, 0,0.041),
+                          fontSize: responsiveFontSize(context, 0, 0.041),
                         ),
                       ),
                     ),
@@ -69,7 +73,7 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                       child: Text(
                         S.of(context).forgotPasswordSubtitle1,
                         style: AppTextStyles.regular16.copyWith(
-                          fontSize:  responsiveFontSize(context, 0,0.041),
+                          fontSize: responsiveFontSize(context, 0, 0.041),
                         ),
                       ),
                     ),
@@ -80,19 +84,30 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                         ? Alignment.centerRight
                         : Alignment.centerLeft,
                     child: Text(
-                      S.of(context).signUpPhoneNumber,
+                      S.of(context).signInEmail,
                       style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                        fontSize:  responsiveFontSize(context, 0,0.04),
-                      ),
+                            fontSize: responsiveFontSize(context, 0, 0.04),
+                          ),
                     ),
                   ),
                   SizedBox(height: 6),
-                  CustomPhoneNumber(
-                    onChanged: (phone) {
-                      setState(() {
-                        phoneNumber = phone;
-                      });
+                  CustomTextFormField(
+                    keyboardType: TextInputType.emailAddress,
+                    obscureText: false,
+                    onChanged: (value) => email = value,
+                    validator: (value) {
+                      String pattern =
+                          r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+";
+                      RegExp regex = RegExp(pattern);
+
+                      if (value!.isEmpty) {
+                        return S.of(context).signInValidatorEmpty;
+                      } else if (!regex.hasMatch(value)) {
+                        return S.of(context).signInValidatorValidEmail;
+                      }
+                      return null;
                     },
+                    isPassword: false,
                   ),
                   SizedBox(height: MediaQuery.of(context).size.height * .015),
                   CustomElevatedButton(
@@ -102,13 +117,18 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                         formKey.currentState!.save();
                         navigatorWithSlideAnimation(
                           context,
-                          EnterVerificationCode(phoneNumber: phoneNumber!),
+                          EnterVerificationCode(),
                           Offset(1, 0),
                         );
+                        setState(() {
+                          
+                        });
+                      } else {
+                        autovalidateMode = AutovalidateMode.always;
+                        setState(() {});
                       }
                     },
                   ),
-                  
                 ],
               ),
             ),

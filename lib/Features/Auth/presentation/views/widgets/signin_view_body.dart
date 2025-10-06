@@ -46,7 +46,9 @@ class _SigninViewBodyState extends State<SigninViewBody> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  CustomArrowBackAppBar(isLogin: true,),
+                  CustomArrowBackAppBar(
+                    isLogin: true,
+                  ),
                   SizedBox(height: responsiveFontSize(context, 0.035, 0)),
 
                   // ? Title
@@ -56,8 +58,8 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                       child: Text(
                         S.of(context).signInTitle,
                         style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                          fontSize: responsiveFontSize(context, 0, 0.09),
-                        ),
+                              fontSize: responsiveFontSize(context, 0, 0.09),
+                            ),
                       ),
                     ),
                   ),
@@ -83,8 +85,8 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                     child: Text(
                       S.of(context).signInEmail,
                       style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                        fontSize: responsiveFontSize(context, 0, 0.045),
-                      ),
+                            fontSize: responsiveFontSize(context, 0, 0.045),
+                          ),
                     ),
                   ),
                   const SizedBox(height: 6),
@@ -106,7 +108,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                     },
                     isPassword: false,
                   ),
-                   SizedBox(height:  responsiveFontSize(context, 0.02, 0)),
+                  SizedBox(height: responsiveFontSize(context, 0.02, 0)),
 
                   // ? Password
                   Align(
@@ -116,8 +118,8 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                     child: Text(
                       S.of(context).signInPassword,
                       style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                        fontSize: responsiveFontSize(context, 0, 0.045),
-                      ),
+                            fontSize: responsiveFontSize(context, 0, 0.045),
+                          ),
                     ),
                   ),
                   const SizedBox(height: 6),
@@ -155,11 +157,11 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                       S.of(context).signInRecoveryPassword,
                       style: AppTextStyles.regular13.copyWith(
                         decoration: TextDecoration.underline,
-                        fontSize: responsiveFontSize(context, 0, 0.035),
+                        fontSize: responsiveFontSize(context, 0, 0.036),
                       ),
                     ),
                   ),
-                   SizedBox(height:  responsiveFontSize(context, 0.025, 0)),
+                  SizedBox(height: responsiveFontSize(context, 0.025, 0)),
 
                   // ? Sign In with email and password Button
                   CustomElevatedButton(
@@ -179,7 +181,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                       }
                     },
                   ),
-                   SizedBox(height:  responsiveFontSize(context, 0.035, 0)),
+                  SizedBox(height: responsiveFontSize(context, 0.035, 0)),
 
                   // ? Social Buttons
                   SignInWithButton(
@@ -189,12 +191,15 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                       BlocProvider.of<SignInCubit>(context).signInWithGoogle();
                     },
                   ),
-                   SizedBox(height:  responsiveFontSize(context, 0.023, 0)),
+                  SizedBox(height: responsiveFontSize(context, 0.023, 0)),
                   SignInWithButton(
                     image: Assets.assetsImagesFacebookIcon,
                     title: S.of(context).signInWithFacebook,
+                    onPressed: () {
+                      context.read<SignInCubit>().signInWithFacebook();
+                    },
                   ),
-                  SizedBox(height:  responsiveFontSize(context, 0.023, 0)),
+                  SizedBox(height: responsiveFontSize(context, 0.023, 0)),
                   SignInWithButton(
                     image: Assets.assetsImagesAppleIcon,
                     title: S.of(context).signInWithApple,
@@ -225,7 +230,9 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                             },
                             child: Text(
                               S.of(context).signInSignUpFree,
-                              style: Theme.of(context).textTheme.bodySmall
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodySmall
                                   ?.copyWith(
                                     decoration: TextDecoration.underline,
                                     fontSize: responsiveFontSize(

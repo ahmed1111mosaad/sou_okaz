@@ -31,6 +31,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "SuccessSignUp": MessageLookupByLibrary.simpleMessage(
       "Dein Konto wurde erfolgreich erstellt",
     ),
+    "accountExistsWithDifferentCredential":
+        MessageLookupByLibrary.simpleMessage(
+          "Dieses Konto existiert bereits mit einem anderen Anmeldeverfahren.",
+        ),
     "bestSellerCategory": MessageLookupByLibrary.simpleMessage("Herrenschuhe"),
     "bestSellerTitle": MessageLookupByLibrary.simpleMessage("Bestseller"),
     "cartCheckout": MessageLookupByLibrary.simpleMessage("Zur Kasse"),
@@ -115,6 +119,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "failedCreateUser": MessageLookupByLibrary.simpleMessage(
       "Benutzer konnte nicht erstellt werden.",
     ),
+    "failedToCreateUser": MessageLookupByLibrary.simpleMessage(
+      "Anmeldung fehlgeschlagen",
+    ),
     "favouriteTitle": MessageLookupByLibrary.simpleMessage("Favoriten"),
     "filtersApply": MessageLookupByLibrary.simpleMessage("Anwenden"),
     "filtersGender": MessageLookupByLibrary.simpleMessage("Geschlecht"),
@@ -190,8 +197,20 @@ class MessageLookup extends MessageLookupByLibrary {
     "homeStoreLocation": MessageLookupByLibrary.simpleMessage(
       "Geschäftsstandort",
     ),
+    "invalidEmail": MessageLookupByLibrary.simpleMessage(
+      "Ungültiges E-Mail-Format.",
+    ),
     "invalidEmailOrPassword": MessageLookupByLibrary.simpleMessage(
       "E-Mail oder Passwort ist falsch.",
+    ),
+    "invalidResetLink": MessageLookupByLibrary.simpleMessage(
+      "Der Zurücksetzungslink ist ungültig.",
+    ),
+    "invalidResetLinkConfig": MessageLookupByLibrary.simpleMessage(
+      "Ungültige Konfiguration des Zurücksetzungslinks.",
+    ),
+    "invalidVerificationCode": MessageLookupByLibrary.simpleMessage(
+      "Ungültiger Bestätigungscode oder ID.",
     ),
     "newPasswordButton": MessageLookupByLibrary.simpleMessage(
       "Neues Passwort erstellen",
@@ -238,7 +257,13 @@ class MessageLookup extends MessageLookupByLibrary {
       "Stylischen Schuhen",
     ),
     "signInButton": MessageLookupByLibrary.simpleMessage("Anmelden"),
+    "signInCanceled": MessageLookupByLibrary.simpleMessage(
+      "Anmeldung vom Benutzer abgebrochen.",
+    ),
     "signInEmail": MessageLookupByLibrary.simpleMessage("E-Mail-Adresse"),
+    "signInMethodNotEnabled": MessageLookupByLibrary.simpleMessage(
+      "Diese Anmeldemethode ist nicht aktiviert.",
+    ),
     "signInNoAccount": MessageLookupByLibrary.simpleMessage("Noch kein Konto?"),
     "signInPassword": MessageLookupByLibrary.simpleMessage("Passwort"),
     "signInRecoveryPassword": MessageLookupByLibrary.simpleMessage(
@@ -341,6 +366,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "thirdPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "Nike 2025",
+    ),
+    "unauthorizedResetLink": MessageLookupByLibrary.simpleMessage(
+      "Unbefugter Zugriff auf den Zurücksetzungslink.",
+    ),
+    "userDisabled": MessageLookupByLibrary.simpleMessage(
+      "Dieses Benutzerkonto wurde deaktiviert.",
     ),
     "userNotFound": MessageLookupByLibrary.simpleMessage(
       "Kein Benutzer für diese E-Mail-Adresse gefunden.",

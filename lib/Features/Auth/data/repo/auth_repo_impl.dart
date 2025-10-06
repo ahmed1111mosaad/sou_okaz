@@ -9,7 +9,6 @@ import 'package:sou_okaz/core/Firebase/firestore/firestore_service.dart';
 import 'package:sou_okaz/core/errors/failure.dart';
 import 'package:sou_okaz/core/services/shared_preferences_singleton.dart';
 import 'package:sou_okaz/core/utils/collection_names.dart';
-import 'package:sou_okaz/core/utils/keys.dart';
 
 class AuthRepoImpl extends AuthRepo {
   AuthRepoImpl({
@@ -18,6 +17,7 @@ class AuthRepoImpl extends AuthRepo {
   }) : super();
   final FirebaseAuthService firebaseAuthService;
   final FirestoreService firestoreService;
+
   @override
   Future<Either<Failure, UserEntity>> createUserWithEmailAndPassword({
     required String email,
@@ -112,6 +112,32 @@ class AuthRepoImpl extends AuthRepo {
       return left(GoogleSignInFailure.fromException(e));
     } catch (e) {
       return left(GoogleSignInFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, UserEntity>> signInWithFacebook() async {
+    try {
+      User user = await firebaseAuthService.signInWithFacebook();
+      return right(UserModel.fromFirebase(user));
+    } on FirebaseAuthException catch (e) {
+      return left(FacebookAuthFailure.fromFirebaseAuthFailure(e));
+    } on Exception catch (e) {
+      return left(FacebookAuthFailure.fromException(e));
+    } catch (e) {
+      return left(FacebookAuthFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> resetPassword({required String email}) async {
+    try {
+      await firebaseAuthService.resetpassword(email: email);
+      return right(null);
+    } on FirebaseAuthException catch (e) {
+      return left(ResetPasswordFailure.fromFirebaseFailure(e));
+    } catch (e) {
+      return left(ResetPasswordFailure(e.toString()));
     }
   }
 }
