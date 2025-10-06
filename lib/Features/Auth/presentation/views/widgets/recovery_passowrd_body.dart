@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl_phone_field/phone_number.dart';
+import 'package:sou_okaz/Features/Auth/presentation/cubits/reset_password_cubit/reset_password_cubit.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/forgetPasswordview/enter_verification_code.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_phone_number.dart';
@@ -115,14 +117,10 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
                         formKey.currentState!.save();
-                        navigatorWithSlideAnimation(
-                          context,
-                          EnterVerificationCode(),
-                          Offset(1, 0),
-                        );
-                        setState(() {
-                          
-                        });
+                        context
+                            .read<ResetPasswordCubit>()
+                            .resetPassword(email: email!);
+                        setState(() {});
                       } else {
                         autovalidateMode = AutovalidateMode.always;
                         setState(() {});

@@ -6,6 +6,7 @@ import 'package:intl/intl.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Auth/domain/repo/auth_repo.dart';
+import 'package:sou_okaz/Features/Auth/presentation/cubits/reset_password_cubit/reset_password_cubit.dart';
 import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_in_cubit/sign_in_cubit.dart';
 import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_up_cubit/sign_up_cubit.dart';
 import 'package:sou_okaz/core/services/service_locator.dart';
@@ -42,9 +43,10 @@ class SouOkaz extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => SignUpCubit(getIt<AuthRepo>())),
         BlocProvider(create: (context) => SignInCubit(getIt<AuthRepo>())),
+        BlocProvider(create: (context) => ResetPasswordCubit(getIt<AuthRepo>())),
       ],
       child: MaterialApp(
-        locale: Locale('ar'),
+        locale: Locale('en'),
         localizationsDelegates: [
           S.delegate,
           GlobalMaterialLocalizations.delegate,

@@ -58,6 +58,8 @@ class FirebaseAuthService {
     // Create a credential from the access token
     final OAuthCredential facebookAuthCredential =
         FacebookAuthProvider.credential(loginResult.accessToken!.tokenString);
+    
+    
 
     // Once signed in, return the UserCredential
     return (await FirebaseAuth.instance
@@ -65,7 +67,7 @@ class FirebaseAuthService {
         .user!;
   }
 
-  Future<void> resetpassword({required String email}) async {
+  resetpassword({required String email}) async {
     await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
   }
 }

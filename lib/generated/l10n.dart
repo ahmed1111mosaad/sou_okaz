@@ -940,6 +940,16 @@ class S {
   }
 
   /// `Password has been changed successfully`
+  String get resetPassword {
+    return Intl.message(
+      'Password has been changed successfully',
+      name: 'resetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password has been changed successfully`
   String get homePasswordChanged {
     return Intl.message(
       'Password has been changed successfully',

@@ -101,6 +101,7 @@
   "invalidResetLinkConfig": "إعداد رابط إعادة التعيين غير صالح.",
   "invalidResetLink": "رابط إعادة التعيين غير صالح.",
   "unauthorizedResetLink": "وصول غير مصرح به إلى رابط إعادة التعيين.",
+  "resetPassword": "تم تغيير كلمة المرور بنجاح",
 
 
 

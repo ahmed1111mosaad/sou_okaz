@@ -104,6 +104,7 @@
   "invalidResetLinkConfig": "Ungültige Konfiguration des Zurücksetzungslinks.",
   "invalidResetLink": "Der Zurücksetzungslink ist ungültig.",
   "unauthorizedResetLink": "Unbefugter Zugriff auf den Zurücksetzungslink.",
+  "resetPassword": "Passwort wurde erfolgreich geändert",
 
 
 

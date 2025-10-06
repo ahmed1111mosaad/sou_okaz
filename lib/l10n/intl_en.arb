@@ -91,6 +91,8 @@
   "invalidResetLinkConfig": "Reset link configuration is invalid.",
   "invalidResetLink": "The reset link is invalid.",
   "unauthorizedResetLink": "Unauthorized reset link access.",
+  "resetPassword": "Password has been changed successfully",
+
 
 
 
