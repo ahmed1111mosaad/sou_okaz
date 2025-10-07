@@ -225,8 +225,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
       "Passwords do not match",
     ),
-    "resetPassword": MessageLookupByLibrary.simpleMessage(
-      "Password has been changed successfully",
+    "resetPasswordEmailSent": MessageLookupByLibrary.simpleMessage(
+      "Password reset email has been sent",
     ),
     "searchCancel": MessageLookupByLibrary.simpleMessage("Cancel"),
     "searchNoResults": MessageLookupByLibrary.simpleMessage("No Results"),

@@ -220,8 +220,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
       "كلمتا المرور غير متطابقتين",
     ),
-    "resetPassword": MessageLookupByLibrary.simpleMessage(
-      "تم تغيير كلمة المرور بنجاح",
+    "resetPasswordEmailSent": MessageLookupByLibrary.simpleMessage(
+      "تم إرسال بريد استعادة كلمة المرور",
     ),
     "searchCancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
     "searchNoResults": MessageLookupByLibrary.simpleMessage("لا توجد نتائج"),

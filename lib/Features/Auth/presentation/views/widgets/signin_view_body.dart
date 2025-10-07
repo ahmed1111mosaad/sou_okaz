@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_in_cubit/sign_in_cubit.dart';
-import 'package:sou_okaz/Features/Auth/presentation/views/forgetPasswordview/recovery_password.dart';
+import 'package:sou_okaz/Features/Auth/presentation/views/recovery_password.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/signup_view.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
@@ -27,6 +27,13 @@ class _SigninViewBodyState extends State<SigninViewBody> {
 
   String? email;
   String? password;
+  TextEditingController emailController = TextEditingController();
+
+  @override
+  void dispose() {
+    emailController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -93,7 +100,10 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   CustomTextFormField(
                     keyboardType: TextInputType.emailAddress,
                     obscureText: false,
-                    onChanged: (value) => email = value,
+                    onChanged: (value) {
+                      email = value;
+                      emailController.text = value;
+                    },
                     validator: (value) {
                       String pattern =
                           r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+";
@@ -124,6 +134,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ),
                   const SizedBox(height: 6),
                   CustomTextFormField(
+                    controller: emailController,
                     obscureText: true,
                     isPassword: true,
                     onChanged: (value) => password = value,
@@ -147,6 +158,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   // ? Forget Password
                   GestureDetector(
                     onTap: () {
+                      emailController.clear();
                       navigatorWithSlideAnimation(
                         context,
                         const RecoveryPassword(),

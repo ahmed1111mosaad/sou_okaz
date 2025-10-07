@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sou_okaz/Features/Auth/presentation/views/forgetPasswordview/recovery_password.dart';
+import 'package:sou_okaz/Features/Auth/presentation/views/recovery_password.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/signin_view.dart';
 import 'package:sou_okaz/Features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:sou_okaz/Features/splash/presentation/views/splash_screen.dart';

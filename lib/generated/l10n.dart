@@ -939,11 +939,11 @@ class S {
     );
   }
 
-  /// `Password has been changed successfully`
-  String get resetPassword {
+  /// `Password reset email has been sent`
+  String get resetPasswordEmailSent {
     return Intl.message(
-      'Password has been changed successfully',
-      name: 'resetPassword',
+      'Password reset email has been sent',
+      name: 'resetPasswordEmailSent',
       desc: '',
       args: [],
     );

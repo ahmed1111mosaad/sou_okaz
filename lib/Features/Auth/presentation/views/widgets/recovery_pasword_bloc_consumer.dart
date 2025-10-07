@@ -20,10 +20,10 @@ class RecoveryPaswordBlocConsumer extends StatelessWidget {
       listener: (context, state) {
         if (state is SuccessResetPasswordState) {
           showSuccess(context,
-              title: S.of(context).resetPassword, description: '');
-        Future.delayed(Duration(seconds: 2),(){
-          Navigator.of(context).pop();
-        });
+              title: S.of(context).resetPasswordEmailSent, description: '');
+          Future.delayed(Duration(seconds: 2), () {
+            Navigator.of(context).pop();
+          });
         }
         if (state is FailureResetPasswordState) {
           showFailure(context, title: state.errMessage, description: '');
