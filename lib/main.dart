@@ -54,7 +54,7 @@ class SouOkaz extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.delegate.supportedLocales,
-        theme:darkMode,
+        theme:lightMode,
         builder: (context, child) {
           return AnnotatedRegion<SystemUiOverlayStyle>(
             value: Theme.of(context).brightness == Brightness.dark
@@ -64,7 +64,7 @@ class SouOkaz extends StatelessWidget {
           );
         },
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.onboarding,
+        initialRoute: Routes.homeScreen,
         routes: routes(),
       ),
     );

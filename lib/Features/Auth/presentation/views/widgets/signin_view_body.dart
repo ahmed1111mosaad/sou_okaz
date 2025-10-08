@@ -27,11 +27,11 @@ class _SigninViewBodyState extends State<SigninViewBody> {
 
   String? email;
   String? password;
-  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   void dispose() {
-    emailController.dispose();
+    passwordController.dispose();
     super.dispose();
   }
 
@@ -102,7 +102,6 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                     obscureText: false,
                     onChanged: (value) {
                       email = value;
-                      emailController.text = value;
                     },
                     validator: (value) {
                       String pattern =
@@ -134,10 +133,13 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ),
                   const SizedBox(height: 6),
                   CustomTextFormField(
-                    controller: emailController,
+                    controller: passwordController,
                     obscureText: true,
                     isPassword: true,
-                    onChanged: (value) => password = value,
+                    onChanged: (value) {
+                      password = value;
+                      passwordController.text = value;
+                    },
                     validator: (value) {
                       RegExp regExp = RegExp(
                         r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$',
@@ -158,7 +160,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   // ? Forget Password
                   GestureDetector(
                     onTap: () {
-                      emailController.clear();
+                      passwordController.clear();
                       navigatorWithSlideAnimation(
                         context,
                         const RecoveryPassword(),

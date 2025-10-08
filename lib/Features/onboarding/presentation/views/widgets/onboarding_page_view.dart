@@ -23,6 +23,7 @@ class OnboardingPageView extends StatelessWidget {
               ),
             ),
             Expanded(
+              flex: 1,
               child: Padding(
                 padding: EdgeInsets.symmetric(
                   horizontal: MediaQuery.of(context).size.width * 0.05,

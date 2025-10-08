@@ -9,6 +9,7 @@ import 'package:sou_okaz/core/Firebase/firestore/firestore_service.dart';
 import 'package:sou_okaz/core/errors/failure.dart';
 import 'package:sou_okaz/core/services/shared_preferences_singleton.dart';
 import 'package:sou_okaz/core/utils/collection_names.dart';
+import 'package:sou_okaz/core/utils/keys.dart';
 
 class AuthRepoImpl extends AuthRepo {
   AuthRepoImpl({
@@ -72,7 +73,7 @@ class AuthRepoImpl extends AuthRepo {
   @override
   Future saveUserData({required UserEntity userEntity}) async {
     String data = jsonEncode(UserModel.fromEntity(userEntity).toJson());
-    await SharedPreferencesSingleton.setString(userEntity.uId, data);
+    await SharedPreferencesSingleton.setString(Keys.kSaveUserData, data);
   }
 
   static UserEntity getUserDataLocallyFromSharedPreferences({
@@ -92,7 +93,8 @@ class AuthRepoImpl extends AuthRepo {
         email: email,
         password: password,
       );
-      // ToDo (get data from database / save data to shared preferences)
+      // ToDo (get data from database --> save data to shared preferences)
+      // so I got the data from database and then saved it to shared preferences
       UserEntity userEntity = await getUserData(uId: user.uid);
       await saveUserData(userEntity: userEntity);
       return right(userEntity);
@@ -105,26 +107,61 @@ class AuthRepoImpl extends AuthRepo {
 
   @override
   Future<Either<Failure, UserEntity>> signInWithGoogle() async {
+    User? user;
     try {
-      User user = await firebaseAuthService.signInWithGoogle();
-      return right(UserModel.fromFirebase(user));
+      user = await firebaseAuthService.signInWithGoogle();
+      UserEntity userEntity = UserModel.fromFirebase(user);
+      await addUserData(userEntity: userEntity);
+      bool isUserExist = await firestoreService.checkIfDataExists(
+          path: CollectionNames.users, docuId: user.uid);
+      if (isUserExist) {
+        saveUserData(userEntity: await getUserData(uId: user.uid));
+      } else {
+        await addUserData(userEntity: userEntity);
+      }
+      return right(userEntity);
     } on Exception catch (e) {
+      if (user != null) {
+        FirebaseAuth.instance.currentUser!.delete();
+      }
       return left(GoogleSignInFailure.fromException(e));
     } catch (e) {
+      if (user != null) {
+        FirebaseAuth.instance.currentUser!.delete();
+      }
       return left(GoogleSignInFailure(e.toString()));
     }
   }
 
   @override
   Future<Either<Failure, UserEntity>> signInWithFacebook() async {
+    User? user;
     try {
-      User user = await firebaseAuthService.signInWithFacebook();
-      return right(UserModel.fromFirebase(user));
+      user = await firebaseAuthService.signInWithFacebook();
+      UserEntity userEntity = UserModel.fromFirebase(user);
+      await addUserData(userEntity: userEntity);
+      bool isUserExist = await firestoreService.checkIfDataExists(
+          path: CollectionNames.users, docuId: user.uid);
+      if (isUserExist) {
+        saveUserData(userEntity: await getUserData(uId: user.uid));
+      } else {
+        await addUserData(userEntity: userEntity);
+      }
+      return right(userEntity);
     } on FirebaseAuthException catch (e) {
+      if (user != null) {
+        FirebaseAuth.instance.currentUser!.delete();
+      }
       return left(FacebookAuthFailure.fromFirebaseAuthFailure(e));
     } on Exception catch (e) {
+      if (user != null) {
+        FirebaseAuth.instance.currentUser!.delete();
+      }
       return left(FacebookAuthFailure.fromException(e));
     } catch (e) {
+      if (user != null) {
+        FirebaseAuth.instance.currentUser!.delete();
+      }
       return left(FacebookAuthFailure(e.toString()));
     }
   }

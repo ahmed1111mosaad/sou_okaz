@@ -14,7 +14,7 @@ void showFailure(
         child: Text(
           title,
           style: TextStyle(
-            color: Color(0xFF2C2C2C),
+            color:Theme.of(context).colorScheme.surface,
             fontSize: 18,
             fontWeight: FontWeight.w600,
           ),
