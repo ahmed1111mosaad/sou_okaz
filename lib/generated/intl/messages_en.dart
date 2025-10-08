@@ -163,6 +163,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "forgotPasswordVerificationTitle": MessageLookupByLibrary.simpleMessage(
       "Enter verification code",
     ),
+    "goodAfternoon": MessageLookupByLibrary.simpleMessage("Good afternoon ☀️"),
+    "goodEvening": MessageLookupByLibrary.simpleMessage("Good evening 🌙"),
+    "goodMorning": MessageLookupByLibrary.simpleMessage("Good morning 🌅"),
     "hello": MessageLookupByLibrary.simpleMessage("Resend Code"),
     "homeBestSeller": MessageLookupByLibrary.simpleMessage("Best Seller"),
     "homeBrandAdidas": MessageLookupByLibrary.simpleMessage("Adidas"),
@@ -247,6 +250,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "secondPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "Style Shoes",
     ),
+    "seeAll": MessageLookupByLibrary.simpleMessage("See all"),
     "signInButton": MessageLookupByLibrary.simpleMessage("Sign In"),
     "signInCanceled": MessageLookupByLibrary.simpleMessage(
       "Sign-in canceled by user.",

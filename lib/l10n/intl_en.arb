@@ -92,9 +92,11 @@
   "invalidResetLink": "The reset link is invalid.",
   "unauthorizedResetLink": "Unauthorized reset link access.",
   "resetPasswordEmailSent": "Password reset email has been sent",
-
-
   "homePasswordChanged": "Password has been changed successfully",
+  "goodMorning": "Good morning 🌅",
+  "goodAfternoon": "Good afternoon ☀️",
+  "goodEvening": "Good evening 🌙",
+  "seeAll": "See all",
   "homeStoreLocation": "Store location",
   "homeStoreAddress": "Mondolibug, Sylhet",
   "homeSearchPlaceholder": "Looking for shoes",

@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_app_bar_home_screen.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_list_of_vectors.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/icon_heart.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/item_best_seller_home_screen.dart';
 import 'package:sou_okaz/core/assets/assets.dart';
-import 'package:sou_okaz/core/helpers/functions/get_data_locally.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
-import 'package:sou_okaz/core/helpers/functions/trim_text.dart';
 import 'package:sou_okaz/core/utils/app_colors.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
+import 'package:sou_okaz/generated/l10n.dart';
 
 class HomeScreenBody extends StatefulWidget {
   const HomeScreenBody({
@@ -22,28 +26,25 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
   void initState() {
     super.initState();
 
-    _updateGreeting(); // 🔹 أول حاجة: احسب التحية الحالية فورًا لما الودجت تشتغل
-
-    _scheduleNextUpdate(); // 🔹 بعد كده: جهز تايمر لتحديث التحية لما الوقت يتغير
+    _updateGreeting();
+    _scheduleNextUpdate();
   }
 
-  // 🔸 الوظيفة دي بتحدّد التحية المناسبة حسب الساعة الحالية
   void _updateGreeting() {
-    final now = DateTime.now(); // الوقت الحالي
-    final hour = now.hour; // نجيب الساعة فقط (0 إلى 23)
+    final now = DateTime.now();
+    final hour = now.hour;
 
     if (hour >= 5 && hour < 12) {
-      greeting = 'Good morning 🌅'; // من 5 إلى 12 → صباح الخير
+      greeting = S.current.goodMorning;
     } else if (hour >= 12 && hour < 17) {
-      greeting = 'Good afternoon ☀️'; // من 12 إلى 5 → مساء الخير (العصر)
+      greeting = S.current.goodAfternoon;
     } else {
-      greeting = 'Good evening 🌙'; // من 5 مساء لحد الفجر → مساء الخير
+      greeting = S.current.goodEvening;
     }
 
-    setState(() {}); // 🔹 نحدّث الواجهة عشان تظهر التحية الجديدة
+    setState(() {});
   }
 
-  // 🔸 الوظيفة دي بتحسب إمتى التحديث الجاي المفروض يحصل
   void _scheduleNextUpdate() {
     final now = DateTime.now(); // الوقت الحالي
     DateTime nextUpdate; // هنسجل فيه الوقت اللي المفروض نحدث بعده
@@ -81,64 +82,108 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
         ),
         child: Column(
           children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .015,
+            ),
+            CustomAppBarHomeScreen(greeting: greeting),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .02,
+            ),
+            CustomTextFormField(
+              isPassword: false,
+              obscureText: false,
+              isSearchField: true,
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .03,
+            ),
+            CustomListOfVectors(),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .03,
+            ),
             Row(
               children: [
-                Image.asset(
-                  Assets.assetsImagesDiceFout,
-                  width: MediaQuery.of(context).size.width * 0.13,
-                  height: MediaQuery.of(context).size.height * 0.058,
+                Text(
+                  S.current.homePopularShoes,
+                  style: AppTextStyles.medium16,
                 ),
                 Spacer(),
-                Row(
+                Text(
+                  'see all',
+                  style: AppTextStyles.regular14.copyWith(
+                      color: AppColors.lightPrimaryColor,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .02,
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.28,
+              child: ListView.separated(
+                  separatorBuilder: (context, index) {
+                    return SizedBox(
+                      width: MediaQuery.of(context).size.width * .05,
+                    );
+                  },
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 3,
+                  itemBuilder: (context, index) {
+                    return CardBestSellerHomeScreen();
+                  }),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .015,
+            ),
+            Align(alignment: Alignment.centerLeft, child: Text('All products')),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .015,
+            ),
+            Container(
+              width: double.infinity,
+              height: MediaQuery.of(context).size.height * 0.15,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(
+                    MediaQuery.of(context).size.height * 0.023,
+                  )),
+              child: Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    ClipOval(
-                      clipBehavior: Clip.antiAlias,
-                      child: CircleAvatar(
-                        radius: MediaQuery.of(context).size.height * 0.030,
-                        backgroundColor: AppColors.lightPrimaryColor,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              bottom: 0.0,
-                              left: 0.0,
-                              right: 0.0,
-                              top: 0.0,
-                              child: Image.asset(
-                                Assets.assetsImagesAvatar,
-                                height:
-                                    MediaQuery.of(context).size.height * 0.91,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 8,
-                    ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          greeting,
-                          style: AppTextStyles.regular12,
+                          S.current.homeNikeAirJordan,
+                          style: AppTextStyles.medium20.copyWith(
+                            fontSize: MediaQuery.of(context).size.width * 0.055,
+                          ),
+                        ),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.01,
                         ),
                         Text(
-                          trimText(getUserDataLocally().name),
-                          style: AppTextStyles.medium14,
-                          overflow: TextOverflow.ellipsis,
-                        ),
+                          r"$" "493.00",
+                          style: AppTextStyles.medium16
+                              .copyWith(
+                                  fontSize:
+                                      responsiveFontSize(context, 0.0, 0.04))
+                              .copyWith(color: Color(0xFFFF5F57)),
+                        )
                       ],
-                    )
+                    ),
+                    Spacer(),
+                    Image.asset(Assets.assetsImagesNikeAirJordan),
+                    Align(alignment: Alignment.topRight, child: IconHeart())
                   ],
                 ),
-                Spacer(),
-                Image.asset(
-                  Assets.assetsImagesNotification,
-                  width: MediaQuery.of(context).size.width * 0.13,
-                  height: MediaQuery.of(context).size.height * 0.058,
-                ),
-              ],
+              ),
             )
           ],
         ),

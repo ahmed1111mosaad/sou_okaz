@@ -13,7 +13,6 @@
   "thirdPageOnboardingSubtitle1": "Nikes neuesten Sommerdesigns",
   "textButtonGetStarted": "Loslegen",
   "textButtonNext": "Weiter",
-  
   "signInTitle": "Hallo wieder!",
   "signInSubtitle": "Willkommen zurück, du wurdest vermisst!",
   "signInEmail": "E-Mail-Adresse",
@@ -37,8 +36,6 @@
   "userDisabled": "Dieses Benutzerkonto wurde deaktiviert.",
   "failedToCreateUser": "Anmeldung fehlgeschlagen",
   "signInCanceled": "Anmeldung vom Benutzer abgebrochen.",
-
-
   "signUpTitle": "Konto erstellen",
   "signUpSubtitle": "Lass uns gemeinsam ein Konto erstellen",
   "signUpFullName": "Vollständiger Name",
@@ -54,10 +51,7 @@
   "signUpPhoneNumber": "Telefonnummer",
   "SuccessSignUp": "Dein Konto wurde erfolgreich erstellt",
   "successSignIn": "Sie haben sich erfolgreich angemeldet",
-  
   "invalidEmailOrPassword": "E-Mail oder Passwort ist falsch.",
-
-
   "termsAndCondition1": "Ich stimme",
   "termsAndCondition2": " den Datenschutzbestimmungen von Sou Okaz",
   "termsAndCondition3": " und",
@@ -69,24 +63,17 @@
   "snackbarTitleWarning": "Achtung",
   "snackbarDescriptionWarning": "Einige Informationen fehlen oder sind unvollständig",
   "snackbarDescriptionFailureTerms": "Bitte akzeptieren Sie die Allgemeinen Geschäftsbedingungen",
-
   "snackbarTitleInfo": "Information",
   "snackbarDescriptionInfo": "Dies ist ein hilfreicher Hinweis für Sie",
-
-
-
-
   "forgotPasswordTitle": "Passwort wiederherstellen",
   "forgotPasswordSubtitle": "Bitte geben Sie Ihre Telefonnummer ein",
   "forgotPasswordSubtitle1": "Um einen Bestätigungscode zu erhalten",
   "forgotPasswordPhoneNumber": "Telefonnummer",
   "forgotPasswordContinue": "Weiter",
-
   "forgotPasswordVerificationTitle": "Bestätigungscode eingeben",
   "forgotPasswordVerificationSubtitle": "Gib den Code ein, den wir an die Nummer 01002275616 gesendet haben",
   "forgotPasswordVerificationButton": "Code bestätigen",
   "forgotPasswordResendCode": "Code erneut senden",
-
   "newPasswordTitle": "Neues Passwort",
   "newPasswordSubtitle": "Bitte erstelle ein neues Passwort zum Anmelden",
   "newPasswordField": "Neues Passwort",
@@ -94,7 +81,6 @@
   "newPasswordButton": "Neues Passwort erstellen",
   "passwordsDoNotMatch": "Passwörter stimmen nicht überein",
   "newPasswordChangedSuccessfully": "Passwort wurde erfolgreich geändert",
-
   "weakPassword": "Das angegebene Passwort ist zu schwach.",
   "emailAlreadyInUse": "Für diese E-Mail-Adresse existiert bereits ein Konto.",
   "userNotFound": "Kein Benutzer für diese E-Mail-Adresse gefunden.",
@@ -105,11 +91,12 @@
   "invalidResetLink": "Der Zurücksetzungslink ist ungültig.",
   "unauthorizedResetLink": "Unbefugter Zugriff auf den Zurücksetzungslink.",
   "resetPasswordEmailSent": "E-Mail zum Zurücksetzen des Passworts wurde gesendet",
-
-
-
-
+  "seeAll": "Alle anzeigen",
+  
   "homePasswordChanged": "Passwort wurde erfolgreich geändert",
+  "goodMorning": "Guten Morgen 🌅",
+  "goodAfternoon": "Guten Nachmittag ☀️",
+  "goodEvening": "Guten Abend 🌙",
   "homeStoreLocation": "Geschäftsstandort",
   "homeStoreAddress": "Mondolibug, Sylhet",
   "homeSearchPlaceholder": "Nach Schuhen suchen",
@@ -124,23 +111,18 @@
   "homeNikeAirMax": "Nike Air Max",
   "homePrice493": "493,00$",
   "homeNikeAirJordan": "Nike Air Jordan",
-
   "bestSellerTitle": "Bestseller",
   "bestSellerCategory": "Herrenschuhe",
-
   "favouriteTitle": "Favoriten",
-
   "searchTitle": "Suche deine Schuhe",
   "searchNoResults": "Keine Ergebnisse",
   "searchSorryMessage": "Entschuldigung… diese Information ist momentan nicht verfügbar",
   "searchShoes": "Schuhe",
   "searchCancel": "Abbrechen",
-
   "notificationsToday": "Heute",
   "notificationsYesterday": "Gestern",
   "notificationsTitle": "Benachrichtigungen",
   "notificationsClearAll": "Alles löschen",
-
   "filtersTitle": "Filter",
   "filtersGender": "Geschlecht",
   "filtersMen": "Männer",
@@ -151,19 +133,16 @@
   "filtersPrice16": "16$",
   "filtersPrice350": "350$",
   "filtersApply": "Anwenden",
-
   "detailsCategory": "Herrenschuhe",
   "detailsTitle": "Nike Air Jordan",
   "detailsPrice": "967,800$",
   "detailsDescription": "Air Jordan ist eine amerikanische Marke für Basketballschuhe, Freizeit- und Sportbekleidung, produziert von Nike....",
   "detailsGallery": "Galerie",
   "detailsAddToCart": "In den Warenkorb",
-
   "cartSubtotal": "Zwischensumme",
   "cartShopping": "Einkauf",
   "cartTotalCost": "Gesamtkosten",
   "cartCheckout": "Zur Kasse",
-
   "checkoutContactInfo": "Kontaktinformationen",
   "checkoutEmail": "E-Mail",
   "checkoutPhone": "Telefon",
@@ -172,7 +151,6 @@
   "checkoutPayment": "Zahlung",
   "checkoutBackToShopping": "Zurück zum Einkaufen",
   "checkoutSuccess": "Deine Zahlung war erfolgreich",
-
   "drawerGreeting": "Hey 👋",
   "drawerUserName": "Alisson Becker",
   "drawerProfile": "Profil",
@@ -183,20 +161,17 @@
   "drawerNotifications": "Benachrichtigungen",
   "drawerAbout": "Über",
   "drawerSignOut": "Abmelden",
-
   "drawerAccountSettings": "Konto & Einstellungen",
   "drawerAccount": "Konto",
   "drawerNotificationSetting": "Benachrichtigungseinstellungen",
   "drawerShippingAddress": "Lieferadresse",
   "drawerPaymentInfo": "Zahlungsinformationen",
   "drawerDeleteAccount": "Konto löschen",
-
   "drawerAppSettings": "App-Einstellungen",
   "drawerLanguages": "Sprachen",
   "drawerEnablePushNotifications": "Push-Benachrichtigungen aktivieren",
   "drawerEnableLocationServices": "Standortdienste aktivieren",
   "drawerDarkMode": "Dunkelmodus",
-
   "drawerFullName": "Vollständiger Name",
   "drawerEmailAddress": "E-Mail-Adresse",
   "drawerLocation": "Standort"

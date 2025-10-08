@@ -170,6 +170,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "forgotPasswordVerificationTitle": MessageLookupByLibrary.simpleMessage(
       "Bestätigungscode eingeben",
     ),
+    "goodAfternoon": MessageLookupByLibrary.simpleMessage(
+      "Guten Nachmittag ☀️",
+    ),
+    "goodEvening": MessageLookupByLibrary.simpleMessage("Guten Abend 🌙"),
+    "goodMorning": MessageLookupByLibrary.simpleMessage("Guten Morgen 🌅"),
     "homeBestSeller": MessageLookupByLibrary.simpleMessage("Bestseller"),
     "homeBrandAdidas": MessageLookupByLibrary.simpleMessage("Adidas"),
     "homeBrandConverse": MessageLookupByLibrary.simpleMessage("Converse"),
@@ -259,6 +264,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "secondPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "Stylischen Schuhen",
     ),
+    "seeAll": MessageLookupByLibrary.simpleMessage("Alle anzeigen"),
     "signInButton": MessageLookupByLibrary.simpleMessage("Anmelden"),
     "signInCanceled": MessageLookupByLibrary.simpleMessage(
       "Anmeldung vom Benutzer abgebrochen.",

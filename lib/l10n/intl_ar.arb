@@ -13,7 +13,6 @@
   "thirdPageOnboardingSubtitle1": "تصاميم نايك الصيفية الأخيرة",
   "textButtonGetStarted": "ابدأ",
   "textButtonNext": "التالي",
-
   "signInTitle": "مرحبًا من جديد!",
   "signInSubtitle": "أهلاً بعودتك، لقد افتقدناك!",
   "signInEmail": "البريد الإلكتروني",
@@ -33,14 +32,12 @@
   "FailureSignInWithGoogle": "تم إلغاء تسجيل الدخول",
   "FailureSignInWithGoogleErrorOccured": "حدث خطأ أثناء تسجيل الدخول",
   "invalidEmailOrPassword": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
-    "accountExistsWithDifferentCredential": "هذا الحساب بالفعل مرتبط بطريقة تسجيل دخول مختلفة.",
+  "accountExistsWithDifferentCredential": "هذا الحساب بالفعل مرتبط بطريقة تسجيل دخول مختلفة.",
   "signInMethodNotEnabled": "طريقة تسجيل الدخول هذه غير مفعلة.",
   "invalidVerificationCode": "رمز أو معرف التحقق غير صالح.",
   "userDisabled": "تم تعطيل حساب هذا المستخدم.",
   "failedToCreateUser": "فشل في تسجيل الدخول",
   "signInCanceled": "تم إلغاء تسجيل الدخول من قبل المستخدم.",
-
-
   "snackbarTitleSuccess": "تهانينا",
   "snackbarDescriptionSuccess": "تم إنشاء الحساب بنجاح",
   "snackbarTitleFailure": "حدث خطأ ما",
@@ -50,10 +47,6 @@
   "snackbarDescriptionWarning": "قد تكون بعض المعلومات ناقصة أو غير مكتملة",
   "snackbarTitleInfo": "معلومة",
   "snackbarDescriptionInfo": "هذه نصيحة مفيدة لك",
-
-
-
- 
   "signUpTitle": "إنشاء حساب",
   "signUpSubtitle": "هيا لننشئ حسابًا معًا",
   "signUpFullName": "الاسم الكامل",
@@ -72,19 +65,15 @@
   "termsAndCondition2": " سياسة الخصوصية لسوق عكاظ",
   "termsAndCondition3": " و",
   "termsAndCondition4": " شروط الاستخدام.",
-
-
   "forgotPasswordTitle": "استعادة كلمة المرور",
   "forgotPasswordSubtitle": "من فضلك أدخل رقم هاتفك",
   "forgotPasswordSubtitle1": "لكي تستقبل رمز التحقق",
   "forgotPasswordPhoneNumber": "رقم الهاتف",
   "forgotPasswordContinue": "متابعة",
-
   "forgotPasswordVerificationTitle": "أدخل رمز التحقق",
   "forgotPasswordVerificationSubtitle": "أدخل الرمز المرسل إلى الرقم 01002275616",
   "forgotPasswordVerificationButton": "تحقق من الرمز",
   "forgotPasswordResendCode": "إعادة إرسال الرمز",
-
   "newPasswordTitle": "كلمة مرور جديدة",
   "newPasswordSubtitle": "الرجاء إنشاء كلمة مرور جديدة لتسجيل الدخول",
   "newPasswordField": "كلمة مرور جديدة",
@@ -102,11 +91,14 @@
   "invalidResetLink": "رابط إعادة التعيين غير صالح.",
   "unauthorizedResetLink": "وصول غير مصرح به إلى رابط إعادة التعيين.",
   "resetPasswordEmailSent": "تم إرسال بريد استعادة كلمة المرور",
-
-
-
   "homePasswordChanged": "تم تغيير كلمة المرور بنجاح",
   "homeStoreLocation": "موقع المتجر",
+  
+  "goodMorning": "صباح الخير 🌅",
+  "goodAfternoon": "مساء الخير ☀️",
+  "goodEvening": "مساء الخير 🌙",
+   "seeAll": "عرض الكل",
+   
   "homeStoreAddress": "مونديليبوج، سيلهيت",
   "homeSearchPlaceholder": "ابحث عن الأحذية",
   "homeBrandNike": "نايك",
@@ -120,23 +112,18 @@
   "homeNikeAirMax": "نايك إير ماكس",
   "homePrice493": "493.00$",
   "homeNikeAirJordan": "نايك إير جوردان",
-
   "bestSellerTitle": "الأكثر مبيعًا",
   "bestSellerCategory": "أحذية رجالية",
-
   "favouriteTitle": "المفضلة",
-
   "searchTitle": "ابحث عن حذائك",
   "searchNoResults": "لا توجد نتائج",
   "searchSorryMessage": "عذرًا… هذه المعلومة غير متوفرة الآن",
   "searchShoes": "أحذية",
   "searchCancel": "إلغاء",
-
   "notificationsToday": "اليوم",
   "notificationsYesterday": "أمس",
   "notificationsTitle": "الإشعارات",
   "notificationsClearAll": "مسح الكل",
-
   "filtersTitle": "الفلاتر",
   "filtersGender": "الجنس",
   "filtersMen": "رجال",
@@ -147,19 +134,16 @@
   "filtersPrice16": "16$",
   "filtersPrice350": "350$",
   "filtersApply": "تطبيق",
-
   "detailsCategory": "أحذية رجالية",
   "detailsTitle": "نايك إير جوردان",
   "detailsPrice": "967.800$",
   "detailsDescription": "إير جوردان علامة أمريكية للأحذية الرياضية والكاجوال والأزياء من إنتاج نايك....",
   "detailsGallery": "المعرض",
   "detailsAddToCart": "أضف إلى السلة",
-
   "cartSubtotal": "الإجمالي الفرعي",
   "cartShopping": "التسوق",
   "cartTotalCost": "التكلفة الإجمالية",
   "cartCheckout": "الدفع",
-
   "checkoutContactInfo": "معلومات الاتصال",
   "checkoutEmail": "البريد الإلكتروني",
   "checkoutPhone": "الهاتف",
@@ -168,7 +152,6 @@
   "checkoutPayment": "الدفع",
   "checkoutBackToShopping": "العودة للتسوق",
   "checkoutSuccess": "تم الدفع بنجاح",
-
   "drawerGreeting": "مرحبًا 👋",
   "drawerUserName": "أليسون بيكر",
   "drawerProfile": "الملف الشخصي",
@@ -179,20 +162,17 @@
   "drawerNotifications": "الإشعارات",
   "drawerAbout": "حول",
   "drawerSignOut": "تسجيل الخروج",
-
   "drawerAccountSettings": "الحساب والإعدادات",
   "drawerAccount": "الحساب",
   "drawerNotificationSetting": "إعدادات الإشعارات",
   "drawerShippingAddress": "عنوان الشحن",
   "drawerPaymentInfo": "معلومات الدفع",
   "drawerDeleteAccount": "حذف الحساب",
-
   "drawerAppSettings": "إعدادات التطبيق",
   "drawerLanguages": "اللغات",
   "drawerEnablePushNotifications": "تفعيل الإشعارات",
   "drawerEnableLocationServices": "تفعيل خدمات الموقع",
   "drawerDarkMode": "الوضع الداكن",
-
   "drawerFullName": "الاسم الكامل",
   "drawerEmailAddress": "البريد الإلكتروني",
   "drawerLocation": "الموقع"

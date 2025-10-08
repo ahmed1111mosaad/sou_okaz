@@ -12,3 +12,6 @@ double responsiveFontSize(
 double responsivePaddingWithWidth(BuildContext context, double scaleWidth) {
   return MediaQuery.of(context).size.width * scaleWidth;
 }
+double responsivePaddingWithHeight(BuildContext context, double scaleHeight) {
+  return MediaQuery.of(context).size.height * scaleHeight;
+}

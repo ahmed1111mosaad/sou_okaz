@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sou_okaz/core/assets/assets.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
+import 'package:sou_okaz/core/utils/app_text_styles.dart';
 
 class CustomTextFormField extends StatefulWidget {
   CustomTextFormField({
@@ -11,6 +13,7 @@ class CustomTextFormField extends StatefulWidget {
     required this.obscureText,
     this.keyboardType,
     this.controller,
+    required this.isSearchField,
   });
   final bool isPassword;
   final Function(String)? onChanged;
@@ -18,6 +21,7 @@ class CustomTextFormField extends StatefulWidget {
   final String? Function(String?)? validator;
   final TextInputType? keyboardType;
   final TextEditingController? controller;
+  final bool isSearchField;
 
   @override
   State<CustomTextFormField> createState() => _CustomTextFormFieldState();
@@ -36,8 +40,6 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       cursorHeight: 24,
       style: TextStyle(
         color: Theme.of(context).colorScheme.onSurface,
-        // color: Color(0xFF1E3A8A),
-        // color: Color(0xFF311B92),
         fontSize: responsiveFontSize(context, 0, 0.046),
         fontFamily: 'Airbnb Cereal App',
         fontWeight: FontWeight.w400,
@@ -73,6 +75,15 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
             width: 2,
           ),
         ),
+
+        prefixIcon: widget.isSearchField
+            ? Image.asset(
+                Assets.assetsImagesSearchIcon,
+              )
+            : null,
+        hintText: widget.isSearchField ? 'Looking for shoes' : null,
+        hintStyle: AppTextStyles.regular14
+            .copyWith(fontSize: responsiveFontSize(context, 0, 0.04)),
         suffixIcon: widget.isPassword
             ? IconButton(
                 onPressed: () {

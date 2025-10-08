@@ -107,6 +107,7 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                       return null;
                     },
                     isPassword: false,
+                    isSearchField: false,
                   ),
                   SizedBox(height: MediaQuery.of(context).size.height * .015),
                   CustomElevatedButton(

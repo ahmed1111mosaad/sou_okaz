@@ -6,6 +6,10 @@ class Assets {
   /// assets/images/addidas_vector.png
   static const String assetsImagesAddidasVector = "assets/images/addidas_vector.png";
 
+  /// Assets for assetsImagesAddidasVectorOriginal
+  /// assets/images/addidas_vector_original.png
+  static const String assetsImagesAddidasVectorOriginal = "assets/images/addidas_vector_original.png";
+
   /// Assets for assetsImagesAppleIcon
   /// assets/images/apple_icon.png
   static const String assetsImagesAppleIcon = "assets/images/apple_icon.png";
@@ -25,6 +29,10 @@ class Assets {
   /// Assets for assetsImagesConverseVector
   /// assets/images/converse_vector.png
   static const String assetsImagesConverseVector = "assets/images/converse_vector.png";
+
+  /// Assets for assetsImagesConverseVectorOriginal
+  /// assets/images/converse_vector_original.png
+  static const String assetsImagesConverseVectorOriginal = "assets/images/converse_vector_original.png";
 
   /// Assets for assetsImagesDiceFourDarkMode
   /// assets/images/dice_four_dark_mode.png
@@ -102,6 +110,10 @@ class Assets {
   /// assets/images/nike_true_vector.png
   static const String assetsImagesNikeTrueVector = "assets/images/nike_true_vector.png";
 
+  /// Assets for assetsImagesNikeVectorOriginal
+  /// assets/images/nike_vector_original.png
+  static const String assetsImagesNikeVectorOriginal = "assets/images/nike_vector_original.png";
+
   /// Assets for assetsImagesNotification
   /// assets/images/notification.png
   static const String assetsImagesNotification = "assets/images/notification.png";
@@ -126,6 +138,10 @@ class Assets {
   /// assets/images/puma_vector.png
   static const String assetsImagesPumaVector = "assets/images/puma_vector.png";
 
+  /// Assets for assetsImagesPumaVectorOriginal
+  /// assets/images/puma_vector_original.png
+  static const String assetsImagesPumaVectorOriginal = "assets/images/puma_vector_original.png";
+
   /// Assets for assetsImagesSearchIcon
   /// assets/images/search_icon.png
   static const String assetsImagesSearchIcon = "assets/images/search_icon.png";
@@ -137,5 +153,9 @@ class Assets {
   /// Assets for assetsImagesUnderArmourVector
   /// assets/images/under_armour_vector.png
   static const String assetsImagesUnderArmourVector = "assets/images/under_armour_vector.png";
+
+  /// Assets for assetsImagesUnderArmourVectorOriginal
+  /// assets/images/under_armour_vector_original.png
+  static const String assetsImagesUnderArmourVectorOriginal = "assets/images/under_armour_vector_original.png";
 }
 

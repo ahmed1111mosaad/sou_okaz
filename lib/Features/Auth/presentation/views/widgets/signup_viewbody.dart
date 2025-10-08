@@ -93,7 +93,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                         return S.of(context).signInValidatorEmpty;
                       }
                       return null;
-                    },
+                    }, isSearchField: false,
                   ),
                   SizedBox(height: 18.0),
 
@@ -155,7 +155,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                         return null;
                       }
                     },
-                    isPassword: false,
+                    isPassword: false, isSearchField: false,
                   ),
                   SizedBox(height: 18.0),
                   // ? Password
@@ -189,7 +189,7 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                     onChanged: (String value) {
                       password = value;
                     },
-                    isPassword: true,
+                    isPassword: true, isSearchField: false,
                   ),
                   SizedBox(height: 10),
                   // ! Terms And Conditions

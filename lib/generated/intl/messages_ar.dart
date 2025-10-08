@@ -161,6 +161,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "forgotPasswordVerificationTitle": MessageLookupByLibrary.simpleMessage(
       "أدخل رمز التحقق",
     ),
+    "goodAfternoon": MessageLookupByLibrary.simpleMessage("مساء الخير ☀️"),
+    "goodEvening": MessageLookupByLibrary.simpleMessage("مساء الخير 🌙"),
+    "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير 🌅"),
     "homeBestSeller": MessageLookupByLibrary.simpleMessage("الأكثر مبيعًا"),
     "homeBrandAdidas": MessageLookupByLibrary.simpleMessage("أديداس"),
     "homeBrandConverse": MessageLookupByLibrary.simpleMessage("كونفرس"),
@@ -242,6 +245,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "secondPageOnboardingTitle1": MessageLookupByLibrary.simpleMessage(
       "أحذية الموضة",
     ),
+    "seeAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
     "signInButton": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "signInCanceled": MessageLookupByLibrary.simpleMessage(
       "تم إلغاء تسجيل الدخول من قبل المستخدم.",

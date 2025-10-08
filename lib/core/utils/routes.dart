@@ -19,5 +19,6 @@ Map<String, Widget Function(BuildContext)> routes() {
     Routes.onboarding: (context) => OnboardingView(),
     Routes.login: (context) => SigninView(),
     Routes.homeScreen: (context) => HomeScreen(),
+    Routes.signUp: (context) => SignUpView(),
   };
 }

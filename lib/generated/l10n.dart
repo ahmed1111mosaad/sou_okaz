@@ -959,6 +959,41 @@ class S {
     );
   }
 
+  /// `Good morning 🌅`
+  String get goodMorning {
+    return Intl.message(
+      'Good morning 🌅',
+      name: 'goodMorning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Good afternoon ☀️`
+  String get goodAfternoon {
+    return Intl.message(
+      'Good afternoon ☀️',
+      name: 'goodAfternoon',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Good evening 🌙`
+  String get goodEvening {
+    return Intl.message(
+      'Good evening 🌙',
+      name: 'goodEvening',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See all`
+  String get seeAll {
+    return Intl.message('See all', name: 'seeAll', desc: '', args: []);
+  }
+
   /// `Store location`
   String get homeStoreLocation {
     return Intl.message(

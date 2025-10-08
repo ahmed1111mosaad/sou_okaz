@@ -116,6 +116,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                       return null;
                     },
                     isPassword: false,
+                    isSearchField: false,
                   ),
                   SizedBox(height: responsiveFontSize(context, 0.02, 0)),
 
@@ -153,6 +154,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                       }
                       return null;
                     },
+                    isSearchField: false,
                   ),
 
                   const SizedBox(height: 4),
