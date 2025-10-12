@@ -21,7 +21,7 @@ class _CustomBottomNavigtionBarState extends State<CustomBottomNavigtionBar> {
     return CurvedNavigationBar(
       buttonBackgroundColor: AppColors.primaryColor,
       index: selectedIndex,
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.black.withOpacity(0.0),
       items: <Widget>[
         selectedIndex == 0
             ? Image.asset(

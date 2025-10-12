@@ -17,7 +17,6 @@ ThemeData lightMode = ThemeData(
   ),
   fontFamily: 'Airbnb Cereal App',
   primaryColor: Color(0xFF5B9EE1),
-
   textTheme: TextTheme(
     labelSmall: TextStyle(color: const Color.fromARGB(255, 244, 99, 89)),
     // title
@@ -28,7 +27,6 @@ ThemeData lightMode = ThemeData(
     // sign up for free
     bodySmall: AppTextStyles.medium14,
   ),
-
   iconTheme: IconThemeData(color: Color(0xFFC0E0FF)),
   primaryIconTheme: IconThemeData(color: Color.fromARGB(255, 238, 237, 237)),
 );

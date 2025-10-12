@@ -58,6 +58,10 @@ class Assets {
   /// assets/images/favoutie_navigation_bar.png
   static const String assetsImagesFavoutieNavigationBar = "assets/images/favoutie_navigation_bar.png";
 
+  /// Assets for assetsImagesFilterBestSeller
+  /// assets/images/Filter_best_seller.png
+  static const String assetsImagesFilterBestSeller = "assets/images/Filter_best_seller.png";
+
   /// Assets for assetsImagesGoogleIcon
   /// assets/images/google_icon.png
   static const String assetsImagesGoogleIcon = "assets/images/google_icon.png";
@@ -65,6 +69,10 @@ class Assets {
   /// Assets for assetsImagesGreenShoes
   /// assets/images/green_shoes.png
   static const String assetsImagesGreenShoes = "assets/images/green_shoes.png";
+
+  /// Assets for assetsImagesHeart
+  /// assets/images/heart.png
+  static const String assetsImagesHeart = "assets/images/heart.png";
 
   /// Assets for assetsImagesHeartNavigationBar
   /// assets/images/heart_navigation_bar.png
@@ -165,6 +173,10 @@ class Assets {
   /// Assets for assetsImagesPumaVectorOriginal
   /// assets/images/puma_vector_original.png
   static const String assetsImagesPumaVectorOriginal = "assets/images/puma_vector_original.png";
+
+  /// Assets for assetsImagesSearchBestSeller
+  /// assets/images/search_best_seller.png
+  static const String assetsImagesSearchBestSeller = "assets/images/search_best_seller.png";
 
   /// Assets for assetsImagesSearchIcon
   /// assets/images/search_icon.png

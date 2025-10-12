@@ -15,6 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       bottomNavigationBar: CustomBottomNavigtionBar(
         onItemTapped: (int value) {
           selectedIndex = value;

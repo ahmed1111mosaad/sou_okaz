@@ -8,18 +8,16 @@ class ListViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: ListView.separated(
-        physics: NeverScrollableScrollPhysics(),
-        scrollDirection: Axis.vertical,
-        itemCount: 10,
-        itemBuilder: (context, index) {
-          return ItemProduct();
-        },
-        separatorBuilder: (context, index) {
-          return SizedBox(height: 5);
-        },
-      ),
+    return ListView.separated(
+      physics: NeverScrollableScrollPhysics(),
+      scrollDirection: Axis.vertical,
+      itemCount: 10,
+      itemBuilder: (context, index) {
+        return ItemProduct();
+      },
+      separatorBuilder: (context, index) {
+        return SizedBox(height: 20);
+      },
     );
   }
 }

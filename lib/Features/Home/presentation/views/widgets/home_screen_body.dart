@@ -2,13 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_app_bar_home_screen.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_list_of_vectors.dart';
-import 'package:sou_okaz/Features/Home/presentation/views/widgets/item_product.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_view_item.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_view_item_best_seller.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/text_popular_shoes.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
-import 'package:sou_okaz/core/utils/app_colors.dart';
-import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
 
 class HomeScreenBody extends StatefulWidget {
@@ -91,14 +88,14 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                 isPassword: false,
                 obscureText: false,
                 isSearchField: true,
-              ),
+              )
             ),
             SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .03)),
             SliverToBoxAdapter(child: CustomListOfVectors()),
             SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .03)),
             SliverToBoxAdapter(child: TextPopularShoes()),
             SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .02)),
-            SliverFillRemaining(child: ListViewItemBestSeller()),
+            SliverToBoxAdapter(child: ListViewItemBestSeller()),
             SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .015)),
             SliverToBoxAdapter(child: Align(alignment: Alignment.centerLeft, child: Text('All products'))),
             SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .015)),

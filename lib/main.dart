@@ -43,7 +43,8 @@ class SouOkaz extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => SignUpCubit(getIt<AuthRepo>())),
         BlocProvider(create: (context) => SignInCubit(getIt<AuthRepo>())),
-        BlocProvider(create: (context) => ResetPasswordCubit(getIt<AuthRepo>())),
+        BlocProvider(
+            create: (context) => ResetPasswordCubit(getIt<AuthRepo>())),
       ],
       child: MaterialApp(
         locale: Locale('en'),
@@ -54,7 +55,7 @@ class SouOkaz extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.delegate.supportedLocales,
-        theme:lightMode,
+        theme: lightMode,
         builder: (context, child) {
           return AnnotatedRegion<SystemUiOverlayStyle>(
             value: Theme.of(context).brightness == Brightness.dark

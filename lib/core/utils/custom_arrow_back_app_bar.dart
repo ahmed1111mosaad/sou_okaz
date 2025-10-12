@@ -13,9 +13,8 @@ class CustomArrowBackAppBar extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: isArabic() ? 8.0 : 0.0),
         child: SizedBox(
-          width: responsiveFontSize(context, 0, 0.13),
-          height: responsiveFontSize(context, 0.058, 0),
-
+          width: responsiveFontSize(context, 0, 0.12),
+          height: responsiveFontSize(context, 0.052, 0),
           child: IconButton(
             style: IconButton.styleFrom(
               backgroundColor: Theme.of(context).colorScheme.secondary,
