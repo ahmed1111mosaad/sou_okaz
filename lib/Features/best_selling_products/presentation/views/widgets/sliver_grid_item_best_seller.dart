@@ -10,7 +10,7 @@ class SliverGridItemBestSeller extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverGrid.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            mainAxisSpacing: 15,
+            mainAxisSpacing: 18,
             childAspectRatio: .75,
             crossAxisSpacing: 15,
             crossAxisCount: 2),

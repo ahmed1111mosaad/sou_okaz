@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/best_selling_products/presentation/views/widgets/custom_app_bar_best_seller.dart';
-import 'package:sou_okaz/Features/best_selling_products/presentation/views/widgets/item_best_seller.dart';
 import 'package:sou_okaz/Features/best_selling_products/presentation/views/widgets/sliver_grid_item_best_seller.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 

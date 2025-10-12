@@ -16,7 +16,7 @@ class ListViewItem extends StatelessWidget {
         return ItemProduct();
       },
       separatorBuilder: (context, index) {
-        return SizedBox(height: 20);
+        return SizedBox(height:15);
       },
     );
   }

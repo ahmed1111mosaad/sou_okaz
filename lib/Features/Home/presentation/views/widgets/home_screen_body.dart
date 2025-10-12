@@ -5,6 +5,7 @@ import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_list_of
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_view_item.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_view_item_best_seller.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/text_popular_shoes.dart';
+import 'package:sou_okaz/core/assets/assets.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 import 'package:sou_okaz/generated/l10n.dart';
 

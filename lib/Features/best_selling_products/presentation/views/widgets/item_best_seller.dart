@@ -16,8 +16,7 @@ class ItemBestSeller extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.28,
       width: MediaQuery.of(context).size.width * .42,
       decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(18.0)),
+          color: Colors.white, borderRadius: BorderRadius.circular(18.0)),
       child: Padding(
         padding: const EdgeInsets.only(left: 12, top: 12),
         child: Column(
@@ -34,8 +33,7 @@ class ItemBestSeller extends StatelessWidget {
                 S.current.homeBestSeller,
                 style: AppTextStyles.regular13.copyWith(
                     color: AppColors.primaryColor,
-                    fontSize:
-                        responsiveFontSize(context, 0.015, 0.00)),
+                    fontSize: responsiveFontSize(context, 0.015, 0.00)),
               ),
             ),
             FittedBox(
@@ -43,16 +41,14 @@ class ItemBestSeller extends StatelessWidget {
               child: Text(
                 S.current.homeNikeJordan,
                 style: AppTextStyles.medium16.copyWith(
-                    fontSize:
-                        responsiveFontSize(context, 0.019, 0.0)),
+                    fontSize: responsiveFontSize(context, 0.019, 0.0)),
               ),
             ),
             FittedBox(
               fit: BoxFit.scaleDown,
               child: Text(S.current.bestSellerCategory,
                   style: AppTextStyles.regular12.copyWith(
-                      fontSize:
-                          responsiveFontSize(context, .016, 0))),
+                      fontSize: responsiveFontSize(context, .016, 0))),
             ),
             Flexible(child: SizedBox(height: 10)),
             Row(
@@ -66,8 +62,7 @@ class ItemBestSeller extends StatelessWidget {
                         color: Color(
                           0xFFFF5F57,
                         ),
-                        fontSize: responsiveFontSize(
-                            context, 0.018, 0)),
+                        fontSize: responsiveFontSize(context, 0.018, 0)),
                   ),
                 ),
                 Spacer(
