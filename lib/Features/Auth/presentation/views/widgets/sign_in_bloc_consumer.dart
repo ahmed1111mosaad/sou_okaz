@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_in_cubit/sign_in_cubit.dart';
 import 'package:sou_okaz/Features/Auth/presentation/cubits/sign_in_cubit/sign_in_states.dart';
-import 'package:sou_okaz/Features/Home/presentation/views/home_screen.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/main_screen.dart';
 import 'package:sou_okaz/core/helpers/functions/navigator_with_fade_animation.dart';
 import 'package:sou_okaz/core/helpers/functions/snackbar/show_failure.dart';
 import 'package:sou_okaz/core/helpers/functions/snackbar/show_success.dart';
@@ -19,7 +19,7 @@ class SignInBlocConsumer extends StatelessWidget {
       listener: (context, state) {
         if (state is SuccessSignInState) {
           showSuccess(context, title: S.of(context).SuccessSignIn, description: '');
-          navigatorWithFadeAnimationPushReplacement(context, HomeScreen());
+          navigatorWithFadeAnimationPushReplacement(context, MainScreen());
         }
         if (state is FailureSignInState) {
           showFailure(context, title: state.errMessage, description: '');

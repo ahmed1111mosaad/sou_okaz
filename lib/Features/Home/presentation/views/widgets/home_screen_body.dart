@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_app_bar_home_screen.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_list_of_vectors.dart';
-import 'package:sou_okaz/Features/Home/presentation/views/widgets/icon_heart.dart';
-import 'package:sou_okaz/Features/Home/presentation/views/widgets/item_best_seller_home_screen.dart';
-import 'package:sou_okaz/core/assets/assets.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/item_product.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_view_item.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_view_item_best_seller.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/text_popular_shoes.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 import 'package:sou_okaz/core/utils/app_colors.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
@@ -80,111 +81,28 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
           horizontal: responsivePaddingWithWidth(context, 0.05),
           vertical: responsivePaddingWithWidth(context, 0.02),
         ),
-        child: Column(
-          children: [
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .015,
-            ),
-            CustomAppBarHomeScreen(greeting: greeting),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .02,
-            ),
-            CustomTextFormField(
-              isPassword: false,
-              obscureText: false,
-              isSearchField: true,
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .03,
-            ),
-            CustomListOfVectors(),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .03,
-            ),
-            Row(
-              children: [
-                Text(
-                  S.current.homePopularShoes,
-                  style: AppTextStyles.medium16,
-                ),
-                Spacer(),
-                Text(
-                  'see all',
-                  style: AppTextStyles.regular14.copyWith(
-                      color: AppColors.lightPrimaryColor,
-                      fontWeight: FontWeight.bold),
-                )
-              ],
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .02,
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.28,
-              child: ListView.separated(
-                  separatorBuilder: (context, index) {
-                    return SizedBox(
-                      width: MediaQuery.of(context).size.width * .05,
-                    );
-                  },
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 3,
-                  itemBuilder: (context, index) {
-                    return CardBestSellerHomeScreen();
-                  }),
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .015,
-            ),
-            Align(alignment: Alignment.centerLeft, child: Text('All products')),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .015,
-            ),
-            Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 0.15,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(
-                    MediaQuery.of(context).size.height * 0.023,
-                  )),
-              child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          S.current.homeNikeAirJordan,
-                          style: AppTextStyles.medium20.copyWith(
-                            fontSize: MediaQuery.of(context).size.width * 0.055,
-                          ),
-                        ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.01,
-                        ),
-                        Text(
-                          r"$" "493.00",
-                          style: AppTextStyles.medium16
-                              .copyWith(
-                                  fontSize:
-                                      responsiveFontSize(context, 0.0, 0.04))
-                              .copyWith(color: Color(0xFFFF5F57)),
-                        )
-                      ],
-                    ),
-                    Spacer(),
-                    Image.asset(Assets.assetsImagesNikeAirJordan),
-                    Align(alignment: Alignment.topRight, child: IconHeart())
-                  ],
-                ),
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .015)),
+            SliverToBoxAdapter(child: CustomAppBarHomeScreen(greeting: greeting)),
+            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .02)),
+            SliverToBoxAdapter(
+              child: CustomTextFormField(
+                isPassword: false,
+                obscureText: false,
+                isSearchField: true,
               ),
-            )
+            ),
+            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .03)),
+            SliverToBoxAdapter(child: CustomListOfVectors()),
+            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .03)),
+            SliverToBoxAdapter(child: TextPopularShoes()),
+            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .02)),
+            SliverFillRemaining(child: ListViewItemBestSeller()),
+            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .015)),
+            SliverToBoxAdapter(child: Align(alignment: Alignment.centerLeft, child: Text('All products'))),
+            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .015)),
+            SliverFillRemaining(child: ListViewItem())
           ],
         ),
       ),

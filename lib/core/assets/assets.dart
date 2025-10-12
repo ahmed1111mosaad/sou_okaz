@@ -26,6 +26,10 @@ class Assets {
   /// assets/images/check.png
   static const String assetsImagesCheck = "assets/images/check.png";
 
+  /// Assets for assetsImagesCheckoutNavigationBar
+  /// assets/images/checkout_navigation_bar.png
+  static const String assetsImagesCheckoutNavigationBar = "assets/images/checkout_navigation_bar.png";
+
   /// Assets for assetsImagesConverseVector
   /// assets/images/converse_vector.png
   static const String assetsImagesConverseVector = "assets/images/converse_vector.png";
@@ -50,6 +54,10 @@ class Assets {
   /// assets/images/facebook_icon.png
   static const String assetsImagesFacebookIcon = "assets/images/facebook_icon.png";
 
+  /// Assets for assetsImagesFavoutieNavigationBar
+  /// assets/images/favoutie_navigation_bar.png
+  static const String assetsImagesFavoutieNavigationBar = "assets/images/favoutie_navigation_bar.png";
+
   /// Assets for assetsImagesGoogleIcon
   /// assets/images/google_icon.png
   static const String assetsImagesGoogleIcon = "assets/images/google_icon.png";
@@ -57,6 +65,14 @@ class Assets {
   /// Assets for assetsImagesGreenShoes
   /// assets/images/green_shoes.png
   static const String assetsImagesGreenShoes = "assets/images/green_shoes.png";
+
+  /// Assets for assetsImagesHeartNavigationBar
+  /// assets/images/heart_navigation_bar.png
+  static const String assetsImagesHeartNavigationBar = "assets/images/heart_navigation_bar.png";
+
+  /// Assets for assetsImagesHomeNavigationBar
+  /// assets/images/home_navigation_bar.png
+  static const String assetsImagesHomeNavigationBar = "assets/images/home_navigation_bar.png";
 
   /// Assets for assetsImagesNIKE
   /// assets/images/NIKE.svg
@@ -122,6 +138,10 @@ class Assets {
   /// assets/images/notification_icon_dark_mode.png
   static const String assetsImagesNotificationIconDarkMode = "assets/images/notification_icon_dark_mode.png";
 
+  /// Assets for assetsImagesNotificationNavigationBar
+  /// assets/images/notification_navigation_bar.png
+  static const String assetsImagesNotificationNavigationBar = "assets/images/notification_navigation_bar.png";
+
   /// Assets for assetsImagesOkazStoreOrginal1280
   /// assets/images/okaz_store_orginal1280.png
   static const String assetsImagesOkazStoreOrginal1280 = "assets/images/okaz_store_orginal1280.png";
@@ -133,6 +153,10 @@ class Assets {
   /// Assets for assetsImagesOrangeOboardingShoes
   /// assets/images/orange_oboarding_shoes.png
   static const String assetsImagesOrangeOboardingShoes = "assets/images/orange_oboarding_shoes.png";
+
+  /// Assets for assetsImagesProfileNavigationBar
+  /// assets/images/profile_navigation_bar.png
+  static const String assetsImagesProfileNavigationBar = "assets/images/profile_navigation_bar.png";
 
   /// Assets for assetsImagesPumaVector
   /// assets/images/puma_vector.png

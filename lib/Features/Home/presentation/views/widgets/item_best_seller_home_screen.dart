@@ -6,8 +6,8 @@ import 'package:sou_okaz/core/utils/app_colors.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
 import 'package:sou_okaz/generated/l10n.dart';
 
-class CardBestSellerHomeScreen extends StatelessWidget {
-  const CardBestSellerHomeScreen({
+class ItemBestSellerHomeScreen extends StatelessWidget {
+  const ItemBestSellerHomeScreen({
     super.key,
   });
 
