@@ -1214,6 +1214,26 @@ class S {
     );
   }
 
+  /// `We Have New`
+  String get notificationItemText {
+    return Intl.message(
+      'We Have New',
+      name: 'notificationItemText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Products With Offers`
+  String get notificationItemText1 {
+    return Intl.message(
+      'Products With Offers',
+      name: 'notificationItemText1',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Clear All`
   String get notificationsClearAll {
     return Intl.message(
@@ -1227,6 +1247,11 @@ class S {
   /// `Filters`
   String get filtersTitle {
     return Intl.message('Filters', name: 'filtersTitle', desc: '', args: []);
+  }
+
+  /// `RESET`
+  String get filtersReset {
+    return Intl.message('RESET', name: 'filtersReset', desc: '', args: []);
   }
 
   /// `Gender`

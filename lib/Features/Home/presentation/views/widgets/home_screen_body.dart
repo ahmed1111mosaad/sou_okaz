@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_app_bar_home_screen.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_list_of_vectors.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_show_modal_bottom_sheet.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_view_item.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_view_item_best_seller.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/text_popular_shoes.dart';
@@ -81,25 +82,63 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
         ),
         child: CustomScrollView(
           slivers: [
-            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .015)),
-            SliverToBoxAdapter(child: CustomAppBarHomeScreen(greeting: greeting)),
-            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .02)),
             SliverToBoxAdapter(
-              child: CustomTextFormField(
-                isPassword: false,
-                obscureText: false,
-                isSearchField: true,
-              )
-            ),
-            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .03)),
+                child: SizedBox(
+                    height: MediaQuery.of(context).size.height * .015)),
+            SliverToBoxAdapter(
+                child: CustomAppBarHomeScreen(greeting: greeting)),
+            SliverToBoxAdapter(
+                child:
+                    SizedBox(height: MediaQuery.of(context).size.height * .02)),
+            SliverToBoxAdapter(
+                child: Row(
+              children: [
+                Expanded(
+                  child: CustomTextFormField(
+                    isPassword: false,
+                    obscureText: false,
+                    isSearchField: true,
+                  ),
+                ),
+                SizedBox(
+                  width: 8,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (context) {
+                          return CustomShowModalBottomSheet();
+                        });
+                  },
+                  child: CircleAvatar(
+                      backgroundColor: Colors.white.withAlpha(200),
+                      child: Image.asset(Assets.assetsImagesFilterBestSeller)),
+                ),
+              ],
+            )),
+            SliverToBoxAdapter(
+                child:
+                    SizedBox(height: MediaQuery.of(context).size.height * .03)),
             SliverToBoxAdapter(child: CustomListOfVectors()),
-            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .03)),
+            SliverToBoxAdapter(
+                child:
+                    SizedBox(height: MediaQuery.of(context).size.height * .03)),
             SliverToBoxAdapter(child: TextPopularShoes()),
-            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .02)),
+            SliverToBoxAdapter(
+                child:
+                    SizedBox(height: MediaQuery.of(context).size.height * .02)),
             SliverToBoxAdapter(child: ListViewItemBestSeller()),
-            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .015)),
-            SliverToBoxAdapter(child: Align(alignment: Alignment.centerLeft, child: Text('All products'))),
-            SliverToBoxAdapter(child: SizedBox(height: MediaQuery.of(context).size.height * .015)),
+            SliverToBoxAdapter(
+                child: SizedBox(
+                    height: MediaQuery.of(context).size.height * .015)),
+            SliverToBoxAdapter(
+                child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text('All products'))),
+            SliverToBoxAdapter(
+                child: SizedBox(
+                    height: MediaQuery.of(context).size.height * .015)),
             SliverFillRemaining(child: ListViewItem())
           ],
         ),

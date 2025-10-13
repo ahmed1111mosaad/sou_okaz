@@ -123,8 +123,12 @@
   "notificationsToday": "Today",
   "notificationsYesterday": "Yesterday",
   "notificationsTitle": "Notifications",
+  "notificationItemText":"We Have New",
+  "notificationItemText1":"Products With Offers",
+  
   "notificationsClearAll": "Clear All",
   "filtersTitle": "Filters",
+  "filtersReset": "RESET",
   "filtersGender": "Gender",
   "filtersMen": "Men",
   "filtersWomen": "Women",

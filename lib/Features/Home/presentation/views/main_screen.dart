@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_bottom_navigation_bar.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/favourite_screen.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/home_screen_body.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/widgets/notification_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -25,17 +27,13 @@ class _MainScreenState extends State<MainScreen> {
       body: selectedIndex == 0
           ? HomeScreenBody()
           : selectedIndex == 1
-              ? Center(
-                  child: Text('Favoutite'),
-                )
+              ? FavouriteScreen()
               : selectedIndex == 2
                   ? Center(
                       child: Text('Cart'),
                     )
                   : selectedIndex == 3
-                      ? Center(
-                          child: Text('Notification'),
-                        )
+                      ? NotificationScreen()
                       : Center(
                           child: Text('profile'),
                         ),

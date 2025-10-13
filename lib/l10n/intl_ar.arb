@@ -123,8 +123,12 @@
   "notificationsYesterday": "أمس",
   "notificationsTitle": "الإشعارات",
   "notificationsClearAll": "مسح الكل",
+  "notificationItemText": "لدينا منتجات جديدة",
+  "notificationItemText1": "مع عروض وخصومات",
+
   "filtersTitle": "الفلاتر",
-  "filtersGender": "الجنس",
+  "filtersReset": "إعادة التعيين",
+  "filtersGender": "النوع",
   "filtersMen": "رجال",
   "filtersWomen": "نساء",
   "filtersUnisex": "للجنسين",

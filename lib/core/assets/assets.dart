@@ -54,6 +54,10 @@ class Assets {
   /// assets/images/facebook_icon.png
   static const String assetsImagesFacebookIcon = "assets/images/facebook_icon.png";
 
+  /// Assets for assetsImagesFavourite
+  /// assets/images/Favourite.png
+  static const String assetsImagesFavourite = "assets/images/Favourite.png";
+
   /// Assets for assetsImagesFavoutieNavigationBar
   /// assets/images/favoutie_navigation_bar.png
   static const String assetsImagesFavoutieNavigationBar = "assets/images/favoutie_navigation_bar.png";

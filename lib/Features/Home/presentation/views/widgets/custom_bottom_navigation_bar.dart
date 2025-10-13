@@ -34,11 +34,11 @@ class _CustomBottomNavigtionBarState extends State<CustomBottomNavigtionBar> {
               ),
         selectedIndex == 1
             ? Image.asset(
-                Assets.assetsImagesFavoutieNavigationBar,
+                Assets.assetsImagesHeartNavigationBar,
                 color: Colors.white,
               )
             : Image.asset(
-                Assets.assetsImagesFavoutieNavigationBar,
+                Assets.assetsImagesHeartNavigationBar,
                 color: Colors.grey,
               ),
         selectedIndex == 2

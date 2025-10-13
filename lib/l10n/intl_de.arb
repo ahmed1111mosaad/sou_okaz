@@ -123,7 +123,13 @@
   "notificationsYesterday": "Gestern",
   "notificationsTitle": "Benachrichtigungen",
   "notificationsClearAll": "Alles löschen",
+  "notificationItemText": "Wir haben neue",
+  "notificationItemText1": "Produkte mit Angeboten",
+
+
+
   "filtersTitle": "Filter",
+  "filtersReset": "Zurücksetzen",
   "filtersGender": "Geschlecht",
   "filtersMen": "Männer",
   "filtersWomen": "Frauen",

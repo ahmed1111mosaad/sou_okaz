@@ -15,6 +15,7 @@ ThemeData lightMode = ThemeData(
     surfaceContainer: Colors.black.withAlpha(170),
     surfaceBright: Colors.black,
   ),
+  
   fontFamily: 'Airbnb Cereal App',
   primaryColor: Color(0xFF5B9EE1),
   textTheme: TextTheme(

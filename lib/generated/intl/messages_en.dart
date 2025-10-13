@@ -122,6 +122,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "filtersPrice": MessageLookupByLibrary.simpleMessage("Price"),
     "filtersPrice16": MessageLookupByLibrary.simpleMessage("\$16"),
     "filtersPrice350": MessageLookupByLibrary.simpleMessage("\$350"),
+    "filtersReset": MessageLookupByLibrary.simpleMessage("RESET"),
     "filtersSize": MessageLookupByLibrary.simpleMessage("Size"),
     "filtersTitle": MessageLookupByLibrary.simpleMessage("Filters"),
     "filtersUnisex": MessageLookupByLibrary.simpleMessage("Unisex"),
@@ -221,6 +222,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "Please Create new password to sign in",
     ),
     "newPasswordTitle": MessageLookupByLibrary.simpleMessage("New Password"),
+    "notificationItemText": MessageLookupByLibrary.simpleMessage("We Have New"),
+    "notificationItemText1": MessageLookupByLibrary.simpleMessage(
+      "Products With Offers",
+    ),
     "notificationsClearAll": MessageLookupByLibrary.simpleMessage("Clear All"),
     "notificationsTitle": MessageLookupByLibrary.simpleMessage("Notifications"),
     "notificationsToday": MessageLookupByLibrary.simpleMessage("Today"),
