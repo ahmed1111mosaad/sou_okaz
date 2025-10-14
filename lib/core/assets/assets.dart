@@ -30,6 +30,10 @@ class Assets {
   /// assets/images/checkout_navigation_bar.png
   static const String assetsImagesCheckoutNavigationBar = "assets/images/checkout_navigation_bar.png";
 
+  /// Assets for assetsImagesCircle
+  /// assets/images/circle.png
+  static const String assetsImagesCircle = "assets/images/circle.png";
+
   /// Assets for assetsImagesConverseVector
   /// assets/images/converse_vector.png
   static const String assetsImagesConverseVector = "assets/images/converse_vector.png";
@@ -125,6 +129,10 @@ class Assets {
   /// Assets for assetsImagesNikeClubMax
   /// assets/images/nike_club_max.png
   static const String assetsImagesNikeClubMax = "assets/images/nike_club_max.png";
+
+  /// Assets for assetsImagesNikeDetails
+  /// assets/images/nike_details.png
+  static const String assetsImagesNikeDetails = "assets/images/nike_details.png";
 
   /// Assets for assetsImagesNikeJordan
   /// assets/images/nike_jordan.png

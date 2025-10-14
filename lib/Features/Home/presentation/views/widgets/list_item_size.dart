@@ -11,7 +11,7 @@ class ListItemSize extends StatefulWidget {
 }
 
 class _ListItemSizeState extends State<ListItemSize> {
-  int selectedindex = 0;
+  int selectedindex = 30;
   final List<String> textSize = [
     'UK 3',
     'UK 4',

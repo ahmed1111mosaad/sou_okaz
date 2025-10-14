@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_bottom_navigation_bar.dart';
-import 'package:sou_okaz/Features/Home/presentation/views/widgets/favourite_screen.dart';
-import 'package:sou_okaz/Features/Home/presentation/views/widgets/home_screen_body.dart';
-import 'package:sou_okaz/Features/Home/presentation/views/widgets/notification_screen.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/favourite_screen.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/home_screen_body.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/notification_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

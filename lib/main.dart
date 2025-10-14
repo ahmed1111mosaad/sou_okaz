@@ -26,7 +26,7 @@ void main() async {
 
   runApp(
     DevicePreview(
-      enabled:false,
+      enabled: false,
       builder: (BuildContext context) {
         return const SouOkaz();
       },
@@ -65,7 +65,7 @@ class SouOkaz extends StatelessWidget {
           );
         },
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.homeScreen,
+        initialRoute: Routes.splash,
         routes: routes(),
       ),
     );

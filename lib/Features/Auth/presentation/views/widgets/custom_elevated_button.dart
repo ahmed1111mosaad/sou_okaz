@@ -10,17 +10,17 @@ class CustomElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
-      // height:  responsiveFontSize(context, 0.065,0),
-      height:  55,
+      height: responsiveFontSize(context, 0.061, 0),
+      // height:  55,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primaryColor,
         ),
         onPressed: onPressed,
-        child: Text(title, style: AppTextStyles.medium18.copyWith(
-          fontSize: responsiveFontSize(context, 0, 0.055),
-        )),
+        child: Text(title,
+            style: AppTextStyles.medium18.copyWith(
+              fontSize: responsiveFontSize(context, 0, 0.052),
+            )),
       ),
     );
   }

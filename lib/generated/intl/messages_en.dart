@@ -28,6 +28,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "FailureSignInWithGoogleErrorOccured": MessageLookupByLibrary.simpleMessage(
       "An error occurred during sign-in",
     ),
+    "Price": MessageLookupByLibrary.simpleMessage("Price"),
     "SuccessSignIn": MessageLookupByLibrary.simpleMessage(
       "You have signed in successfully",
     ),

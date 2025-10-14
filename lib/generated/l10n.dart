@@ -1349,6 +1349,11 @@ class S {
     );
   }
 
+  /// `Price`
+  String get Price {
+    return Intl.message('Price', name: 'Price', desc: '', args: []);
+  }
+
   /// `Subtotal`
   String get cartSubtotal {
     return Intl.message('Subtotal', name: 'cartSubtotal', desc: '', args: []);

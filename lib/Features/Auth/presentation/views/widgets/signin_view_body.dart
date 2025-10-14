@@ -180,22 +180,25 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   SizedBox(height: responsiveFontSize(context, 0.025, 0)),
 
                   // ? Sign In with email and password Button
-                  CustomElevatedButton(
-                    title: S.of(context).signInButton,
-                    onPressed: () {
-                      if (key.currentState!.validate()) {
-                        key.currentState!.save();
-                        BlocProvider.of<SignInCubit>(
-                          context,
-                        ).signInWithEmailAndPassword(
-                          email: email!,
-                          password: password!,
-                        );
-                      } else {
-                        autovalidateMode = AutovalidateMode.always;
-                        setState(() {});
-                      }
-                    },
+                  SizedBox(
+                    width: double.infinity,
+                    child: CustomElevatedButton(
+                      title: S.of(context).signInButton,
+                      onPressed: () {
+                        if (key.currentState!.validate()) {
+                          key.currentState!.save();
+                          BlocProvider.of<SignInCubit>(
+                            context,
+                          ).signInWithEmailAndPassword(
+                            email: email!,
+                            password: password!,
+                          );
+                        } else {
+                          autovalidateMode = AutovalidateMode.always;
+                          setState(() {});
+                        }
+                      },
+                    ),
                   ),
                   SizedBox(height: responsiveFontSize(context, 0.035, 0)),
 

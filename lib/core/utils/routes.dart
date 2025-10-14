@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/signin_view.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/signup_view.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/details_screen.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/main_screen.dart';
 import 'package:sou_okaz/Features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:sou_okaz/Features/splash/presentation/views/splash_screen.dart';
@@ -11,6 +12,7 @@ abstract class Routes {
   static const login = 'LoginView';
   static const signUp = 'signUp';
   static const homeScreen = 'MainScreen';
+  static const detailsScreen = 'DetailsScreen';
 }
 
 Map<String, Widget Function(BuildContext)> routes() {
@@ -20,5 +22,6 @@ Map<String, Widget Function(BuildContext)> routes() {
     Routes.login: (context) => SigninView(),
     Routes.homeScreen: (context) => MainScreen(),
     Routes.signUp: (context) => SignUpView(),
+    Routes.detailsScreen: (context) => DetailsScreen(),
   };
 }

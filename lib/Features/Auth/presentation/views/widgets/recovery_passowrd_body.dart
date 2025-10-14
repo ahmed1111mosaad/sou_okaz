@@ -110,20 +110,23 @@ class _RecoveryPassowrdBodyState extends State<RecoveryPassowrdBody> {
                     isSearchField: false,
                   ),
                   SizedBox(height: MediaQuery.of(context).size.height * .015),
-                  CustomElevatedButton(
-                    title: S.of(context).forgotPasswordContinue,
-                    onPressed: () {
-                      if (formKey.currentState!.validate()) {
-                        formKey.currentState!.save();
-                        context
-                            .read<ResetPasswordCubit>()
-                            .resetPassword(email: email!);
-                        setState(() {});
-                      } else {
-                        autovalidateMode = AutovalidateMode.always;
-                        setState(() {});
-                      }
-                    },
+                  SizedBox(
+                    width: double.infinity,
+                    child: CustomElevatedButton(
+                      title: S.of(context).forgotPasswordContinue,
+                      onPressed: () {
+                        if (formKey.currentState!.validate()) {
+                          formKey.currentState!.save();
+                          context
+                              .read<ResetPasswordCubit>()
+                              .resetPassword(email: email!);
+                          setState(() {});
+                        } else {
+                          autovalidateMode = AutovalidateMode.always;
+                          setState(() {});
+                        }
+                      },
+                    ),
                   ),
                 ],
               ),

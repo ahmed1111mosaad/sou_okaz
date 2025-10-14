@@ -13,9 +13,8 @@ class CustomArrowBackAppBar extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: isArabic() ? 8.0 : 0.0),
         child: SizedBox(
-          width: responsiveFontSize(context, 0, 0.12),
+          width: responsiveFontSize(context, 0, 0.10),
           height: responsiveFontSize(context, 0.052, 0),
-
           child: IconButton(
             style: IconButton.styleFrom(
               backgroundColor: Theme.of(context).colorScheme.secondary,
@@ -27,10 +26,13 @@ class CustomArrowBackAppBar extends StatelessWidget {
                 Navigator.of(context).pop();
               }
             },
-            icon: Icon(
-              Icons.arrow_back_ios,
-              size: 17,
-              color: Theme.of(context).colorScheme.onSurface,
+            icon: Padding(
+              padding: const EdgeInsets.only(left: 4.0),
+              child: Icon(
+                Icons.arrow_back_ios,
+                size: 17,
+                color: Theme.of(context).colorScheme.onSurface,
+              ),
             ),
           ),
         ),

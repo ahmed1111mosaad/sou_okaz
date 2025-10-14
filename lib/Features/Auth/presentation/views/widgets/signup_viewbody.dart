@@ -200,35 +200,38 @@ class _SignupViewbodyState extends State<SignupViewbody> {
                   ),
                   SizedBox(height: 25),
                   // ! Sign Up Button
-                  CustomElevatedButton(
-                    title: S.of(context).signUpButton,
-                    onPressed: () async {
-                      if (formKey.currentState!.validate()) {
-                        formKey.currentState!.save();
-
-                        if (isTermsAccepted) {
-                          BlocProvider.of<SignUpCubit>(
-                            context,
-                          ).createUserWithEmailAndPassowrd(
-                            email: email!,
-                            password: password!,
-                            name: name!,
-                            phoneNumber: phoneNumber!.completeNumber,
-                          );
+                  SizedBox(
+                    width: double.infinity,
+                    child: CustomElevatedButton(
+                      title: S.of(context).signUpButton,
+                      onPressed: () async {
+                        if (formKey.currentState!.validate()) {
+                          formKey.currentState!.save();
+                    
+                          if (isTermsAccepted) {
+                            BlocProvider.of<SignUpCubit>(
+                              context,
+                            ).createUserWithEmailAndPassowrd(
+                              email: email!,
+                              password: password!,
+                              name: name!,
+                              phoneNumber: phoneNumber!.completeNumber,
+                            );
+                          } else {
+                            showFailure(
+                              context,
+                              title: S.of(context).snackbarTitleFailure,
+                              description: S
+                                  .of(context)
+                                  .snackbarDescriptionFailureTerms,
+                            );
+                          }
                         } else {
-                          showFailure(
-                            context,
-                            title: S.of(context).snackbarTitleFailure,
-                            description: S
-                                .of(context)
-                                .snackbarDescriptionFailureTerms,
-                          );
+                          autovalidateMode = AutovalidateMode.always;
+                          setState(() {});
                         }
-                      } else {
-                        autovalidateMode = AutovalidateMode.always;
-                        setState(() {});
-                      }
-                    },
+                      },
+                    ),
                   ),
                   SizedBox(height: 20),
                   Row(
