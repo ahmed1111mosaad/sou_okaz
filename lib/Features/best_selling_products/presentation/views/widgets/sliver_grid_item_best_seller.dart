@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/details_screen.dart';
 import 'package:sou_okaz/Features/best_selling_products/presentation/views/widgets/item_best_seller.dart';
+import 'package:sou_okaz/core/helpers/functions/navigator_with_fade_animation.dart';
 
 class SliverGridItemBestSeller extends StatelessWidget {
   const SliverGridItemBestSeller({
@@ -15,7 +17,11 @@ class SliverGridItemBestSeller extends StatelessWidget {
             crossAxisSpacing: 15,
             crossAxisCount: 2),
         itemBuilder: (context, index) {
-          return ItemBestSeller();
+          return GestureDetector(
+              onTap: () {
+                navigatorWithFadeAnimation(context, DetailsScreen());
+              },
+              child: ItemBestSeller());
         });
   }
 }

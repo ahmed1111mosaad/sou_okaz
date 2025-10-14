@@ -9,6 +9,5 @@ class DetailsScreen extends StatelessWidget {
     return const Scaffold(
       body: DetailsScreenBody(),
     );
-    
   }
 }

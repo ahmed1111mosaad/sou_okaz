@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Auth/presentation/views/widgets/custom_elevated_button.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/cart_screen.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/custom_app_bar_details_screen.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/image_details.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_item_size.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/list_of_item_gallery.dart';
+import 'package:sou_okaz/core/helpers/functions/navigator_with_slide_animation.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 import 'package:sou_okaz/core/utils/app_colors.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
@@ -102,7 +104,10 @@ class DetailsScreenBody extends StatelessWidget {
                       Spacer(),
                       CustomElevatedButton(
                         title: S.current.detailsAddToCart,
-                        onPressed: () {},
+                        onPressed: () {
+                          navigatorWithSlideAnimation(
+                              context, CartScreen(), Offset(1, 0));
+                        },
                       )
                     ],
                   ),

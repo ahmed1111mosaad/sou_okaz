@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sou_okaz/Features/Home/presentation/views/details_screen.dart';
+import 'package:sou_okaz/core/helpers/functions/navigator_with_fade_animation.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 import 'package:sou_okaz/core/utils/app_colors.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';

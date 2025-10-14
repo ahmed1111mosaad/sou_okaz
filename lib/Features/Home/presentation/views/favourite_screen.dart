@@ -22,7 +22,7 @@ class FavouriteScreen extends StatelessWidget {
             SliverToBoxAdapter(
                 child: Row(
               children: [
-                CustomArrowBackAppBar(),
+                CustomArrowBackAppBar(isLogin: true,),
                 Spacer(),
                 Text(S.current.favouriteTitle,
                     style: AppTextStyles.medium16.copyWith(

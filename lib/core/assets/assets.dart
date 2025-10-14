@@ -186,6 +186,10 @@ class Assets {
   /// assets/images/puma_vector_original.png
   static const String assetsImagesPumaVectorOriginal = "assets/images/puma_vector_original.png";
 
+  /// Assets for assetsImagesRemoveIcon
+  /// assets/images/remove_icon.png
+  static const String assetsImagesRemoveIcon = "assets/images/remove_icon.png";
+
   /// Assets for assetsImagesSearchBestSeller
   /// assets/images/search_best_seller.png
   static const String assetsImagesSearchBestSeller = "assets/images/search_best_seller.png";
