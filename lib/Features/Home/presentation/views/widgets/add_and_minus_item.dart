@@ -14,10 +14,10 @@ class AddAndMinusItem extends StatelessWidget {
       children: [
         CircleAvatar(
           backgroundColor: Colors.white,
-          radius: 12,
+          radius: MediaQuery.of(context).size.height * 0.015,
           child: Icon(
             Icons.remove,
-            size: 20,
+            size: MediaQuery.of(context).size.height * 0.030,
             color: Colors.black,
           ),
         ),
@@ -38,10 +38,10 @@ class AddAndMinusItem extends StatelessWidget {
         ),
         CircleAvatar(
           backgroundColor: AppColors.primaryColor,
-          radius: 12,
+          radius: MediaQuery.of(context).size.height * 0.015,
           child: Icon(
             Icons.add,
-            size: 20,
+            size: MediaQuery.of(context).size.height * 0.030,
             color: Colors.white,
           ),
         ),

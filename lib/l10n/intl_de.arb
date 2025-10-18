@@ -92,7 +92,6 @@
   "unauthorizedResetLink": "Unbefugter Zugriff auf den Zurücksetzungslink.",
   "resetPasswordEmailSent": "E-Mail zum Zurücksetzen des Passworts wurde gesendet",
   "seeAll": "Alle anzeigen",
-  
   "homePasswordChanged": "Passwort wurde erfolgreich geändert",
   "goodMorning": "Guten Morgen 🌅",
   "goodAfternoon": "Guten Nachmittag ☀️",
@@ -125,9 +124,6 @@
   "notificationsClearAll": "Alles löschen",
   "notificationItemText": "Wir haben neue",
   "notificationItemText1": "Produkte mit Angeboten",
-
-
-
   "filtersTitle": "Filter",
   "filtersReset": "Zurücksetzen",
   "filtersGender": "Geschlecht",
@@ -181,5 +177,9 @@
   "drawerDarkMode": "Dunkelmodus",
   "drawerFullName": "Vollständiger Name",
   "drawerEmailAddress": "E-Mail-Adresse",
-  "drawerLocation": "Standort"
+  "drawerLocation": "Standort",
+  "comment": "Schreibe einen Kommentar..",
+  "Review": "Bewertung",
+  "summary": "Zusammenfassung"
+
 }

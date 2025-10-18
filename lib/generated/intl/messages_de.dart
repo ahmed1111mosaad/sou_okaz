@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Bei der Anmeldung ist ein Fehler aufgetreten",
     ),
     "Price": MessageLookupByLibrary.simpleMessage("Preis"),
+    "Review": MessageLookupByLibrary.simpleMessage("Bewertung"),
     "SuccessSignUp": MessageLookupByLibrary.simpleMessage(
       "Dein Konto wurde erfolgreich erstellt",
     ),
@@ -57,6 +58,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "checkoutSuccess": MessageLookupByLibrary.simpleMessage(
       "Deine Zahlung war erfolgreich",
+    ),
+    "comment": MessageLookupByLibrary.simpleMessage(
+      "Schreibe einen Kommentar..",
     ),
     "detailsAddToCart": MessageLookupByLibrary.simpleMessage(
       "In den Warenkorb",
@@ -362,6 +366,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "snackbarTitleInfo": MessageLookupByLibrary.simpleMessage("Information"),
     "snackbarTitleSuccess": MessageLookupByLibrary.simpleMessage("Glückwunsch"),
     "snackbarTitleWarning": MessageLookupByLibrary.simpleMessage("Achtung"),
+    "summary": MessageLookupByLibrary.simpleMessage("Zusammenfassung"),
     "termsAndCondition1": MessageLookupByLibrary.simpleMessage("Ich stimme"),
     "termsAndCondition2": MessageLookupByLibrary.simpleMessage(
       " den Datenschutzbestimmungen von Sou Okaz",

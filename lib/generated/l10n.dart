@@ -1633,6 +1633,26 @@ class S {
   String get drawerLocation {
     return Intl.message('Location', name: 'drawerLocation', desc: '', args: []);
   }
+
+  /// `Write a comment..`
+  String get comment {
+    return Intl.message(
+      'Write a comment..',
+      name: 'comment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Review`
+  String get Review {
+    return Intl.message('Review', name: 'Review', desc: '', args: []);
+  }
+
+  /// `summary`
+  String get summary {
+    return Intl.message('summary', name: 'summary', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

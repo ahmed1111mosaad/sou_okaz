@@ -190,6 +190,10 @@ class Assets {
   /// assets/images/remove_icon.png
   static const String assetsImagesRemoveIcon = "assets/images/remove_icon.png";
 
+  /// Assets for assetsImagesReviewImage
+  /// assets/images/review_image.jpg
+  static const String assetsImagesReviewImage = "assets/images/review_image.jpg";
+
   /// Assets for assetsImagesSearchBestSeller
   /// assets/images/search_best_seller.png
   static const String assetsImagesSearchBestSeller = "assets/images/search_best_seller.png";
@@ -198,9 +202,17 @@ class Assets {
   /// assets/images/search_icon.png
   static const String assetsImagesSearchIcon = "assets/images/search_icon.png";
 
+  /// Assets for assetsImagesStar
+  /// assets/images/star.png
+  static const String assetsImagesStar = "assets/images/star.png";
+
   /// Assets for assetsImagesTShirt
   /// assets/images/t-shirt.png
   static const String assetsImagesTShirt = "assets/images/t-shirt.png";
+
+  /// Assets for assetsImagesToti
+  /// assets/images/toti.jpg
+  static const String assetsImagesToti = "assets/images/toti.jpg";
 
   /// Assets for assetsImagesUnderArmourVector
   /// assets/images/under_armour_vector.png

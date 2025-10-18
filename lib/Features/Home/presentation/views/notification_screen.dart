@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sou_okaz/Features/Home/presentation/views/widgets/notification_item.dart';
-import 'package:sou_okaz/core/assets/assets.dart';
 import 'package:sou_okaz/core/helpers/functions/responsive.dart';
 import 'package:sou_okaz/core/utils/app_colors.dart';
 import 'package:sou_okaz/core/utils/app_text_styles.dart';
@@ -23,7 +22,7 @@ class NotificationScreen extends StatelessWidget {
             SliverToBoxAdapter(
                 child: Row(
               children: [
-                CustomArrowBackAppBar(),
+                CustomArrowBackAppBar(isLogin: true,),
                 Spacer(),
                 Text(S.current.notificationsTitle,
                     style: AppTextStyles.medium16.copyWith(

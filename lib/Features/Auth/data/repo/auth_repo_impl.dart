@@ -38,7 +38,7 @@ class AuthRepoImpl extends AuthRepo {
         uId: user.uid,
         phoneNumber: phoneNumber,
       );
-      // ToDo add data to the  database
+      // ToDo add data to the  database and store it in the shared preferences
       await addUserData(userEntity: userEntity);
       await saveUserData(userEntity: userEntity);
       return right(userEntity);

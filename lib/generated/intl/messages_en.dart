@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "An error occurred during sign-in",
     ),
     "Price": MessageLookupByLibrary.simpleMessage("Price"),
+    "Review": MessageLookupByLibrary.simpleMessage("Review"),
     "SuccessSignIn": MessageLookupByLibrary.simpleMessage(
       "You have signed in successfully",
     ),
@@ -61,6 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "checkoutSuccess": MessageLookupByLibrary.simpleMessage(
       "Your Payment Is Successful",
     ),
+    "comment": MessageLookupByLibrary.simpleMessage("Write a comment.."),
     "detailsAddToCart": MessageLookupByLibrary.simpleMessage("Add To Cart"),
     "detailsCategory": MessageLookupByLibrary.simpleMessage("Men\'s Shoes"),
     "detailsDescription": MessageLookupByLibrary.simpleMessage(
@@ -348,6 +350,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Congratulations",
     ),
     "snackbarTitleWarning": MessageLookupByLibrary.simpleMessage("Attention"),
+    "summary": MessageLookupByLibrary.simpleMessage("summary"),
     "termsAndCondition1": MessageLookupByLibrary.simpleMessage(
       "I agree to Sou Okaz\'s",
     ),

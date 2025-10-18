@@ -17,10 +17,13 @@ class CustomElevatedButton extends StatelessWidget {
           backgroundColor: AppColors.primaryColor,
         ),
         onPressed: onPressed,
-        child: Text(title,
-            style: AppTextStyles.medium18.copyWith(
-              fontSize: responsiveFontSize(context, 0, 0.052),
-            )),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(title,
+              style: AppTextStyles.medium18.copyWith(
+                fontSize: responsiveFontSize(context, 0, 0.051),
+              )),
+        ),
       ),
     );
   }

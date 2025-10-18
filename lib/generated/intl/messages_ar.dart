@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "حدث خطأ أثناء تسجيل الدخول",
     ),
     "Price": MessageLookupByLibrary.simpleMessage("السعر"),
+    "Review": MessageLookupByLibrary.simpleMessage("مراجعة"),
     "SuccessSignIn": MessageLookupByLibrary.simpleMessage(
       "لقد قمت بتسجيل الدخول بنجاح",
     ),
@@ -59,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "شارع نيوهول 36، لندن، 12908 - المملكة المتحدة",
     ),
     "checkoutSuccess": MessageLookupByLibrary.simpleMessage("تم الدفع بنجاح"),
+    "comment": MessageLookupByLibrary.simpleMessage("اكتب تعليقًا.."),
     "detailsAddToCart": MessageLookupByLibrary.simpleMessage("أضف إلى السلة"),
     "detailsCategory": MessageLookupByLibrary.simpleMessage("أحذية رجالية"),
     "detailsDescription": MessageLookupByLibrary.simpleMessage(
@@ -333,6 +335,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "snackbarTitleInfo": MessageLookupByLibrary.simpleMessage("معلومة"),
     "snackbarTitleSuccess": MessageLookupByLibrary.simpleMessage("تهانينا"),
     "snackbarTitleWarning": MessageLookupByLibrary.simpleMessage("تنبيه"),
+    "summary": MessageLookupByLibrary.simpleMessage("الملخص"),
     "termsAndCondition1": MessageLookupByLibrary.simpleMessage("أوافق على"),
     "termsAndCondition2": MessageLookupByLibrary.simpleMessage(
       " سياسة الخصوصية لسوق عكاظ",

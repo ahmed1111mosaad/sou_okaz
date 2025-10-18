@@ -180,5 +180,9 @@
   "drawerDarkMode": "Dark Mode",
   "drawerFullName": "Full Name",
   "drawerEmailAddress": "Email Address",
-  "drawerLocation": "Location"
+  "drawerLocation": "Location",
+  "comment": "Write a comment..",
+  "Review": "Review",
+  "summary": "summary"
+
 }

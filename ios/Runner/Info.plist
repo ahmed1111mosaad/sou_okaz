@@ -26,6 +26,7 @@
 		<true />
 		<key>UILaunchStoryboardName</key>
 		<string>LaunchScreen</string>
+
 		<key>UIMainStoryboardFile</key>
 		<string>Main</string>
 		<key>UISupportedInterfaceOrientations</key>
@@ -52,6 +53,14 @@
 			<string>ar</string>
 			<string>de</string>
 		</array>
+
+
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>This app needs access to your photo library to allow you to select images for your
+			products.</string>
+
+
+			
 
 	</dict>
 </plist>

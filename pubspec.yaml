@@ -53,6 +53,7 @@ dependencies:
   intl_utils: ^2.8.12
   modal_progress_hud_nsn: ^0.5.1
   motion_toast: ^2.14.0
+  rating_summary: ^1.0.4
   rive: ^0.13.20
   shared_preferences: ^2.5.3
   verification_code: ^0.0.4
